@@ -4,6 +4,7 @@ import { chartWatcher, filterChartWatcher } from "./components/chart/chartSaga"
 import { marketWatcher } from "./components/footer/marketSaga";
 import { keyStatsWatcher } from "./components/keystats/keyStatsSaga";
 import { newsWatcher } from "./components/news/newsSaga";
+import { overviewWatcher } from "./components/overview/overviewSaga";
 
 export const APP_STARTED = "APP_STARTED";
 export const FETCH_SYMBOLS_SUCCESS = "FETCH_SYMBOLS_SUCCESS"
@@ -22,7 +23,8 @@ export function* root() {
     fork(filterChartWatcher), 
     fork(marketWatcher), 
     fork(keyStatsWatcher), 
-    fork(newsWatcher)
+    fork(newsWatcher), 
+    fork(overviewWatcher)
   ]);
   yield put(onAppStart());
 }
