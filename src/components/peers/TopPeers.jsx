@@ -4,7 +4,7 @@ import { SectionHeader } from "../reusables/SectionHeader"
 import  NoData  from "../reusables/NoData";
 
 const TopPeers = ({toppeers}) => {
-  return (
+  return toppeers.length ? (
     <div>
       {toppeers && (
         <div>
@@ -26,7 +26,7 @@ const TopPeers = ({toppeers}) => {
         </div>
       )}
     </div>
-  );
+  ) : null
 };
 
 

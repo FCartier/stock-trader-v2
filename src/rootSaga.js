@@ -5,6 +5,8 @@ import { marketWatcher } from "./components/footer/marketSaga";
 import { keyStatsWatcher } from "./components/keystats/keyStatsSaga";
 import { newsWatcher } from "./components/news/newsSaga";
 import { overviewWatcher } from "./components/overview/overviewSaga";
+import { peerWatcher } from "./components/peers/peerSaga";
+import { priceWatcher } from "./components/price/priceSaga";
 
 export const APP_STARTED = "APP_STARTED";
 export const FETCH_SYMBOLS_SUCCESS = "FETCH_SYMBOLS_SUCCESS"
@@ -24,7 +26,9 @@ export function* root() {
     fork(marketWatcher), 
     fork(keyStatsWatcher), 
     fork(newsWatcher), 
-    fork(overviewWatcher)
+    fork(overviewWatcher), 
+    fork(peerWatcher), 
+    fork(priceWatcher)
   ]);
   yield put(onAppStart());
 }

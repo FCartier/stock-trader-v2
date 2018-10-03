@@ -44,5 +44,15 @@ export const api = {
   getOverview: symbolId =>
     fetch(`https://api.iextrading.com/1.0/stock/${symbolId}/company`).then(
       response => response.json()
+    ),
+
+  getPeers: symbolId =>
+    fetch(`https://api.iextrading.com/1.0/stock/${symbolId}/peers`).then(
+      response => response.json()
+    ),
+
+  getPrice: symbolId =>
+    fetch(`https://api.iextrading.com/1.0/stock/${symbolId}/previous`).then(
+      response => response.json()
     )
 };
