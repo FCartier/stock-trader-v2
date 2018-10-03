@@ -34,5 +34,10 @@ export const api = {
   getKeyStats: symbolId =>
     fetch(`https://api.iextrading.com/1.0/stock/${symbolId}/quote`).then(
       response => response.json()
+    ),
+
+  getNews: symbolId =>
+    fetch(`https://api.iextrading.com/1.0/stock/${symbolId}/news/last/50`).then(
+      response => response.json()
     )
 };

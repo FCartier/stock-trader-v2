@@ -3,6 +3,7 @@ import {api} from './utils/apiUtil'
 import { chartWatcher, filterChartWatcher } from "./components/chart/chartSaga"
 import { marketWatcher } from "./components/footer/marketSaga";
 import { keyStatsWatcher } from "./components/keystats/keyStatsSaga";
+import { newsWatcher } from "./components/news/newsSaga";
 
 export const APP_STARTED = "APP_STARTED";
 export const FETCH_SYMBOLS_SUCCESS = "FETCH_SYMBOLS_SUCCESS"
@@ -20,7 +21,8 @@ export function* root() {
     fork(chartWatcher),
     fork(filterChartWatcher), 
     fork(marketWatcher), 
-    fork(keyStatsWatcher)
+    fork(keyStatsWatcher), 
+    fork(newsWatcher)
   ]);
   yield put(onAppStart());
 }
