@@ -5,7 +5,6 @@ import { newsAction } from "../news/newsActions";
 import { peerAction } from "../peers/peerActions";
 import { keyStatAction } from "../keystats/keyStatsActions";
 import { priceAction } from "../price/priceActions";
-import { marketAction } from "../footer/marketActions";
 
 export const SEARCH = "SEARCH";
 export const SYMBOLS_ACTION = "SYMBOLS ACTION";
@@ -32,6 +31,5 @@ export function handleSearch(input) {
     apiCall("peer", input, peerAction, dispatch);
     apiCall("keystats", input, keyStatAction, dispatch);
     apiCall("price", input, priceAction, dispatch);
-    apiCall("market", input, marketAction, dispatch);
   };
 }

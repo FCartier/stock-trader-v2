@@ -1,8 +1,9 @@
 import { all, fork, put, take, call } from "redux-saga/effects";
 import {api} from './utils/apiUtil'
 import { chartWatcher, filterChartWatcher } from "./components/chart/chartSaga"
+import { marketWatcher } from "./components/footer/marketSaga";
 
-const APP_STARTED = "APP_STARTED";
+export const APP_STARTED = "APP_STARTED";
 export const FETCH_SYMBOLS_SUCCESS = "FETCH_SYMBOLS_SUCCESS"
 
 
@@ -16,7 +17,8 @@ export function* root() {
   yield all([
     fork(appStartedWorker),
     fork(chartWatcher),
-    fork(filterChartWatcher)
+    fork(filterChartWatcher), 
+    fork(marketWatcher)
   ]);
   yield put(onAppStart());
 }
