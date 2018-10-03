@@ -27,7 +27,12 @@ export const api = {
     ).then(response => response.json()),
 
   getMarket: () =>
-    fetch(
-      `https://api.iextrading.com/1.0/market`
-    ).then(response => response.json())
+    fetch(`https://api.iextrading.com/1.0/market`).then(response =>
+      response.json()
+    ),
+
+  getKeyStats: symbolId =>
+    fetch(`https://api.iextrading.com/1.0/stock/${symbolId}/quote`).then(
+      response => response.json()
+    )
 };
