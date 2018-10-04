@@ -54,6 +54,7 @@
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "regenerator-runtime": "^0.12.1",
-    "sass": "^1.14.1"
+    "sass": "^1.14.1",
+    "tslint": "^5.11.0"
   }
 }

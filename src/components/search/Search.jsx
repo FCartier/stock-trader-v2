@@ -43,6 +43,8 @@ class Search extends Component {
 }
 
 const mapStateToProps = state => {
+  console.log(state.search.symbols)
+  console.log(formatSearchData(state.search.symbols))
   return {
     results: formatSearchData(state.search.symbols)
   }

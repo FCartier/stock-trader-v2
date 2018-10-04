@@ -21,7 +21,6 @@ const referenceLabel = (data) => {
 }
 
 export const Chart = ({data} ) => {
-  console.log(data)
   return (
     <ResponsiveContainer>
       <AreaChart
