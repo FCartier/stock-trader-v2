@@ -15,7 +15,7 @@ interface IKeyStatsProps {
   }
 
 const KeyStats: React.SFC<IKeyStatsProps> = ({keystats}) => {
-  return keystats.high ? (
+  return keystats.open ? (
     <div>
         <div className="keystats">
           <SectionHeader title="KEY STATS" />
