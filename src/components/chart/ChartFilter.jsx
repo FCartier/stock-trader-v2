@@ -22,7 +22,7 @@ class ChartFilter extends React.Component {
 
 export default connect(
   state => ({
-    input: state.input
+    input: state.search.symbol
   }),
   { chartFilter }
 )(ChartFilter);

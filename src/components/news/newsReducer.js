@@ -1,8 +1,8 @@
-import { NEWS_ACTION } from "./newsActions"
+import { FETCH_NEWS_SUCCESS } from "./newsActions"
 
 export const news = (state = [], action) => {
     switch (action.type) {
-      case NEWS_ACTION:
+      case FETCH_NEWS_SUCCESS:
         return action.payload;
       default:
         return state;

@@ -1,6 +1,1 @@
-export const OVERVIEW_ACTION = "OVERVIEW ACTION";
-
-export const overviewAction = payload => ({
-    type: OVERVIEW_ACTION,
-    payload
-  });
+export const FETCH_OVERVIEW_SUCCESS = "FETCH_OVERVIEW_SUCCESS";

@@ -1,8 +1,8 @@
-import { KEY_STAT_ACTION } from "./keyStatsActions"
+import { FETCH_KEYSTATS_SUCCESS } from "./keyStatsActions"
 
 export const keystats = (state = {}, action) => {
     switch (action.type) {
-      case KEY_STAT_ACTION:
+      case FETCH_KEYSTATS_SUCCESS:
         return action.payload
       default:
         return state;

@@ -1,7 +1,2 @@
-export const NEWS_ACTION = "NEWS ACTION";
+export const FETCH_NEWS_SUCCESS = "FETCH_NEWS_SUCCESS";
 
-export const newsAction = payload => ({
-    type: NEWS_ACTION,
-    payload
-  });
-  

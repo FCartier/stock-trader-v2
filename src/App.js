@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import 'babel-polyfill';
 import './App.css'
 import News from './components/news/News'
 import Overview from './components/overview/Overview'
@@ -52,7 +53,7 @@ const App = props => (
       <div className='Grid-cell'>
         <div>
           <Overview overview={props.overview} />
-          <TopPeers toppeers={props.toppeers} />
+          <TopPeers toppeers={props.peers} />
         </div>
       </div>
     </div>
@@ -72,7 +73,7 @@ export default connect(
     overview: state.overview,
     news: state.news,
     chart: state.chart,
-    toppeers: state.toppeers,
+    peers: state.peers,
     loading: state.loading,
     market: state.market,
     price: state.price

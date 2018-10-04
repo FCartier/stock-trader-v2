@@ -2,8 +2,7 @@ import React from "react";
 
 const MarketFooter = props => {
   const { market } = props;
-
-  console.log(market);
+  
   return (
     <div>
       <ul className="market-foot">

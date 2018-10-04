@@ -1,6 +1,1 @@
-export const MARKET_ACTION = "MARKET ACTION";
-
-export const marketAction = payload => ({
-  type: MARKET_ACTION,
-  payload
-});
+export const FETCH_MARKET_SUCCESS = "FETCH_MARKET_SUCCESS"

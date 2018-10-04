@@ -1,8 +1,8 @@
-import { PEER_ACTION } from "./peerActions"
+import { FETCH_PEER_SUCCESS } from "./peerActions"
 
 export const peers = (state = {}, action) => {
     switch (action.type) {
-      case PEER_ACTION:
+      case FETCH_PEER_SUCCESS:
         return action.payload;
       default:
         return state;

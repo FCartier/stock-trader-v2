@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Select from "react-virtualized-select";
 import "react-virtualized-select/styles.css";
-import { handleSearch, getSymbols } from "./searchActions";
+import { selectedSymbol } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
 import * as searchIcon from "./images/search.png";
@@ -9,16 +9,12 @@ import * as searchIcon from "./images/search.png";
 class Search extends Component {
   state = {
     selectedOption: null
-  };
-
-  componentDidMount() {
-    this.props.getSymbols();
-  }
+  }; 
 
   handleChange = selectedOption => {
     this.setState({ selectedOption });
     if(selectedOption)
-      this.props.handleSearch(selectedOption.value);
+      this.props.selectedSymbol(selectedOption.value);
   };
 
   render() {
@@ -49,8 +45,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps =  {
-    handleSearch,
-    getSymbols
+    selectedSymbol
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
