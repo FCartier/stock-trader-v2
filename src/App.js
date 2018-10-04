@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import News from './components/news/News'
-import Overview from './components/overview/Overview'
+import Overview from './components/overview/Overview.tsx'
 import KeyStats from './components/keystats/KeyStats'
 import ChartContainer from './components/chart/ChartContainer'
 import TopPeers from './components/peers/TopPeers'
