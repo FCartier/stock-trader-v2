@@ -1,17 +1,26 @@
-import React from "react";
+import * as React from "react";
 
 import { SectionHeader } from "../reusables/SectionHeader";
 
+interface NewsItem {
+  url: string;
+  headline: string;
+  source: string;
+}
 
-const News = props => {
-  const { news } = props;
+interface NewsList {
+  news: []
+}
+
+
+const News: React.SFC<NewsList> = ({news}) => {
 
   return news.length ? (
     <div>
       <div className="news">
         <SectionHeader title="NEWS" />
         <ul className="news-list">
-          {news.map((article, index) => {
+          {news.map((article: NewsItem, index: number) => {
             return (
               <li key={index}>
                 <p className="article-header">

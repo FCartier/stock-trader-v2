@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import News from './components/news/News'
+import News from './components/news/News.tsx'
 import Overview from './components/overview/Overview.tsx'
 import KeyStats from './components/keystats/KeyStats.tsx'
 import ChartContainer from './components/chart/ChartContainer'
