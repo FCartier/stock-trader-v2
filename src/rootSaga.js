@@ -18,6 +18,7 @@ function* appStartedWorker() {
     yield put({ type: FETCH_SYMBOLS_SUCCESS, payload: symbols });
 }
 
+
 export function* root() {
   yield all([
     fork(appStartedWorker),

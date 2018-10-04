@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import 'babel-polyfill';
 import './App.css'
 import News from './components/news/News'
 import Overview from './components/overview/Overview'
