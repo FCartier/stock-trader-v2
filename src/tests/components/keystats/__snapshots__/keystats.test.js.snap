@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`keystats component keystats component should display all data fields 1`] = `
+<div>
+  <div
+    className="keystats"
+  >
+    <div
+      className="category-header"
+    >
+      <h3>
+        KEY STATS
+      </h3>
+    </div>
+    <div
+      className="keystats-row"
+    >
+      <div
+        className="keystats-column"
+      >
+        <ul
+          className="keystats-list"
+        >
+          <li>
+            <p>
+              Previous Close
+            </p>
+             
+            <h5>
+              51.806
+            </h5>
+          </li>
+          <li>
+            <p>
+              Day Range
+            </p>
+             
+            <h5>
+              51.56
+              -
+              53.17
+            </h5>
+          </li>
+          <li>
+            <p>
+              Volume
+            </p>
+             
+            <h5>
+              77
+            </h5>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="keystats-column"
+      >
+        <ul
+          className="keystats-list"
+        >
+          <li>
+            <p>
+              Open 
+            </p>
+             
+            <h5>
+              51.76
+            </h5>
+          </li>
+          <li>
+            <p>
+              52 Week Range
+            </p>
+             
+            <h5>
+              47.31
+              -
+              64
+            </h5>
+          </li>
+          <li>
+            <p>
+               Total Avg. Volume
+            </p>
+             
+            <h5>
+              32193
+            </h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`keystats component keystats should display all data fields 1`] = `
+<div>
+  <div
+    className="keystats"
+  >
+    <div
+      className="category-header"
+    >
+      <h3>
+        KEY STATS
+      </h3>
+    </div>
+    <div
+      className="keystats-row"
+    >
+      <div
+        className="keystats-column"
+      >
+        <ul
+          className="keystats-list"
+        >
+          <li>
+            <p>
+              Previous Close
+            </p>
+             
+            <h5>
+              51.806
+            </h5>
+          </li>
+          <li>
+            <p>
+              Day Range
+            </p>
+             
+            <h5>
+              51.56
+              -
+              53.17
+            </h5>
+          </li>
+          <li>
+            <p>
+              Volume
+            </p>
+             
+            <h5>
+              77
+            </h5>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="keystats-column"
+      >
+        <ul
+          className="keystats-list"
+        >
+          <li>
+            <p>
+              Open 
+            </p>
+             
+            <h5>
+              51.76
+            </h5>
+          </li>
+          <li>
+            <p>
+              52 Week Range
+            </p>
+             
+            <h5>
+              47.31
+              -
+              64
+            </h5>
+          </li>
+          <li>
+            <p>
+               Total Avg. Volume
+            </p>
+             
+            <h5>
+              32193
+            </h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`keystats should display all data fields 1`] = `
+<div>
+  <div
+    className="keystats"
+  >
+    <div
+      className="category-header"
+    >
+      <h3>
+        KEY STATS
+      </h3>
+    </div>
+    <div
+      className="keystats-row"
+    >
+      <div
+        className="keystats-column"
+      >
+        <ul
+          className="keystats-list"
+        >
+          <li>
+            <p>
+              Previous Close
+            </p>
+             
+            <h5>
+              51.806
+            </h5>
+          </li>
+          <li>
+            <p>
+              Day Range
+            </p>
+             
+            <h5>
+              51.56
+              -
+              53.17
+            </h5>
+          </li>
+          <li>
+            <p>
+              Volume
+            </p>
+             
+            <h5>
+              77
+            </h5>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="keystats-column"
+      >
+        <ul
+          className="keystats-list"
+        >
+          <li>
+            <p>
+              Open 
+            </p>
+             
+            <h5>
+              51.76
+            </h5>
+          </li>
+          <li>
+            <p>
+              52 Week Range
+            </p>
+             
+            <h5>
+              47.31
+              -
+              64
+            </h5>
+          </li>
+          <li>
+            <p>
+               Total Avg. Volume
+            </p>
+             
+            <h5>
+              32193
+            </h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
