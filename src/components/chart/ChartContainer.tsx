@@ -1,9 +1,14 @@
 import React from "react";
 import { Chart } from "./Chart";
 import { formatChartData } from "./utils/formatChartData";
-import ChartFilter from "./ChartFilter"
+import ChartFilter from "./ChartFilter.tsx"
 
-const ChartContainer = (props) => {
+
+interface IChartContainerProps {
+  chart: []
+}
+
+export const ChartContainer: React.SFC<IChartContainerProps> = (props) => {
   
   const { chart } = props;
 
