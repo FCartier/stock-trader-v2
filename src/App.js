@@ -3,9 +3,15 @@ import './App.css'
 import News from './components/news/News.tsx'
 import Overview from './components/overview/Overview.tsx'
 import KeyStats from './components/keystats/KeyStats.tsx'
+<<<<<<< HEAD
 import ChartContainer from './components/chart/ChartContainer.tsx'
 import TopPeers from './components/peers/TopPeers'
 import MarketFooter from './components/footer/MarketFooter'
+=======
+import ChartContainer from './components/chart/ChartContainer'
+import TopPeers from './components/peers/TopPeers.tsx'
+import MarketFooter from './components/footer/MarketFooter.tsx'
+>>>>>>> 2b34b732c65bd27b26b86c949504d0560ff4eebd
 import Price from './components/price/Price.tsx'
 import Search from './components/search/Search'
 import { connect } from 'react-redux'
@@ -52,7 +58,7 @@ const App = props => (
       <div className='Grid-cell'>
         <div>
           <Overview overview={props.overview} />
-          <TopPeers toppeers={props.toppeers} />
+          <TopPeers peers={props.peers} />
         </div>
       </div>
     </div>
@@ -72,7 +78,7 @@ export default connect(
     overview: state.overview,
     news: state.news,
     chart: state.chart,
-    toppeers: state.toppeers,
+    peers: state.peers,
     loading: state.loading,
     market: state.market,
     price: state.price

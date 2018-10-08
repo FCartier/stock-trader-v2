@@ -8,13 +8,13 @@
 }
 
 html, body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0;
   font-family: "Lato", sans-serif;
   color: white;
@@ -42,9 +42,13 @@ body {
   align-items: stretch;
   justify-content: space-between;
   max-width: 100%;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   background-image: linear-gradient(to bottom right, #01255c, #002050);
   overflow: hidden;
+}
+
+footer {
+  flex-shrink: 0;
 }
 
 /* Grid + Responsive */
