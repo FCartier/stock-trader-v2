@@ -1,6 +1,6 @@
 import { combineReducers } from "redux"
 import { chart } from "./components/chart/chartReducer"
-import { keystats } from "./components/keystats/keystatsReducer"
+import { keystats } from "./components/keystats/keystatsReducer.tsx"
 import { news } from "./components/news/newsReducer"
 import { overview } from "./components/overview/overviewReducer.tsx"
 import { market } from "./components/footer/marketReducer"

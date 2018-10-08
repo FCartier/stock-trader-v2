@@ -4,7 +4,7 @@ import { overviewAction } from "../overview/overviewActions.tsx";
 import { newsAction } from "../news/newsActions";
 import { chartAction } from "../chart/chartActions";
 import { peerAction } from "../peers/peerActions";
-import { keyStatAction } from "../keystats/keyStatsActions";
+import { keyStatsAction } from "../keystats/keyStatsActions.tsx";
 import { priceAction } from "../price/priceActions";
 import { marketAction } from "../footer/marketActions";
 
@@ -31,7 +31,7 @@ export function handleSearch(input) {
     apiCall("news", input, newsAction, dispatch);
     apiCall("chart", input, chartAction, dispatch);
     apiCall("peer", input, peerAction, dispatch);
-    apiCall("keystats", input, keyStatAction, dispatch);
+    apiCall("keystats", input, keyStatsAction, dispatch);
     apiCall("price", input, priceAction, dispatch);
     apiCall("market", input, marketAction, dispatch);
   };
