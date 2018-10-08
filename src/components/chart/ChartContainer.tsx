@@ -1,7 +1,7 @@
 import React from "react";
-import { Chart } from "./Chart";
+import { Chart } from "./Chart.tsx";
 import { formatChartData } from "./utils/formatChartData";
-import ChartFilter from "./ChartFilter.tsx"
+import ChartFilter from "./ChartFilter.tsx";
 
 
 interface IChartContainerProps {

@@ -36,8 +36,8 @@ export const Chart: React.SFC<IChartProps> = (props) => {
           orientation="right"
           dataKey="value"
           domain={[
-            dataMin => Math.ceil(dataMin / 10) * 10 - 10,
-            dataMax => {
+            (dataMin: number) => Math.ceil(dataMin / 10) * 10 - 10,
+            (dataMax: number) => {
               return Math.ceil(dataMax / 10) * 10 + 10}
           ]}
           tickLine={false}

@@ -7,6 +7,10 @@ interface IChartFilter {
    input: string
 }
 
+interface IState {
+  input: string;
+}
+
 class ChartFilter extends React.Component<IChartFilter> {
   public filter = (event: any) => {
     this.props.chartFilter(this.props.input, event.target.value);
@@ -26,7 +30,7 @@ class ChartFilter extends React.Component<IChartFilter> {
 }
 
 export default connect(
-  state => ({
+  (state : IState) => ({
     input: state.input
   }),
   { chartFilter }
