@@ -376,6 +376,13 @@ sup {
   color: grey;
 }
 
+.referenceLine > label {
+  position: "right";
+  fill: blue;
+  font-size: 14;
+  text-align: "right";
+}
+
 .keystats-column {
   flex: 50%;
 }
