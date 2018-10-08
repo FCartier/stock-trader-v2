@@ -7,7 +7,7 @@ import { newsWatcher } from "./components/news/newsSaga";
 import { overviewWatcher } from "./components/overview/overviewSaga";
 import { peerWatcher } from "./components/peers/peerSaga";
 import { priceWatcher } from "./components/price/priceSaga";
-import { priceWebSocket } from "./components/price/priceWebsocketInit"
+import { priceWebsocketWatcher } from "./components/price/priceWebsocket"
 
 export const APP_STARTED = "APP_STARTED";
 export const FETCH_SYMBOLS_SUCCESS = "FETCH_SYMBOLS_SUCCESS"
@@ -31,7 +31,7 @@ export function* root() {
     fork(overviewWatcher), 
     fork(peerWatcher), 
     fork(priceWatcher), 
-    fork(priceWebSocket)
+    fork(priceWebsocketWatcher)
   ]);
   yield put(onAppStart());
 }
