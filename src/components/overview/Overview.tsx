@@ -10,7 +10,7 @@ interface IOverviewProps {
 }
 
 const Overview: React.SFC<IOverviewProps> = ({overview}) => {
-  return overview.companyName ? (
+  return !(typeof overview == "undefined" || overview.companyName == "") ? (
     <div>
       <div className='overview'>
         <SectionHeader title="COMPANY OVERVIEW"/>

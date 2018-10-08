@@ -1,6 +1,6 @@
 import { apiCall } from "../../utils/api";
 
-import { overviewAction } from "../overview/overviewActions";
+import { overviewAction } from "../overview/overviewActions.tsx";
 import { newsAction } from "../news/newsActions";
 import { chartAction } from "../chart/chartActions";
 import { peerAction } from "../peers/peerActions";
