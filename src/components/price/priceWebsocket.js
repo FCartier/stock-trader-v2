@@ -1,50 +1,48 @@
-import { call, take, put, fork, takeLatest } from "redux-saga/effects";
-import { eventChannel } from "redux-saga";
+import { call, put, takeEvery } from "redux-saga/effects";
+import { eventChannel, END } from "redux-saga";
 import io from "socket.io-client";
-import { shouldDispatchPrice } from "./utils/shouldDispatchPrice"
 import { priceReceived } from "./priceActions"
 
 import { SELECTED_SYMBOL } from "../search/searchActions";
 
+const SUBSCRIPTION_ENDPOINT = 'https://ws-api.iextrading.com/1.0/tops' 
+
+let socket;  // Declared outside to avoid re-init
+
+
 function connect(symbol) {
-  const socket = io("https://ws-api.iextrading.com/1.0/tops");
-  return new Promise(resolve => {
-    socket.on("connect", () => {
-      socket.emit("subscribe", symbol);
-      resolve(socket);
-    });
-  });
-}
-
-function subscribe(socket) {
   return eventChannel(emit => {
-    socket.on("message", data => {
-      const { lastSalePrice } = JSON.parse(data);
-      shouldDispatchPrice(lastSalePrice)
-        ? emit(priceReceived(lastSalePrice))
-        : null;  
-    });
-    return () => {};
-  });
+    if (!socket || socket.disconnected) {             // if there is no socket or it is disconnected (first case scenario)
+      socket = io(SUBSCRIPTION_ENDPOINT);
+      socket.on("connect", () => {                    // socket connects to server
+        socket.emit("subscribe", symbol);             // socket subscribes to endpoint with specific symbol
+        socket.on("message", data => {                // function triggered on each message received 
+          priceReceivedHandler(emit, data);           // pricehandler dispatched 
+        });
+      });
+      socket.on('connect_error', (err) => {
+        console.log(err)
+        emit(END)                                     // end - close and unsubscribe from channel
+      });
+    } else {
+      socket.emit("subscribe", symbol);               // if a different symbol is selected
+    }
+    return () => socket && socket.close();
+  })
+}
+
+function priceReceivedHandler(emit, data) {
+  const { lastSalePrice, symbol } = JSON.parse(data)
+  console.log(data)
+  emit(priceReceived(lastSalePrice))
 }
 
 
-function* read(socket) {
-  const channel = yield call(subscribe, socket);
-  while (true) {
-    let action = yield take(channel);
-    yield put(action);
-  }
-}
-
-function* priceWebsocket({ payload }) {
-  while (true) {
-    const socket = yield call(connect, payload);
-    yield fork(read, socket);
-  }
+function* subscribeToSymbol({ payload }) {
+  const channel = yield call(connect, payload);
+  yield takeEvery(channel, put);
 }
 
 export function* priceWebsocketWatcher() {
-  yield takeLatest(SELECTED_SYMBOL, priceWebsocket);
+  yield takeEvery(SELECTED_SYMBOL, subscribeToSymbol);
 }
-
