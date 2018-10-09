@@ -1,5 +1,5 @@
 import { Reducer } from 'redux';
-import { OVERVIEW_ACTION, OverviewAction } from "./overviewActions.tsx";
+import { OVERVIEW_ACTION, OverviewAction } from "./overviewActions";
 import OverviewState from './types';
 
 const initialState: OverviewState = {

@@ -3,15 +3,9 @@ import './App.css'
 import News from './components/news/News.tsx'
 import Overview from './components/overview/Overview.tsx'
 import KeyStats from './components/keystats/KeyStats.tsx'
-<<<<<<< HEAD
-import ChartContainer from './components/chart/ChartContainer.tsx'
-import TopPeers from './components/peers/TopPeers'
-import MarketFooter from './components/footer/MarketFooter'
-=======
 import ChartContainer from './components/chart/ChartContainer'
 import TopPeers from './components/peers/TopPeers.tsx'
 import MarketFooter from './components/footer/MarketFooter.tsx'
->>>>>>> 2b34b732c65bd27b26b86c949504d0560ff4eebd
 import Price from './components/price/Price.tsx'
 import Search from './components/search/Search'
 import { connect } from 'react-redux'
