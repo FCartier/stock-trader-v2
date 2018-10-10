@@ -1,5 +1,5 @@
 import * as React from "react";
-import { SectionHeader } from "../reusables/SectionHeader"
+import { SectionHeader } from "../reusables/SectionHeader.tsx"
 
 interface IOverviewProps {
   overview: {
