@@ -13,11 +13,11 @@ let currentSymbol;
 const priceReceivedHandler = emit => rawData => {
   const data = JSON.parse(rawData);
   if (data.symbol !== currentSymbol) {
-    console.log('outdate data received', data);
+    console.log('outdated data received', data);
     return;
   }
-  priceReceivedHandler(emit, data);  // pricehandler dispatched 
-  emit(priceReceived(data.lastSalePrice.toFixed(2)))
+  priceReceivedHandler(emit, data);   // pricehandler dispatched 
+  emit(priceReceived(data))
 }
 
 function connect(symbol) {

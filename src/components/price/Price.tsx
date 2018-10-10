@@ -5,21 +5,26 @@ export interface IPriceProps {
         close: number;
         change: number;
         changePercent: number;
+        lastSalePrice: number
     }
 }
 
-const Overview: React.SFC<IPriceProps> = ({price}) => {
+const Price: React.SFC<IPriceProps> = ({price}) => {
     return price.close ? (
       <div>
         <div className='price'>
             <sup>$</sup>{price.close} <div className={dynamicDiv(price.change)}>{price.change} | {price.changePercent}<sup>%</sup></div>
         </div>
       </div>
-    ): null;
+    ) 
+    :  
+    <div className="price">
+      <sup>$</sup>{price.lastSalePrice}
+    </div>
 }
 
 const dynamicDiv = (price: number) => {
     return price > 0 ? "text-green" : "text-orange";
 }
   
-export default Overview;
+export default Price;
