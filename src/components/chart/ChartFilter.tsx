@@ -1,13 +1,22 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { connect } from "react-redux";
 import { chartFilter } from "./chartActions";
 
-class ChartFilter extends React.Component {
-  filter = event => {
+interface IChartFilter {
+   chartFilter: (input: string, event: any) => void,
+   input: string
+}
+
+interface IState {
+  input: string;
+}
+
+class ChartFilter extends React.Component<IChartFilter> {
+  public filter = (event: any) => {
     this.props.chartFilter(this.props.input, event.target.value);
   };
 
-  render() {
+  public render() {
     return (
       <div className="chart-filter">
         <button onClick={this.filter} value={"1d"}>1d</button>
@@ -21,8 +30,8 @@ class ChartFilter extends React.Component {
 }
 
 export default connect(
-  state => ({
-    input: state.search.symbol
+  (state : IState) => ({
+    input: state.input
   }),
   { chartFilter }
 )(ChartFilter);

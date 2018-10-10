@@ -4,20 +4,39 @@ import "react-virtualized-select/styles.css";
 import { selectedSymbol } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
-import * as searchIcon from "./images/search.png";
 
-class Search extends Component {
-  state = {
-    selectedOption: null
-  }; 
+const searchIcon = require("./images/search.png")
 
-  handleChange = selectedOption => {
+
+interface ISearchProps {
+    results: any;    
+    getSymbols: () => {symbol: string, name: string}[];
+    handleSearch: (input: string) => void;
+}
+
+interface ISearchState {
+    selectedOption: null | object
+}
+
+class Search extends Component <ISearchProps, ISearchState> {
+  constructor (props: ISearchProps) {
+    super(props)
+    this.state = {
+      selectedOption: null
+    }
+  }
+
+  public componentDidMount() {
+    this.props.getSymbols();
+  }
+
+  public handleChange = (selectedOption: {value: string}) => {
     this.setState({ selectedOption });
     if(selectedOption)
       this.props.selectedSymbol(selectedOption.value);
   };
 
-  render() {
+  public render() {
     const { selectedOption } = this.state;
     return (
       <div className="full-height">
@@ -38,7 +57,8 @@ class Search extends Component {
   }
 }
 
-const mapStateToProps = state => {
+
+const mapStateToProps = (state: {search: {symbols: []}}) => {
   return {
     results: formatSearchData(state.search.symbols)
   }
@@ -48,4 +68,14 @@ const mapDispatchToProps =  {
     selectedSymbol
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Search);
+interface IMapProps {
+  handleSearch: () => any;
+  getSymbols: () => any;
+}
+
+
+interface IMapState {
+  results: {symbol: string, name: string}[]
+}
+
+export default connect<IMapState, IMapProps, {}>(mapStateToProps, mapDispatchToProps)(Search);

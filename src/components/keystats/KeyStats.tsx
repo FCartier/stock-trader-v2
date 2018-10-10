@@ -1,10 +1,21 @@
-import React from "react";
+import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader";
 
-const KeyStats = props => {
-  const { keystats } = props;
+interface IKeyStatsProps {
+    keystats: {
+        close: number;
+        low: number;
+        high: number;
+        open: number;
+        latestVolume: number;
+        week52High: number;
+        week52Low: number;
+        avgTotalVolume: number;
+    };
+  }
 
-  return Object.keys(keystats).length ? (
+const KeyStats: React.SFC<IKeyStatsProps> = ({keystats}) => {
+  return keystats.high ? (
     <div>
         <div className="keystats">
           <SectionHeader title="KEY STATS" />

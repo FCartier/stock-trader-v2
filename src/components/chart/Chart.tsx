@@ -11,16 +11,13 @@ import {
 
 import {calculateMaxValue} from "./utils/calculateMaxValue";
 
-const referenceLabel = (data) => {
-  return ({
-    position: 'right',  
-    value: calculateMaxValue(data), 
-    fill: 'orange', 
-    fontSize: 14
-  });
+interface IChartProps {
+  data: {date: string, value: number}[]
 }
 
-export const Chart = ({data} ) => {
+export const Chart: React.SFC<IChartProps> = (props) => {
+  console.log(props)
+  const { data } = props 
   return (
     <ResponsiveContainer>
       <AreaChart
@@ -39,13 +36,13 @@ export const Chart = ({data} ) => {
           orientation="right"
           dataKey="value"
           domain={[
-            dataMin => Math.ceil(dataMin / 10) * 10 - 10,
-            dataMax => {
+            (dataMin: number) => Math.ceil(dataMin / 10) * 10 - 10,
+            (dataMax: number) => {
               return Math.ceil(dataMax / 10) * 10 + 10}
           ]}
           tickLine={false}
         />
-        <ReferenceLine y={calculateMaxValue(data)} stroke={'orange'} label={referenceLabel(data)} />
+        <ReferenceLine y={calculateMaxValue(data)} stroke={'orange'}  className="referenceLine" />
         <Area type="monotone" dataKey="value" stroke="#72a2e9" fillOpacity={1} fill="url(#colorUv)" />
         
       </AreaChart>

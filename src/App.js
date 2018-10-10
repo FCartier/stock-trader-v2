@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import 'babel-polyfill';
 import './App.css'
-import News from './components/news/News'
-import Overview from './components/overview/Overview'
-import KeyStats from './components/keystats/KeyStats'
+import News from './components/news/News.tsx'
+import Overview from './components/overview/Overview.tsx'
+import KeyStats from './components/keystats/KeyStats.tsx'
 import ChartContainer from './components/chart/ChartContainer'
-import TopPeers from './components/peers/TopPeers'
-import MarketFooter from './components/footer/MarketFooter'
-import Price from './components/price/Price'
+import TopPeers from './components/peers/TopPeers.tsx'
+import MarketFooter from './components/footer/MarketFooter.tsx'
+import Price from './components/price/Price.tsx'
 import Search from './components/search/Search'
 import { connect } from 'react-redux'
 import * as logo from './images/logo.png'
@@ -41,6 +41,7 @@ const App = props => (
       <div className='Grid-cell'>
         <div>
           <News news={props.news} />
+          
         </div>
       </div>
     </div>
@@ -53,7 +54,7 @@ const App = props => (
       <div className='Grid-cell'>
         <div>
           <Overview overview={props.overview} />
-          <TopPeers toppeers={props.peers} />
+          <TopPeers peers={props.peers} />
         </div>
       </div>
     </div>
