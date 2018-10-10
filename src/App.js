@@ -6,7 +6,7 @@ import Overview from './components/overview'
 import KeyStats from './components/keystats/KeyStats.tsx'
 import Chart from './components/chart'
 import TopPeers from './components/peers'
-import MarketFooter from './components/footer/MarketFooter.tsx'
+import MarketFooter from './components/footer'
 import Price from './components/price/Price.tsx'
 import Search from './components/search/Search'
 import { connect } from 'react-redux'
@@ -59,7 +59,7 @@ const App = props => (
     </div>
     <div>
       <footer className='footer'>
-        <MarketFooter market={props.market} />
+        <MarketFooter />
       </footer>
     </div>
   </div>
@@ -71,7 +71,6 @@ export default connect(
     error: state.error,
     keystats: state.keystats,
     loading: state.loading,
-    market: state.market,
     price: state.price
   }),
   null
