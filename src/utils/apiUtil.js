@@ -1,4 +1,5 @@
 import { request } from "./apiRequestFormat"
+import { websocketRequest } from "./apiWebSocketRequest"
 
 export const api = {
 
@@ -14,6 +15,9 @@ export const api = {
   getKeyStats: symbolId => request(`/stock/${symbolId}/quote`),
   getPeers: symbolId => request(`/stock/${symbolId}/peers`),
   getPrice: symbolId => request(`/stock/${symbolId}/previous`),
+
+  /**** Price WebSocket ****/
+  getPriceWebsocket: () => websocketRequest(`https://ws-api.iextrading.com/1.0/tops`),
   
   /**** Called on chart filter select ****/
   filterChart: (symbolId, time) => request(`/stock/${symbolId}/chart/${time}`),
