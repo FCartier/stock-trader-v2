@@ -4,7 +4,7 @@ import './App.css'
 import News from './components/news'
 import Overview from './components/overview'
 import KeyStats from './components/keystats/KeyStats.tsx'
-import ChartContainer from './components/chart/ChartContainer'
+import Chart from './components/chart'
 import TopPeers from './components/peers'
 import MarketFooter from './components/footer/MarketFooter.tsx'
 import Price from './components/price/Price.tsx'
@@ -34,7 +34,7 @@ const App = props => (
     <div className='Grid Grid--gutters Grid--1of3'>
       <div className='Grid-cell main'>
         <div>
-          <ChartContainer chart={props.chart} loading={props.loading} />
+          <Chart/>
         </div>
       </div>
 
@@ -70,7 +70,6 @@ export default connect(
     input: state.input,
     error: state.error,
     keystats: state.keystats,
-    chart: state.chart,
     loading: state.loading,
     market: state.market,
     price: state.price
