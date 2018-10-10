@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import 'babel-polyfill';
 import './App.css'
 import News from './components/news'
-import Overview from './components/overview/Overview.tsx'
+import Overview from './components/overview'
 import KeyStats from './components/keystats/KeyStats.tsx'
 import ChartContainer from './components/chart/ChartContainer'
 import TopPeers from './components/peers/TopPeers.tsx'
@@ -52,7 +52,7 @@ const App = props => (
 
       <div className='Grid-cell'>
         <div>
-          <Overview overview={props.overview} />
+          <Overview/>
           <TopPeers peers={props.peers} />
         </div>
       </div>
@@ -70,7 +70,6 @@ export default connect(
     input: state.input,
     error: state.error,
     keystats: state.keystats,
-    overview: state.overview,
     chart: state.chart,
     peers: state.peers,
     loading: state.loading,
