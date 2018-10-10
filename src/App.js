@@ -3,7 +3,7 @@ import 'babel-polyfill';
 import './App.css'
 import News from './components/news'
 import Overview from './components/overview'
-import KeyStats from './components/keystats/KeyStats.tsx'
+import KeyStats from './components/keystats'
 import Chart from './components/chart'
 import TopPeers from './components/peers'
 import MarketFooter from './components/footer'
@@ -47,7 +47,7 @@ const App = props => (
 
     <div className='Grid Grid--gutters Grid--1of3'>
       <div className='Grid-cell main'>
-        <KeyStats keystats={props.keystats} />
+        <KeyStats />
       </div>
 
       <div className='Grid-cell'>
@@ -69,7 +69,6 @@ export default connect(
   state => ({
     input: state.input,
     error: state.error,
-    keystats: state.keystats,
     loading: state.loading,
     price: state.price
   }),
