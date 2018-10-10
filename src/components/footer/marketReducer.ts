@@ -1,13 +1,13 @@
 import { Reducer } from 'redux';
-import { MARKET_ACTION, MarketAction } from "./marketActions";
+import { FETCH_MARKET_SUCCESS } from "./marketActions";
 import { MarketItem } from './types';
 
 const initialState: MarketItem[] = []
 type MarketState = typeof initialState
 
-export const market: Reducer<MarketState, MarketAction> = (state = initialState, action) => {
+export const market: Reducer<MarketState> = (state = initialState, action) => {
   switch (action.type) {
-    case MARKET_ACTION:
+    case FETCH_MARKET_SUCCESS:
       return [ ...action.market ]
     default:
       return state

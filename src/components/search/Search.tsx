@@ -10,8 +10,7 @@ const searchIcon = require("./images/search.png")
 
 interface ISearchProps {
     results: any;    
-    getSymbols: () => {symbol: string, name: string}[];
-    handleSearch: (input: string) => void;
+    selectedSymbol: (input: string) => void;
 }
 
 interface ISearchState {
@@ -24,10 +23,6 @@ class Search extends Component <ISearchProps, ISearchState> {
     this.state = {
       selectedOption: null
     }
-  }
-
-  public componentDidMount() {
-    this.props.getSymbols();
   }
 
   public handleChange = (selectedOption: {value: string}) => {
@@ -69,10 +64,8 @@ const mapDispatchToProps =  {
 }
 
 interface IMapProps {
-  handleSearch: () => any;
-  getSymbols: () => any;
+  selectedSymbol: () => any;
 }
-
 
 interface IMapState {
   results: {symbol: string, name: string}[]

@@ -1,18 +1,21 @@
-import { Reducer } from 'redux';
-import { OVERVIEW_ACTION, OverviewAction } from "./overviewActions";
-import OverviewState from './types';
+import { Reducer } from "redux";
+import { FETCH_OVERVIEW_SUCCESS } from "./overviewActions";
+import OverviewState from "./types";
 
 const initialState: OverviewState = {
-  companyName: '',
-  website: '',
-  description: ''
-}
+  companyName: "",
+  website: "",
+  description: ""
+};
 
-export const overview: Reducer<OverviewState, OverviewAction> = (state = initialState, action) => {
+export const overview: Reducer<OverviewState> = (
+  state = initialState,
+  action
+) => {
   switch (action.type) {
-    case OVERVIEW_ACTION:
-      return { ...action.overview }
+    case FETCH_OVERVIEW_SUCCESS:
+      return action.payload;
     default:
-      return state
+      return state;
   }
-}
+};

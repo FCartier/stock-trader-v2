@@ -1,6 +1,5 @@
 import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader.tsx";
-import  NoData  from "../reusables/NoData.tsx";
 
 interface ITopPeersItem {
     name: String;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import 'babel-polyfill';
 import './App.css'
-import News from './components/news/News.tsx'
+import News from './components/news'
 import Overview from './components/overview/Overview.tsx'
 import KeyStats from './components/keystats/KeyStats.tsx'
 import ChartContainer from './components/chart/ChartContainer'
@@ -40,8 +40,7 @@ const App = props => (
 
       <div className='Grid-cell'>
         <div>
-          <News news={props.news} />
-          
+          <News/>
         </div>
       </div>
     </div>
@@ -72,7 +71,6 @@ export default connect(
     error: state.error,
     keystats: state.keystats,
     overview: state.overview,
-    news: state.news,
     chart: state.chart,
     peers: state.peers,
     loading: state.loading,
