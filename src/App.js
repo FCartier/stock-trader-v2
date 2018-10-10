@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import 'babel-polyfill';
 import './App.css'
 import News from './components/news/News.tsx'
 import Overview from './components/overview/Overview.tsx'
@@ -40,6 +41,7 @@ const App = props => (
       <div className='Grid-cell'>
         <div>
           <News news={props.news} />
+          
         </div>
       </div>
     </div>

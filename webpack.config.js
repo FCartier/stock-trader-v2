@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.tsx',
+    entry: ["babel-polyfill", './src/index.tsx'],
     module: {
         rules: [
             {

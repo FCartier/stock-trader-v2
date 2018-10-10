@@ -1,4 +1,4 @@
-import { apiCall } from "../../utils/api";
+export const SELECTED_SYMBOL = "SELECTED_SYMBOL";
 
 import { overviewAction } from "../overview/overviewActions";
 import { newsAction } from "../news/newsActions.tsx";

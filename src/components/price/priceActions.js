@@ -1,6 +1,1 @@
-export const PRICE_ACTION = "PRICE ACTION";
-
-export const priceAction = payload => ({
-    type: PRICE_ACTION,
-    payload
-  });
+export const FETCH_PRICE_SUCCESS = "FETCH_PRICE_SUCCESS";

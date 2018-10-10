@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Select from "react-virtualized-select";
 import "react-virtualized-select/styles.css";
-import { handleSearch, getSymbols } from "./searchActions";
+import { selectedSymbol } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
 
@@ -32,8 +32,8 @@ class Search extends Component <ISearchProps, ISearchState> {
 
   public handleChange = (selectedOption: {value: string}) => {
     this.setState({ selectedOption });
-    if(selectedOption) 
-      this.props.handleSearch(selectedOption.value)
+    if(selectedOption)
+      this.props.selectedSymbol(selectedOption.value);
   };
 
   public render() {
@@ -65,8 +65,7 @@ const mapStateToProps = (state: {search: {symbols: []}}) => {
 }
 
 const mapDispatchToProps =  {
-    handleSearch,
-    getSymbols
+    selectedSymbol
 }
 
 interface IMapProps {
