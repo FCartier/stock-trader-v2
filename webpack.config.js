@@ -1,32 +1,26 @@
-const path = require('path');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require('path'),
+ HtmlWebPackPlugin = require("html-webpack-plugin"),
+ MiniCssExtractPlugin = require("mini-css-extract-plugin"),
+ CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: ["babel-polyfill", './src/index.tsx'],
+    entry: ["babel-polyfill", './src/index.tsx', 'webpack-hot-middleware/client'],
     module: {
         rules: [
             {
                 test: /\.(js|jsx|ts|tsx)$/,
                 exclude: /node_modules/,
                 use: [
-                    {
-                        loader: "babel-loader"
-                    },
-                    {
-                        loader: 'ts-loader'
-                    }
+                    {loader: "babel-loader"},
+                    {loader: 'ts-loader'}
                 ]
             },
             {
                 test: /\.html$/,
-                use: [
-                {
+                use: [{
                     loader: "html-loader",
                     options: { minimize: true }
-                }
-                ]
+                }]
             },
             {
                 test: /\.css$/,
@@ -34,9 +28,7 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                'file-loader'
-                ]
+                use: ['file-loader']
             }
         ]
     },
