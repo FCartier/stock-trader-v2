@@ -5,7 +5,7 @@ import News from './components/news'
 import Overview from './components/overview'
 import KeyStats from './components/keystats/KeyStats.tsx'
 import ChartContainer from './components/chart/ChartContainer'
-import TopPeers from './components/peers/TopPeers.tsx'
+import TopPeers from './components/peers'
 import MarketFooter from './components/footer/MarketFooter.tsx'
 import Price from './components/price/Price.tsx'
 import Search from './components/search/Search'
@@ -53,7 +53,7 @@ const App = props => (
       <div className='Grid-cell'>
         <div>
           <Overview/>
-          <TopPeers peers={props.peers} />
+          <TopPeers/>
         </div>
       </div>
     </div>
@@ -71,7 +71,6 @@ export default connect(
     error: state.error,
     keystats: state.keystats,
     chart: state.chart,
-    peers: state.peers,
     loading: state.loading,
     market: state.market,
     price: state.price
