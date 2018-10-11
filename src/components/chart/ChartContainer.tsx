@@ -2,13 +2,14 @@ import React from "react";
 import { Chart } from "./Chart.tsx";
 import { formatChartData } from "./utils/formatChartData";
 import ChartFilter from "./ChartFilter.tsx";
-
+import { connect } from 'react-redux'
+import { GlobalState } from '../../StoreTypes'
 
 interface IChartContainerProps {
   chart: []
 }
 
-export const ChartContainer: React.SFC<IChartContainerProps> = (props) => {
+const ChartContainer: React.SFC<IChartContainerProps> = (props) => {
   
   const { chart } = props;
 
@@ -22,4 +23,11 @@ export const ChartContainer: React.SFC<IChartContainerProps> = (props) => {
   ) : null
 };
 
-export default ChartContainer;
+const mapStateToProps = (state: GlobalState) => ({
+  chart: state.chart
+})
+
+export default connect(
+    mapStateToProps,
+    null
+)(ChartContainer)
