@@ -1,5 +1,3 @@
 export default function renderCondition(array: []) {
-    if (array.length > 0) {
-      return true
-    }
+    return (array !== undefined && array.length > 0);
 }
