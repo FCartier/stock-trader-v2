@@ -6,7 +6,8 @@
   "scripts": {
     "prod": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "lint": "tslint --project ."
   },
   "repository": {
     "type": "git",
@@ -33,10 +34,14 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "ts-loader": "^5.2.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.1.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-server": "^3.1.9",
+    "webpack-hot-middleware": "^2.24.3"
   },
   "dependencies": {
     "@types/react": "^16.4.14",
