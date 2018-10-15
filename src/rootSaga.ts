@@ -37,5 +37,4 @@ export function* root() {
 }
 
 
-
 const onAppStart = () => ({ type: APP_STARTED });
