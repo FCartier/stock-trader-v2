@@ -1,13 +1,13 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 import { eventChannel, END } from "redux-saga";
 import io from "socket.io-client";
-import { priceReceived } from "./priceActions"
+import { priceReceived, fetchStaticPrice } from "./priceActions"
 
 import { SELECTED_SYMBOL } from "../search/searchActions";
 
 const SUBSCRIPTION_ENDPOINT = 'https://ws-api.iextrading.com/1.0/tops' 
 
-let socket;  // Declared outside to avoid re-init
+let socket;  
 let currentSymbol;
 
 const priceReceivedHandler = emit => rawData => {
@@ -16,24 +16,29 @@ const priceReceivedHandler = emit => rawData => {
     console.log('outdated data received', data);
     return;
   }
-  priceReceivedHandler(emit, data);   // pricehandler dispatched 
-  emit(priceReceived(data))
+  priceReceivedHandler(emit, data);   
+  if (data.askPrice == 0){
+    console.log(data)
+    emit(fetchStaticPrice(data.symbol))
+  } else {
+    emit(priceReceived(data))
+  }
 }
 
 function connect(symbol) {
   return eventChannel(emit => {
     if (!socket || socket.disconnected) { 
-      currentSymbol = symbol // if there is no socket or it is disconnected (first case scenario)
+      currentSymbol = symbol 
       socket = io(SUBSCRIPTION_ENDPOINT);
       socket.on("connect", () => {   
-        socket.emit("subscribe", symbol); // socket subscribes to endpoint with specific symbol
+        socket.emit("subscribe", symbol); 
         socket.on("message", priceReceivedHandler(emit));
       });
-      socket.on('connect_error', err =>  emit(END)) // end - close and unsubscribe from channel
+      socket.on('connect_error', err =>  emit(END)) 
     } else {
       socket.emit('unsubscribe', currentSymbol)
       currentSymbol = symbol;
-      socket.emit("subscribe", symbol); // if a different symbol is selected
+      socket.emit("subscribe", symbol); 
     }
     return () => socket && socket.close();
   })
