@@ -2,30 +2,30 @@ import * as React from "react";
 
 import { SectionHeader } from "../reusables/SectionHeader.tsx";
 import { NewsItem, NewsList } from './types';
+import { List, Header, Footer, Container } from "./styles"
 
 const News: React.SFC<NewsList> = ({news}) => {
   console.log(news);
 
-
   return renderCondition(news) ? (
     <div>
-      <div className="news">
+      <Container>
         <SectionHeader title="NEWS" />
-        <ul className="news-list">
+        <List>
           {news
           .slice(0, 5)
           .map((article: NewsItem, index: number) => {
             return (
               <li key={index}>
-                <p className="article-header">
+                <Header>
                   <a href={article.url}>{article.headline}</a>
-                </p>
-                <p className="article-footer">{article.source}</p>
+                </Header>
+                <Footer>{article.source}</Footer>
               </li>
             );
           })}
-        </ul>
-      </div>
+        </List>
+      </Container>
     </div>
   ) : null;
 };
