@@ -160,20 +160,6 @@ footer {
   .flexbox-container {
     flex-wrap: wrap;
   }
-
-  .keystats-row {
-    margin-bottom: 30px;
-  }
-}
-@media all and (max-width: 1040px) {
-  .keystats-row {
-    display: block;
-  }
-}
-@media all and (min-width: 1040px) {
-  .keystats-row {
-    display: flex;
-  }
 }
 @media all and (max-width: 760px) {
   .news {
@@ -189,43 +175,8 @@ footer {
   .overview-content {
     padding: 1rem;
   }
-
-  .keystats-row {
-    padding-right: 1rem;
-  }
 }
 /* App Components */
-.keystats-column {
-  flex: 50%;
-}
-
-.keystats-list {
-  list-style-type: none;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.keystats-list > li {
-  border-bottom: 2px solid grey;
-}
-
-.keystats-list > li > p {
-  display: inline-block;
-  width: 49%;
-}
-
-.keystats-list > li > h5 {
-  display: inline-block;
-  text-align: right;
-  padding: 0px;
-  margin: 0px;
-  width: 50%;
-}
-
-.keystats {
-  margin-left: 1em;
-}
-
 .news-list {
   list-style-type: none;
   margin: 0;
@@ -385,37 +336,6 @@ sup {
   fill: blue;
   font-size: 14;
   text-align: "right";
-}
-
-.keystats-column {
-  flex: 50%;
-}
-
-.keystats-list {
-  list-style-type: none;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.keystats-list > li {
-  border-bottom: 2px solid grey;
-}
-
-.keystats-list > li > p {
-  display: inline-block;
-  width: 49%;
-}
-
-.keystats-list > li > h5 {
-  display: inline-block;
-  text-align: right;
-  padding: 0px;
-  margin: 0px;
-  width: 50%;
-}
-
-.keystats {
-  margin-left: 1em;
 }
 
 /*# sourceMappingURL=App.css.map */
