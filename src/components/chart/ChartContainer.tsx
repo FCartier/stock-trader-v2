@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import { GlobalState } from '../../StoreTypes'
 
 interface IChartContainerProps {
-  chart: []
+  chart?: []
 }
 
 const ChartContainer: React.SFC<IChartContainerProps> = (props) => {

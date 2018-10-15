@@ -4,8 +4,6 @@ import { SectionHeader } from "../reusables/SectionHeader.tsx";
 import { NewsItem, NewsList } from './types';
 
 const News: React.SFC<NewsList> = ({news}) => {
-  console.log(news);
-
 
   return renderCondition(news) ? (
     <div>

@@ -2,11 +2,11 @@ import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader.tsx";
 
 interface ITopPeersItem {
-    name: String;
+    name: string;
 }
 
 interface ITopPeersProps {
-    peers: [];
+    peers?: [];
 }
 
 const TopPeers: React.SFC<ITopPeersProps> = ({peers}) => {
