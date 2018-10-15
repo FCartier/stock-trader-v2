@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import { connect } from "react-redux";
 import { chartFilter } from "./chartActions";
+import { Filter } from "./styles"
 
 interface IChartFilter {
    chartFilter: (input: string, event: any) => void,
@@ -18,13 +19,13 @@ class ChartFilter extends React.Component<IChartFilter> {
 
   public render() {
     return (
-      <div className="chart-filter">
+      <Filter>
         <button onClick={this.filter} value={"1d"}>1d</button>
         <button onClick={this.filter} value={"1m"}>1m</button>
         <button onClick={this.filter} value={"6m"}>6m</button>
         <button onClick={this.filter} value={"1y"}>1y</button>
         <button onClick={this.filter} value={"5y"}>5y</button>
-      </div>
+      </Filter>
     );
   }
 }

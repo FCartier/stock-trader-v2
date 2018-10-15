@@ -1,6 +1,5 @@
 import styled from 'react-emotion'
 
-
 const topFooter = '#01255c'
 const bottomFooter = '#002050' 
 

@@ -4,6 +4,7 @@ import { formatChartData } from "./utils/formatChartData";
 import ChartFilter from "./ChartFilter.tsx";
 import { connect } from 'react-redux'
 import { GlobalState } from '../../StoreTypes'
+import { Container } from './styles'
 
 interface IChartContainerProps {
   chart: []
@@ -15,10 +16,10 @@ const ChartContainer: React.SFC<IChartContainerProps> = (props) => {
 
   return chart.length ? (
     <div>
-        <div className="chartContainer">
+        <Container>
           <ChartFilter/>
           <Chart data={formatChartData(chart)} />
-        </div>
+        </Container>
     </div>
   ) : null
 };
