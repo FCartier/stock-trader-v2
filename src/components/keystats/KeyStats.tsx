@@ -2,7 +2,7 @@ import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader";
 
 interface IKeyStatsProps {
-    keystats: {
+    keystats?: {
         close: number;
         low: number;
         high: number;

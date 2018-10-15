@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "babel-polyfill";
 import "./App.css";
 import News from "./components/news";
@@ -10,9 +10,11 @@ import MarketFooter from "./components/footer";
 import Price from "./components/price";
 import Search from "./components/search/Search";
 
+// @ts-ignore
 import * as logo from "./images/logo.png";
 
-const App = props => (
+
+const App: React.SFC = () => (
   <div className="gradient">
     <div className="flexbox-container">
       <div>
