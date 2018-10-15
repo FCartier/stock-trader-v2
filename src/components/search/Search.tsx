@@ -17,6 +17,8 @@ interface ISearchState {
     selectedOption: null | object
 }
 
+
+
 class Search extends Component <ISearchProps, ISearchState> {
   constructor (props: ISearchProps) {
     super(props)
@@ -27,8 +29,9 @@ class Search extends Component <ISearchProps, ISearchState> {
 
   public handleChange = (selectedOption: {value: string}) => {
     this.setState({ selectedOption });
-    if(selectedOption)
+    if(selectedOption) {
       this.props.selectedSymbol(selectedOption.value);
+    }
   };
 
   public render() {

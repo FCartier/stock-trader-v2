@@ -161,25 +161,6 @@ body {
   }
 }
 /* App Components */
-.price {
-  font-size: 2em;
-  display: inline-block;
-}
-
-.text-orange {
-  color: #df5455;
-  display: inline-block;
-}
-
-.text-green {
-  color: #6fb792;
-  display: inline-block;
-}
-
-sup {
-  font-size: 0.5em;
-}
-
 .searchbar {
   width: 80%;
   height: 4em;
