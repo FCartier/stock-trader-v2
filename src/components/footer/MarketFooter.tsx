@@ -1,8 +1,9 @@
 import React from "react";
+import { MarketFoot } from "./styles"
 
 interface IMarketItem {
-  mic: String;
-  venueName: String;
+  mic: string;
+  venueName: string;
   marketPercent: number;
 }
 
@@ -13,9 +14,9 @@ interface IMarketsProps {
 const MarketFooter: React.SFC<IMarketsProps> = ({market}) => {
   return market.length ? (
     <div>
-      <ul className="market-foot">
+      <MarketFoot>
         {market.map((item: IMarketItem, index: number)  => <li key={index}><p><strong>{item.venueName}</strong>  {item.marketPercent}%</p></li>)}
-      </ul>
+      </MarketFoot>
     </div>
   ) : null;
 };

@@ -35,22 +35,6 @@ body {
   padding-bottom: 0px;
 }
 
-.market-foot {
-  display: flex;
-  font-size: 10px;
-  list-style-type: none;
-  align-items: stretch;
-  justify-content: space-between;
-  max-width: 100%;
-  margin-bottom: 1rem;
-  background-image: linear-gradient(to bottom right, #01255c, #002050);
-  overflow: hidden;
-}
-
-footer {
-  flex-shrink: 0;
-}
-
 /* Grid + Responsive */
 .flexbox-container {
   display: flex;
@@ -270,21 +254,6 @@ sup {
 .searchbox-container {
   display: inline-block;
   min-width: 80%;
-}
-
-.top-peers-list {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.top-peers-element {
-  display: block;
-  flex: 0 1 auto;
-  list-style-type: none;
 }
 
 .chartContainer {
