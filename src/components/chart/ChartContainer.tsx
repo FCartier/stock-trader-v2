@@ -1,7 +1,7 @@
 import React from "react";
-import { Chart } from "./Chart.tsx";
+import { Chart } from "./Chart";
 import { formatChartData } from "./utils/formatChartData";
-import ChartFilter from "./ChartFilter.tsx";
+import ChartFilter from "./ChartFilter";
 import { connect } from 'react-redux'
 import { GlobalState } from '../../StoreTypes'
 

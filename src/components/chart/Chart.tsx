@@ -12,7 +12,7 @@ import {
 import {calculateMaxValue} from "./utils/calculateMaxValue";
 
 interface IChartProps {
-  data?: {date: string, value: number}[]
+  data?: Array<{date: string, value: number}>
 }
 
 export const Chart: React.SFC<IChartProps> = (props) => {
