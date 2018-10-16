@@ -1,17 +1,18 @@
 import { call, put, takeLatest } from "redux-saga/effects";
-import { FETCH_CHART_SUCCESS, FILTER_CHART } from "./chartActions";
-import { SELECTED_SYMBOL } from "../search/searchActions";
+import { FETCH_CHART_SUCCESS, FILTER_CHART, FilterAction } from "./chartActions";
+import { SELECTED_SYMBOL, SelectedSymbol } from "../search/searchActions";
 import { api } from "../../utils/apiUtil";
 
 /**** Workers ****/
 
-function* chartWorker({ payload }) {
+function* chartWorker(action: SelectedSymbol) {
+  const { payload } = action
   const chart = yield call(api.getChart, payload);
   yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
 }
 
-function* filterChartWorker({payload}) {
-  console.log(payload)
+function* filterChartWorker(action: FilterAction) {
+  const { payload } = action
   const chart = yield call(api.filterChart, payload.input, payload.time);
   yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
 }
