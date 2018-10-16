@@ -1,7 +1,6 @@
 import styled from 'react-emotion'
 
-const topFooter = '#01255c'
-const bottomFooter = '#002050' 
+
 
 export const MarketFoot = styled('ul')`
     display: flex;
@@ -11,6 +10,6 @@ export const MarketFoot = styled('ul')`
     justify-content: space-between;
     max-width: 100%;
     margin-bottom: 1rem;
-    background-image: linear-gradient(to bottom right, ${topFooter}, ${bottomFooter}); 
+    background-image: linear-gradient(to bottom right, ${props => props.theme.marketFooterTop}, ${props => props.theme.marketFooterBottom}); 
     overflow: hidden;
 `

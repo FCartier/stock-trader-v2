@@ -45,6 +45,17 @@ export const Logo = styled('img')`
   height: auto;
 `
 
+export const ThemeChangeButton = styled('button')`
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+  color: grey;
+`
+
 
 
 export default Global;

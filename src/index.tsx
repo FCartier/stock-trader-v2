@@ -8,24 +8,16 @@ import middleware from './middleware'
 import { root } from './rootSaga'  
 import { sagaMiddleware } from './middleware'
 import Global from './globalStyles'
-import { ThemeProvider } from 'emotion-theming'
 
-export const theme = {
-  textColor: 'white',
-  backgroundColorTop: '#1E355E',
-  backgroundColorBottom: '#16233B'
-}
 
 const store = createStore(reducer, middleware)
 sagaMiddleware.run(root)
 
 ReactDOM.render(
     <Provider store={store}>
-     <ThemeProvider theme={theme}>
        <Global>
           <App />
         </Global>
-     </ThemeProvider>
     </Provider>,
     document.getElementById('app')
   )

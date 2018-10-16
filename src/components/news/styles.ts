@@ -15,7 +15,7 @@ export const Header = styled('p')`
   padding: 0px;
   a {
     text-decoration: none;
-    color: white;
+    color: ${props => props.theme.textColor};
   }
 `
 export const Footer = styled('p')`
