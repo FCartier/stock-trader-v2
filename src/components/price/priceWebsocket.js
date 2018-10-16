@@ -26,6 +26,8 @@ const priceReceivedHandler = emit => rawData => {
 }
 
 function connect(symbol) {
+  let sentMessage = false;
+  console.log("hello")
   return eventChannel(emit => {
     if (!socket || socket.disconnected) { 
       currentSymbol = symbol 
@@ -33,15 +35,22 @@ function connect(symbol) {
       socket.on("connect", () => {   
         socket.emit("subscribe", symbol); 
         socket.on("message", priceReceivedHandler(emit));
+        sentMessage = true;
       });
+      dispatchStaticPriceTimeout(emit, sentMessage, symbol)
       socket.on('connect_error', err =>  emit(END)) 
     } else {
       socket.emit('unsubscribe', currentSymbol)
       currentSymbol = symbol;
       socket.emit("subscribe", symbol); 
+      dispatchStaticPriceTimeout(emit, sentMessage, symbol)
     }
     return () => socket && socket.close();
   })
+}
+
+function dispatchStaticPriceTimeout(emit,sentMessage, symbol){
+  setTimeout(() => {if(!sentMessage){emit(fetchStaticPrice(symbol))}}, 500)
 }
 
 function* subscribeToSymbol({ payload }) {
