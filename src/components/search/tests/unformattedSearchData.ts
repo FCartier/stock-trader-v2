@@ -2,7 +2,7 @@ interface UnformattedData {
     symbol: string;
     name: string;
     date: string;
-    isEnabled: true;
+    isEnabled: boolean;
     type: string;
     iexId: string;
 }

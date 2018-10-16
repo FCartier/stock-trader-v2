@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Select from "react-virtualized-select";
 import "react-virtualized-select/styles.css";
-import { selectedSymbol } from "./searchActions";
+import { SELECTED_SYMBOL, selectedSymbol, SelectedSymbolReturnType } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
 
-// @ts-ignore
-import * as searchIcon from "./images/search.png";
+const searchIcon = require("./images/search.png")
+
 
 interface ISearchProps {
     results: any;    
@@ -27,9 +27,8 @@ class Search extends Component <ISearchProps, ISearchState> {
 
   public handleChange = (selectedOption: {value: string}) => {
     this.setState({ selectedOption });
-    if(selectedOption) {
+    if(selectedOption)
       this.props.selectedSymbol(selectedOption.value);
-    }
   };
 
   public render() {
@@ -65,11 +64,11 @@ const mapDispatchToProps =  {
 }
 
 interface IMapProps {
-  selectedSymbol: () => any;
+  selectedSymbol?: () => SelectedSymbolReturnType;
 }
 
 interface IMapState {
-  results: Array<{symbol: string, name: string}>
+  results: {symbol: string, name: string}[]
 }
 
 export default connect<IMapState, IMapProps, {}>(mapStateToProps, mapDispatchToProps)(Search);
