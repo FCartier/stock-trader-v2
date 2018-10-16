@@ -4,6 +4,7 @@ import "react-virtualized-select/styles.css";
 import { selectedSymbol } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
+import "./style.css"
 
 const searchIcon = require("./images/search.png")
 

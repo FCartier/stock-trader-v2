@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "babel-polyfill";
-import "./App.css";
 import News from "./components/news";
 import Overview from "./components/overview";
 import KeyStats from "./components/keystats";
@@ -9,14 +8,18 @@ import TopPeers from "./components/peers";
 import MarketFooter from "./components/footer";
 import Price from "./components/price";
 import Search from "./components/search/Search";
-
+import { Gradient } from "./globalStyles"
+import { Logo } from "./globalStyles"
 import * as logo from "./images/logo.png";
+import "./grid.css"
+
+
 
 const App = props => (
-  <div className="gradient">
+  <Gradient>
     <div className="flexbox-container">
       <div>
-        <img src={logo} alt="Adaptive Logo" className="logo" />
+        <Logo src={logo} alt="Adaptive Logo"/>
       </div>
     </div>
 
@@ -62,7 +65,7 @@ const App = props => (
         <MarketFooter />
       </footer>
     </div>
-  </div>
+  </Gradient>
 );
 
 export default App;
