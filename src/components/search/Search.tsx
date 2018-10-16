@@ -5,8 +5,8 @@ import { selectedSymbol } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
 
-const searchIcon = require("./images/search.png")
-
+// @ts-ignore
+import * as searchIcon from "./images/search.png";
 
 interface ISearchProps {
     results: any;    
@@ -27,8 +27,9 @@ class Search extends Component <ISearchProps, ISearchState> {
 
   public handleChange = (selectedOption: {value: string}) => {
     this.setState({ selectedOption });
-    if(selectedOption)
+    if(selectedOption) {
       this.props.selectedSymbol(selectedOption.value);
+    }
   };
 
   public render() {
@@ -68,7 +69,7 @@ interface IMapProps {
 }
 
 interface IMapState {
-  results: {symbol: string, name: string}[]
+  results: Array<{symbol: string, name: string}>
 }
 
 export default connect<IMapState, IMapProps, {}>(mapStateToProps, mapDispatchToProps)(Search);

@@ -1,13 +1,13 @@
 import React from "react";
 
 interface IMarketItem {
-  mic: String;
-  venueName: String;
+  mic: string;
+  venueName: string;
   marketPercent: number;
 }
 
 interface IMarketsProps {
-  market: [];
+  market?: [];
 }
 
 const MarketFooter: React.SFC<IMarketsProps> = ({market}) => {

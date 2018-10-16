@@ -5,5 +5,5 @@ export interface NewsItem {
 }
   
 export interface NewsList {
-    news: [];
+    news?: [];
 }

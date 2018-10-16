@@ -1,7 +1,8 @@
 import * as React from "react";
 
 export interface IPriceProps {
-  price: {
+
+  price?: {
     close: number;
     change: number;
     changePercent: number;
