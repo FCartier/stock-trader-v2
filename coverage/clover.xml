@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1539791977830" clover="3.2.0">
+  <project timestamp="1539791977830" name="All files">
+    <metrics statements="9" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="1" elements="15" coveredelements="12" complexity="0" loc="9" ncloc="9" packages="3" files="3" classes="3">
+      <package name="overview">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <file name="Overview.tsx" path="C:\Users\FlorianCartier\Documents\workspace\stock-trader-v2\src\components\overview\Overview.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="cond" truecount="2" falsecount="0"/>
+          <line num="27" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="overview.__tests__">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="overview.data.ts" path="C:\Users\FlorianCartier\Documents\workspace\stock-trader-v2\src\components\overview\__tests__\overview.data.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="reusables">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <file name="SectionHeader.tsx" path="C:\Users\FlorianCartier\Documents\workspace\stock-trader-v2\src\components\reusables\SectionHeader.tsx">
+          <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

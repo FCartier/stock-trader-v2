@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader"
 
-interface IOverviewProps {
+export interface IOverviewProps {
   overview?: {
       companyName: string;
       website: string;

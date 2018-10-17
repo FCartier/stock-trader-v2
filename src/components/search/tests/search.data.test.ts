@@ -12,10 +12,11 @@ import {api} from '../../../utils/apiUtil';
 test('adds 1 + 2 to equal 3', () => {
     expect(1 + 2).toBe(3);
 });
-
+/*
 test('the data is peanut butter', async () => {
     expect.assertions(1);
     await expect(api.getSymbols()).resolves.toBe(unformattedSearchData);
   });
   
 
+*/
