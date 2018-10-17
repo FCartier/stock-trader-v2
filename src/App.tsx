@@ -10,6 +10,8 @@ import Price from "./components/price";
 import Search from "./components/search/Search";
 import { Gradient } from "./globalStyles";
 import { Logo } from "./globalStyles";
+
+// @ts-ignore
 import * as logo from "./images/logo.png";
 import { ThemeProvider } from 'emotion-theming'
 import { darkTheme, lightTheme } from './themes'
@@ -18,16 +20,21 @@ import "./grid.css";
 
 
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
+interface IAppState {
+  isDark: boolean, 
+  theme: object
+}
+
+class App extends React.Component<{}, IAppState> {
+  constructor(props: {}) {
+    super(props)
     this.state = {
       isDark: true,
       theme: darkTheme
     };
   }
 
-  handleClick() {
+  public handleClick() {
     const isDark = !this.state.isDark;
     this.setState({
       isDark,
@@ -35,7 +42,7 @@ class App extends React.Component {
     });
   }
 
-  render() {
+  public render() {
     return (
       <ThemeProvider theme={this.state.theme}>
         <Gradient>

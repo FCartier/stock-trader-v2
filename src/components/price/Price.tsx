@@ -2,7 +2,7 @@ import * as React from "react";
 import { Container, CurrencyTag, orange, green } from "./styles";
 
 export interface IPriceProps {
-  price: {
+  price?: {
     close: number;
     change: number;
     changePercent: number;
