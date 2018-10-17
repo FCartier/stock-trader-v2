@@ -1,4 +1,5 @@
 import React from "react";
+import { CategoryHeader } from "./styles"
 
 interface SectionHeaderProps {
     title: string,
@@ -6,8 +7,8 @@ interface SectionHeaderProps {
 
 export const SectionHeader: React.SFC<SectionHeaderProps> = (props) => {
     return (
-        <div className="category-header">
+        <CategoryHeader>
                 <h3>{props.title}</h3>
-        </div>
+        </CategoryHeader>
     )
 }

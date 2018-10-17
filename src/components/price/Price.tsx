@@ -1,43 +1,37 @@
 import * as React from "react";
+import { Container, CurrencyTag, orange, green } from "./styles";
 
 export interface IPriceProps {
-
   price?: {
     close: number;
     change: number;
     changePercent: number;
     lastSalePrice: number;
-    askPrice: number;
   };
 }
 
 const Price: React.SFC<IPriceProps> = ({ price }) => {
   return price.close ? (
     <div>
-      <div className="price">
-        <sup>$</sup>
-        {price.close.toFixed(2)}{" "}
+      <Container>
+        <CurrencyTag>$</CurrencyTag>
+        {price.close}{" "}
         <div className={dynamicDiv(price.change)}>
           {price.change} | {price.changePercent}
           <sup>%</sup>
         </div>
-      </div>
+      </Container>
     </div>
   ) : (
-    <div className="price">
-      
-      {price.askPrice ? (
-        <div>
-          <sup>$</sup>
-          {price.askPrice.toFixed(2)}
-        </div>
-      ) : null} 
-    </div>
+    <Container>
+      <CurrencyTag>$</CurrencyTag>
+      {price.lastSalePrice}
+    </Container>
   );
 };
 
 const dynamicDiv = (price: number) => {
-  return price > 0 ? "text-green" : "text-orange";
+  return price > 0 ? orange : green;
 };
 
 
