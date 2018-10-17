@@ -9,6 +9,7 @@ import TopPeers from "./components/peers";
 import MarketFooter from "./components/footer";
 import Price from "./components/price";
 import Search from "./components/search/Search";
+import StockInfo from "./components/info"
 
 // @ts-ignore
 import * as logo from "./images/logo.png";
@@ -32,7 +33,7 @@ const App: React.SFC = () => (
     </div>
 
     <hr />
-
+    <StockInfo/>
     <div className="Grid Grid--gutters Grid--1of3">
       <div className="Grid-cell main">
         <div>
