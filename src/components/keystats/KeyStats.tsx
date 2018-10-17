@@ -4,7 +4,7 @@ import { Container, Row, Column, List } from "./styles"
 
 
 interface IKeyStatsProps {
-    keystats: {
+    keystats?: {
         close: number;
         low: number;
         high: number;

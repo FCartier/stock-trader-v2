@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "babel-polyfill";
 import News from "./components/news";
 import Overview from "./components/overview";
@@ -8,8 +8,13 @@ import TopPeers from "./components/peers";
 import MarketFooter from "./components/footer";
 import Price from "./components/price";
 import Search from "./components/search/Search";
+<<<<<<< HEAD:src/App.js
 import { Gradient } from "./globalStyles";
 import { Logo } from "./globalStyles";
+=======
+
+// @ts-ignore
+>>>>>>> master:src/App.tsx
 import * as logo from "./images/logo.png";
 import { ThemeProvider } from 'emotion-theming'
 import { darkTheme, lightTheme } from './themes'
@@ -35,6 +40,7 @@ class App extends React.Component {
     });
   }
 
+<<<<<<< HEAD:src/App.js
   render() {
     return (
       <ThemeProvider theme={this.state.theme}>
@@ -45,6 +51,16 @@ class App extends React.Component {
               <ThemeChangeButton onClick={() => this.handleClick()}>Change Theme</ThemeChangeButton>
             </div>
           </div>
+=======
+
+const App: React.SFC = () => (
+  <div className="gradient">
+    <div className="flexbox-container">
+      <div>
+        <img src={logo} alt="Adaptive Logo" className="logo" />
+      </div>
+    </div>
+>>>>>>> master:src/App.tsx
 
           <div className="flexbox-container searchbar-container">
             <div className="searchbar">

@@ -6,8 +6,8 @@ import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
 import "./style.css"
 
-const searchIcon = require("./images/search.png")
-
+// @ts-ignore
+import * as searchIcon from "./images/search.png";
 
 interface ISearchProps {
     results: any;    
@@ -72,7 +72,7 @@ interface IMapProps {
 }
 
 interface IMapState {
-  results: {symbol: string, name: string}[]
+  results: Array<{symbol: string, name: string}>
 }
 
 export default connect<IMapState, IMapProps, {}>(mapStateToProps, mapDispatchToProps)(Search);

@@ -8,7 +8,7 @@ interface IMarketItem {
 }
 
 interface IMarketsProps {
-  market: [];
+  market?: [];
 }
 
 const MarketFooter: React.SFC<IMarketsProps> = ({market}) => {
