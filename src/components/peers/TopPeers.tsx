@@ -1,10 +1,6 @@
 import * as React from "react";
-<<<<<<< HEAD
 import { SectionHeader } from "../reusables/SectionHeader.tsx";
 import { List, Item } from "./styles"
-=======
-import { SectionHeader } from "../reusables/SectionHeader";
->>>>>>> master
 
 interface ITopPeersItem {
     name: string;

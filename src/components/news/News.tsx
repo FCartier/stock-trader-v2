@@ -5,10 +5,7 @@ import { NewsItem, NewsList } from './types';
 import { List, Header, Footer, Container } from "./styles"
 
 const News: React.SFC<NewsList> = ({news}) => {
-<<<<<<< HEAD
   console.log(news);
-=======
->>>>>>> master
 
   return renderCondition(news) ? (
     <div>
