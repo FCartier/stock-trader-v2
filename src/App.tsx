@@ -8,8 +8,12 @@ import TopPeers from "./components/peers";
 import MarketFooter from "./components/footer";
 import Price from "./components/price";
 import Search from "./components/search/Search";
+
+import StockInfo from "./components/info"
+
 import { Gradient } from "./globalStyles";
 import { Logo } from "./globalStyles";
+
 
 // @ts-ignore
 import * as logo from "./images/logo.png";
@@ -24,6 +28,7 @@ interface IAppState {
   isDark: boolean, 
   theme: object
 }
+
 
 class App extends React.Component<{}, IAppState> {
   constructor(props: {}) {
@@ -41,6 +46,7 @@ class App extends React.Component<{}, IAppState> {
       theme: isDark ? darkTheme : lightTheme
     });
   }
+
 
   public render() {
     return (
