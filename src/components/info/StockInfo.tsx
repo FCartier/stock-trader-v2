@@ -1,6 +1,6 @@
 import React from "react";
 import { IStockInfo } from "./types";
-import { SSL_OP_COOKIE_EXCHANGE } from "constants";
+import { StockInfoBox, stockInfo, LastUpdate, MarketStatus } from "./styles"
 
 const StockInfo: React.SFC<IStockInfo> = ({ keystats }) => {
   const {
@@ -13,11 +13,12 @@ const StockInfo: React.SFC<IStockInfo> = ({ keystats }) => {
 
   
   return keystats.primaryExchange ? (
-    <div>
-      <p>{primaryExchange}</p>
-      <p>{sector}</p>
-      <p>Real-Time Price as of {formatTime(latestUpdate)}</p>
-      {isStockTrading(openTime, closeTime) ? <p>Market Open</p> : <p>Market Closed</p>}
+    <div className={stockInfo}>
+        <StockInfoBox>{primaryExchange}</StockInfoBox>
+        <StockInfoBox>{sector}</StockInfoBox>
+       
+        {isStockTrading(openTime, closeTime) ? <MarketStatus>Market Open</MarketStatus> : <MarketStatus>Market Closed</MarketStatus>}
+        <LastUpdate>Real-Time Price as of {formatTime(latestUpdate)}</LastUpdate>
     </div>
   ) : null;
 };

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { SectionHeader } from "../reusables/SectionHeader.tsx";
+import { SectionHeader } from "../reusables/SectionHeader";
 import { List, Item } from "./styles"
 
 interface ITopPeersItem {

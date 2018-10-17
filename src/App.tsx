@@ -14,7 +14,6 @@ import StockInfo from "./components/info"
 import { Gradient } from "./globalStyles";
 import { Logo } from "./globalStyles";
 
-
 // @ts-ignore
 import * as logo from "./images/logo.png";
 import { ThemeProvider } from 'emotion-theming'
@@ -69,7 +68,10 @@ class App extends React.Component<{}, IAppState> {
           </div>
 
           <hr />
-
+          
+          <div className="flexbox-container">
+            <StockInfo/>
+          </div>
           <div className="Grid Grid--gutters Grid--1of3">
             <div className="Grid-cell main">
               <div>
