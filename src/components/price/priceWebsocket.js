@@ -17,12 +17,14 @@ const priceReceivedHandler = emit => rawData => {
     return;
   }
   priceReceivedHandler(emit, data);   
-  if (data.askPrice == 0){
-    console.log(data)
-    emit(fetchStaticPrice(data.symbol))
-  } else {
+  if (data.lastSalePrice !== 0){
     emit(priceReceived(data))
-  }
+  } 
+}
+
+
+function fakePriceHandler(emit, price) {
+  emit(priceReceived({askPrice: price}))
 }
 
 function connect(symbol) {
@@ -34,23 +36,25 @@ function connect(symbol) {
       socket = io(SUBSCRIPTION_ENDPOINT);
       socket.on("connect", () => {   
         socket.emit("subscribe", symbol); 
-        socket.on("message", priceReceivedHandler(emit));
+        //socket.on("message", priceReceivedHandler(emit));
+        testPriceComponent(emit)
         sentMessage = true;
       });
-      dispatchStaticPriceTimeout(emit, sentMessage, symbol)
       socket.on('connect_error', err =>  emit(END)) 
     } else {
       socket.emit('unsubscribe', currentSymbol)
       currentSymbol = symbol;
       socket.emit("subscribe", symbol); 
-      dispatchStaticPriceTimeout(emit, sentMessage, symbol)
     }
     return () => socket && socket.close();
   })
 }
 
-function dispatchStaticPriceTimeout(emit,sentMessage, symbol){
-  setTimeout(() => {if(!sentMessage){emit(fetchStaticPrice(symbol))}}, 500)
+function testPriceComponent(emit) {
+  setTimeout(() => setInterval(function(){
+    const randomNumber = Math.floor((Math.random()*10)+10)
+    emit(priceReceived({askPrice: randomNumber}))
+  }, 200), 400)
 }
 
 function* subscribeToSymbol({ payload }) {
