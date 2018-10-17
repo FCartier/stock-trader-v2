@@ -1,11 +1,9 @@
 import * as React from "react";
 
-import { SectionHeader } from "../reusables/SectionHeader.tsx";
+import { SectionHeader } from "../reusables/SectionHeader";
 import { NewsItem, NewsList } from './types';
 
 const News: React.SFC<NewsList> = ({news}) => {
-  console.log(news);
-
 
   return renderCondition(news) ? (
     <div>

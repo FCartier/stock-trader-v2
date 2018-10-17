@@ -22,11 +22,6 @@ const priceReceivedHandler = emit => rawData => {
   } 
 }
 
-
-function fakePriceHandler(emit, price) {
-  emit(priceReceived({askPrice: price}))
-}
-
 function connect(symbol) {
   let sentMessage = false;
   console.log("hello")
