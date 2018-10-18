@@ -1,16 +1,10 @@
 export const testData = {
-    symbol: "AAT",
-    companyName: "American Assets Trust Inc.",
-    exchange: "New York Stock Exchange",
-    industry: "REITs",
-    website: "http://www.americanassetstrust.com",
-    description: "American Assets Trust Inc is a self-administered real estate investment trust based in the United States. The company mainly invests in, operates, and develops retail, office, residential, and mixed-use properties in California, Oregon, and Hawaii.",
-    CEO: "Ernest Rady",
-    issueType: "cs",
-    sector: "Real Estate",
-    tags: [
-      "Real Estate",
-      "REIT - Retail",
-      "REITs"
-    ]
-  }
+    close: 221.19,
+    low: 219.34,
+    high: 222.64, 
+    open: 222.15, 
+    latestVolume: 22688651,
+    week52High: 233.47,
+    week52Low: 150.24,
+    avgTotalVolume: 34502868
+}
