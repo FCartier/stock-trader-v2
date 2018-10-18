@@ -29,8 +29,9 @@ class Search extends Component<ISearchProps, ISearchState> {
 
   public handleChange = (selectedOption: { value: string }) => {
     this.setState({ selectedOption });
-    if (selectedOption)
+    if (selectedOption){
       this.props.selectedSymbol(selectedOption.value);
+    }
   };
 
   public render() {
@@ -66,7 +67,7 @@ const mapDispatchToProps = {
 }
 
 interface IMapProps {
-  selectedSymbol?: () => SelectedSymbolReturnType;
+  selectedSymbol?: (input: string) => SelectedSymbolReturnType;
 }
 
 interface IMapState {
