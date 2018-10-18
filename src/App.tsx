@@ -1,33 +1,26 @@
 import React from "react";
-import "babel-polyfill";
 import News from "./components/news";
 import Overview from "./components/overview";
 import KeyStats from "./components/keystats";
-import Chart from "./components/chart";
 import TopPeers from "./components/peers";
 import MarketFooter from "./components/footer";
 import Price from "./components/price";
 import Search from "./components/search/Search";
+import StockInfo from "./components/info";
+import Chart from "./components/chart";
 
-import StockInfo from "./components/info"
-
-import { Gradient } from "./globalStyles";
-import { Logo } from "./globalStyles";
+import { Gradient, Logo, ThemeChangeButton } from "./globalStyles";
 
 // @ts-ignore
 import * as logo from "./images/logo.png";
-import { ThemeProvider } from 'emotion-theming'
-import { darkTheme, lightTheme } from './themes'
-import { ThemeChangeButton } from './globalStyles'
+import { ThemeProvider } from 'emotion-theming';
+import { darkTheme, lightTheme } from './themes';
 import "./grid.css";
-
-
 
 interface IAppState {
   isDark: boolean, 
   theme: object
 }
-
 
 class App extends React.Component<any, IAppState> {
   constructor(props: any) {
@@ -45,7 +38,6 @@ class App extends React.Component<any, IAppState> {
       theme: isDark ? darkTheme : lightTheme
     });
   }
-
 
   public render() {
     return (
