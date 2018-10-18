@@ -4,21 +4,13 @@ exports[`keyStats component keyStats component should render properly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <div>
-    <div
-      className="keystats"
-    >
+    <Styled(div)>
       <Unknown
         title="KEY STATS"
       />
-      <div
-        className="keystats-row"
-      >
-        <div
-          className="keystats-column"
-        >
-          <ul
-            className="keystats-list"
-          >
+      <Styled(div)>
+        <Styled(div)>
+          <Styled(ul)>
             <li>
               <p>
                 Previous Close
@@ -48,14 +40,10 @@ ShallowWrapper {
                 22688651
               </h5>
             </li>
-          </ul>
-        </div>
-        <div
-          className="keystats-column"
-        >
-          <ul
-            className="keystats-list"
-          >
+          </Styled(ul)>
+        </Styled(div)>
+        <Styled(div)>
+          <Styled(ul)>
             <li>
               <p>
                 Open 
@@ -85,10 +73,10 @@ ShallowWrapper {
                 34502868
               </h5>
             </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+          </Styled(ul)>
+        </Styled(div)>
+      </Styled(div)>
+    </Styled(div)>
   </div>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -103,21 +91,13 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="keystats"
-      >
+      "children": <Styled(div)>
         <Unknown
           title="KEY STATS"
         />
-        <div
-          className="keystats-row"
-        >
-          <div
-            className="keystats-column"
-          >
-            <ul
-              className="keystats-list"
-            >
+        <Styled(div)>
+          <Styled(div)>
+            <Styled(ul)>
               <li>
                 <p>
                   Previous Close
@@ -147,14 +127,10 @@ ShallowWrapper {
                   22688651
                 </h5>
               </li>
-            </ul>
-          </div>
-          <div
-            className="keystats-column"
-          >
-            <ul
-              className="keystats-list"
-            >
+            </Styled(ul)>
+          </Styled(div)>
+          <Styled(div)>
+            <Styled(ul)>
               <li>
                 <p>
                   Open 
@@ -184,30 +160,24 @@ ShallowWrapper {
                   34502868
                 </h5>
               </li>
-            </ul>
-          </div>
-        </div>
-      </div>,
+            </Styled(ul)>
+          </Styled(div)>
+        </Styled(div)>
+      </Styled(div)>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
           <Unknown
             title="KEY STATS"
           />,
-          <div
-            className="keystats-row"
-          >
-            <div
-              className="keystats-column"
-            >
-              <ul
-                className="keystats-list"
-              >
+          <Styled(div)>
+            <Styled(div)>
+              <Styled(ul)>
                 <li>
                   <p>
                     Previous Close
@@ -237,14 +207,10 @@ ShallowWrapper {
                     22688651
                   </h5>
                 </li>
-              </ul>
-            </div>
-            <div
-              className="keystats-column"
-            >
-              <ul
-                className="keystats-list"
-              >
+              </Styled(ul)>
+            </Styled(div)>
+            <Styled(div)>
+              <Styled(ul)>
                 <li>
                   <p>
                     Open 
@@ -274,11 +240,10 @@ ShallowWrapper {
                     34502868
                   </h5>
                 </li>
-              </ul>
-            </div>
-          </div>,
+              </Styled(ul)>
+            </Styled(div)>
+          </Styled(div)>,
         ],
-        "className": "keystats",
       },
       "ref": null,
       "rendered": Array [
@@ -296,15 +261,11 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
-              <div
-                className="keystats-column"
-              >
-                <ul
-                  className="keystats-list"
-                >
+              <Styled(div)>
+                <Styled(ul)>
                   <li>
                     <p>
                       Previous Close
@@ -334,14 +295,10 @@ ShallowWrapper {
                       22688651
                     </h5>
                   </li>
-                </ul>
-              </div>,
-              <div
-                className="keystats-column"
-              >
-                <ul
-                  className="keystats-list"
-                >
+                </Styled(ul)>
+              </Styled(div)>,
+              <Styled(div)>
+                <Styled(ul)>
                   <li>
                     <p>
                       Open 
@@ -371,21 +328,18 @@ ShallowWrapper {
                       34502868
                     </h5>
                   </li>
-                </ul>
-              </div>,
+                </Styled(ul)>
+              </Styled(div)>,
             ],
-            "className": "keystats-row",
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
-                "children": <ul
-                  className="keystats-list"
-                >
+                "children": <Styled(ul)>
                   <li>
                     <p>
                       Previous Close
@@ -415,14 +369,13 @@ ShallowWrapper {
                       22688651
                     </h5>
                   </li>
-                </ul>,
-                "className": "keystats-column",
+                </Styled(ul)>,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
                   "children": Array [
                     <li>
@@ -455,7 +408,6 @@ ShallowWrapper {
                       </h5>
                     </li>,
                   ],
-                  "className": "keystats-list",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -599,18 +551,16 @@ ShallowWrapper {
                     "type": "li",
                   },
                 ],
-                "type": "ul",
+                "type": [Function],
               },
-              "type": "div",
+              "type": [Function],
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
-                "children": <ul
-                  className="keystats-list"
-                >
+                "children": <Styled(ul)>
                   <li>
                     <p>
                       Open 
@@ -640,14 +590,13 @@ ShallowWrapper {
                       34502868
                     </h5>
                   </li>
-                </ul>,
-                "className": "keystats-column",
+                </Styled(ul)>,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
                   "children": Array [
                     <li>
@@ -680,7 +629,6 @@ ShallowWrapper {
                       </h5>
                     </li>,
                   ],
-                  "className": "keystats-list",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -824,15 +772,15 @@ ShallowWrapper {
                     "type": "li",
                   },
                 ],
-                "type": "ul",
+                "type": [Function],
               },
-              "type": "div",
+              "type": [Function],
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
     "type": "div",
   },
@@ -842,21 +790,13 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div
-          className="keystats"
-        >
+        "children": <Styled(div)>
           <Unknown
             title="KEY STATS"
           />
-          <div
-            className="keystats-row"
-          >
-            <div
-              className="keystats-column"
-            >
-              <ul
-                className="keystats-list"
-              >
+          <Styled(div)>
+            <Styled(div)>
+              <Styled(ul)>
                 <li>
                   <p>
                     Previous Close
@@ -886,14 +826,10 @@ ShallowWrapper {
                     22688651
                   </h5>
                 </li>
-              </ul>
-            </div>
-            <div
-              className="keystats-column"
-            >
-              <ul
-                className="keystats-list"
-              >
+              </Styled(ul)>
+            </Styled(div)>
+            <Styled(div)>
+              <Styled(ul)>
                 <li>
                   <p>
                     Open 
@@ -923,30 +859,24 @@ ShallowWrapper {
                     34502868
                   </h5>
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>,
+              </Styled(ul)>
+            </Styled(div)>
+          </Styled(div)>
+        </Styled(div)>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <Unknown
               title="KEY STATS"
             />,
-            <div
-              className="keystats-row"
-            >
-              <div
-                className="keystats-column"
-              >
-                <ul
-                  className="keystats-list"
-                >
+            <Styled(div)>
+              <Styled(div)>
+                <Styled(ul)>
                   <li>
                     <p>
                       Previous Close
@@ -976,14 +906,10 @@ ShallowWrapper {
                       22688651
                     </h5>
                   </li>
-                </ul>
-              </div>
-              <div
-                className="keystats-column"
-              >
-                <ul
-                  className="keystats-list"
-                >
+                </Styled(ul)>
+              </Styled(div)>
+              <Styled(div)>
+                <Styled(ul)>
                   <li>
                     <p>
                       Open 
@@ -1013,11 +939,10 @@ ShallowWrapper {
                       34502868
                     </h5>
                   </li>
-                </ul>
-              </div>
-            </div>,
+                </Styled(ul)>
+              </Styled(div)>
+            </Styled(div)>,
           ],
-          "className": "keystats",
         },
         "ref": null,
         "rendered": Array [
@@ -1035,15 +960,11 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": Array [
-                <div
-                  className="keystats-column"
-                >
-                  <ul
-                    className="keystats-list"
-                  >
+                <Styled(div)>
+                  <Styled(ul)>
                     <li>
                       <p>
                         Previous Close
@@ -1073,14 +994,10 @@ ShallowWrapper {
                         22688651
                       </h5>
                     </li>
-                  </ul>
-                </div>,
-                <div
-                  className="keystats-column"
-                >
-                  <ul
-                    className="keystats-list"
-                  >
+                  </Styled(ul)>
+                </Styled(div)>,
+                <Styled(div)>
+                  <Styled(ul)>
                     <li>
                       <p>
                         Open 
@@ -1110,21 +1027,18 @@ ShallowWrapper {
                         34502868
                       </h5>
                     </li>
-                  </ul>
-                </div>,
+                  </Styled(ul)>
+                </Styled(div)>,
               ],
-              "className": "keystats-row",
             },
             "ref": null,
             "rendered": Array [
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
-                  "children": <ul
-                    className="keystats-list"
-                  >
+                  "children": <Styled(ul)>
                     <li>
                       <p>
                         Previous Close
@@ -1154,14 +1068,13 @@ ShallowWrapper {
                         22688651
                       </h5>
                     </li>
-                  </ul>,
-                  "className": "keystats-column",
+                  </Styled(ul)>,
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
                     "children": Array [
                       <li>
@@ -1194,7 +1107,6 @@ ShallowWrapper {
                         </h5>
                       </li>,
                     ],
-                    "className": "keystats-list",
                   },
                   "ref": null,
                   "rendered": Array [
@@ -1338,18 +1250,16 @@ ShallowWrapper {
                       "type": "li",
                     },
                   ],
-                  "type": "ul",
+                  "type": [Function],
                 },
-                "type": "div",
+                "type": [Function],
               },
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
-                  "children": <ul
-                    className="keystats-list"
-                  >
+                  "children": <Styled(ul)>
                     <li>
                       <p>
                         Open 
@@ -1379,14 +1289,13 @@ ShallowWrapper {
                         34502868
                       </h5>
                     </li>
-                  </ul>,
-                  "className": "keystats-column",
+                  </Styled(ul)>,
                 },
                 "ref": null,
                 "rendered": Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "host",
+                  "nodeType": "class",
                   "props": Object {
                     "children": Array [
                       <li>
@@ -1419,7 +1328,6 @@ ShallowWrapper {
                         </h5>
                       </li>,
                     ],
-                    "className": "keystats-list",
                   },
                   "ref": null,
                   "rendered": Array [
@@ -1563,15 +1471,15 @@ ShallowWrapper {
                       "type": "li",
                     },
                   ],
-                  "type": "ul",
+                  "type": [Function],
                 },
-                "type": "div",
+                "type": [Function],
               },
             ],
-            "type": "div",
+            "type": [Function],
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
       "type": "div",
     },

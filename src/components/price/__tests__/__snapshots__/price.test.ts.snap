@@ -3,27 +3,22 @@
 exports[`<Price /> should render properly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <div>
+  Symbol(enzyme.__unrendered__): <Styled(div)>
+    <Styled(sup)>
+      $
+    </Styled(sup)>
+    221.19
     <div
-      className="price"
+      className="css-1dt5uw9"
     >
+      0.000
+       | 
+      0.000
       <sup>
-        $
+        %
       </sup>
-      221.19
-       
-      <div
-        className="text-orange"
-      >
-        -0.96
-         | 
-        -0.432
-        <sup>
-          %
-        </sup>
-      </div>
     </div>
-  </div>,
+  </Styled(div)>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -37,86 +32,133 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="price"
-      >
-        <sup>
+      "children": Array [
+        <Styled(sup)>
           $
-        </sup>
-        221.19
-         
+        </Styled(sup)>,
+        221.19,
         <div
-          className="text-orange"
+          className="css-1dt5uw9"
         >
-          -0.96
+          0.000
            | 
-          -0.432
+          0.000
           <sup>
             %
           </sup>
-        </div>
-      </div>,
+        </div>,
+      ],
+      "className": "css-k6d7ts",
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "$",
+        },
+        "ref": null,
+        "rendered": "$",
+        "type": [Function],
+      },
+      221.19,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "0.000",
+            " | ",
+            "0.000",
+            <sup>
+              %
+            </sup>,
+          ],
+          "className": "css-1dt5uw9",
+        },
+        "ref": null,
+        "rendered": Array [
+          "0.000",
+          " | ",
+          "0.000",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "%",
+            },
+            "ref": null,
+            "rendered": "%",
+            "type": "sup",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <sup>
+          <Styled(sup)>
             $
-          </sup>,
-          "221.19",
-          " ",
+          </Styled(sup)>,
+          221.19,
           <div
-            className="text-orange"
+            className="css-1dt5uw9"
           >
-            -0.96
+            0.000
              | 
-            -0.432
+            0.000
             <sup>
               %
             </sup>
           </div>,
         ],
-        "className": "price",
+        "className": "css-k6d7ts",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": "$",
           },
           "ref": null,
           "rendered": "$",
-          "type": "sup",
+          "type": [Function],
         },
-        "221.19",
-        " ",
+        221.19,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              -0.96,
+              "0.000",
               " | ",
-              -0.432,
+              "0.000",
               <sup>
                 %
               </sup>,
             ],
-            "className": "text-orange",
+            "className": "css-1dt5uw9",
           },
           "ref": null,
           "rendered": Array [
-            -0.96,
+            "0.000",
             " | ",
-            -0.432,
+            "0.000",
             Object {
               "instance": null,
               "key": undefined,
@@ -132,113 +174,6 @@ ShallowWrapper {
           "type": "div",
         },
       ],
-      "type": "div",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
-          className="price"
-        >
-          <sup>
-            $
-          </sup>
-          221.19
-           
-          <div
-            className="text-orange"
-          >
-            -0.96
-             | 
-            -0.432
-            <sup>
-              %
-            </sup>
-          </div>
-        </div>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <sup>
-              $
-            </sup>,
-            "221.19",
-            " ",
-            <div
-              className="text-orange"
-            >
-              -0.96
-               | 
-              -0.432
-              <sup>
-                %
-              </sup>
-            </div>,
-          ],
-          "className": "price",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "$",
-            },
-            "ref": null,
-            "rendered": "$",
-            "type": "sup",
-          },
-          "221.19",
-          " ",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                -0.96,
-                " | ",
-                -0.432,
-                <sup>
-                  %
-                </sup>,
-              ],
-              "className": "text-orange",
-            },
-            "ref": null,
-            "rendered": Array [
-              -0.96,
-              " | ",
-              -0.432,
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "%",
-                },
-                "ref": null,
-                "rendered": "%",
-                "type": "sup",
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
       "type": "div",
     },
   ],

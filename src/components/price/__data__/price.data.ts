@@ -1,7 +1,29 @@
-export const testData = {
-    close: 221.19,
-    change: -0.96,
-    changePercent: -0.432,
-    lastSalePrice: 221.19,
-    askPrice: 221.19
-};
+import { IPriceProps } from '../types';
+
+export const data : IPriceProps = {
+    price: {
+        change: -0.96,
+        changePercent: -0.432,
+        askPrice: 221.19
+    },
+    keystats: {
+        previousClose: 221.19,
+        change: -0.96,
+        changePercent: -0.432
+    }
+}
+
+// Here we should try to remove the price data and check how the
+// Price component will be rendered
+export const dataKeyStats : IPriceProps = {
+    price: {
+        change: -0.96,
+        changePercent: -0.432,
+        askPrice: 221.19
+    },
+    keystats: {
+        previousClose: 221.19,
+        change: -0.96,
+        changePercent: -0.432
+    }
+}
