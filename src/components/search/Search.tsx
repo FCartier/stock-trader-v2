@@ -4,6 +4,9 @@ import "react-virtualized-select/styles.css";
 import { selectedSymbol, SelectedSymbolReturnType } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
+import "./style.css"
+
+// @ts-ignore
 import * as searchIcon from "./images/search.png";
 
 

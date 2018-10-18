@@ -1,5 +1,7 @@
 import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader";
+import { Container, Row, Column, List } from "./styles"
+
 
 interface IKeyStatsProps {
     keystats?: {
@@ -17,11 +19,11 @@ interface IKeyStatsProps {
 const KeyStats: React.SFC<IKeyStatsProps> = ({keystats}) => {
   return keystats.high ? (
     <div>
-        <div className="keystats">
+        <Container>
           <SectionHeader title="KEY STATS" />
-          <div className="keystats-row">
-            <div className="keystats-column">
-              <ul className="keystats-list">
+          <Row>
+            <Column>
+              <List>
                 <li>
                   <p>Previous Close</p> <h5>{keystats.close}</h5>
                 </li>
@@ -34,10 +36,10 @@ const KeyStats: React.SFC<IKeyStatsProps> = ({keystats}) => {
                 <li>
                   <p>Volume</p> <h5>{keystats.latestVolume}</h5>
                 </li>
-              </ul>
-            </div>
-            <div className="keystats-column">
-              <ul className="keystats-list">
+              </List>
+            </Column>
+            <Column>
+              <List>
                 <li>
                   <p>Open </p> <h5>{keystats.open}</h5>
                 </li>
@@ -50,10 +52,10 @@ const KeyStats: React.SFC<IKeyStatsProps> = ({keystats}) => {
                 <li>
                   <p> Total Avg. Volume</p> <h5>{keystats.avgTotalVolume}</h5>
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+              </List>
+            </Column>
+          </Row>
+        </Container>
     </div>
   ) : null
 };

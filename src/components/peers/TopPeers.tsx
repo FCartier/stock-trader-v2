@@ -1,5 +1,6 @@
 import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader";
+import { List, Item } from "./styles"
 
 interface ITopPeersItem {
     name: string;
@@ -14,15 +15,15 @@ const TopPeers: React.SFC<ITopPeersProps> = ({peers}) => {
     <div>
             <SectionHeader title="TOP PEERS"/>
             <div>
-            <ul className="top-peers-list">
+            <List>
                 {peers.map((peer: ITopPeersItem, index: number) => {
                     return (
-                        <li className="top-peers-element" key={index}>
+                        <Item key={index}>
                         {peer}
-                        </li>
+                        </Item>
                     );
                 })}
-            </ul>
+            </List>
             </div>
         </div>
   ) : null;
