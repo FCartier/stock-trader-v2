@@ -1,13 +1,11 @@
+/* tslint:disable */
 import React from "react";
 import { injectGlobal }  from "react-emotion";
 import styled from "react-emotion"
 
 class Global extends React.Component {
 
-  componentDidMount() {
-    console.log(this.props.theme)
-  }
-  render() {
+  public render() {
     injectGlobal`
       @font-face {
         font-family: 'Lato';
@@ -20,6 +18,8 @@ class Global extends React.Component {
         min-height: 100%;
         margin: 0;
         font-family: 'Lato'; 
+        display: flex;
+        flex-direction: column;
       };
       html & body {
         height: 100%;
@@ -37,6 +37,7 @@ export const Gradient = styled('div')`
      ${props => props.theme.backgroundColorTop},
      ${props => props.theme.backgroundColorBottom}); 
   min-height: 100vh;
+  flex: 1;
   color: ${props => props.theme.textColor};
 `
 

@@ -8,8 +8,10 @@ export const MarketFoot = styled('ul')`
     list-style-type: none;
     align-items: stretch;
     justify-content: space-between;
-    max-width: 100%;
-    margin-bottom: 1rem;
     background-image: linear-gradient(to bottom right, ${props => props.theme.marketFooterTop}, ${props => props.theme.marketFooterBottom}); 
     overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: ${props => props.theme.textColor};
 `
