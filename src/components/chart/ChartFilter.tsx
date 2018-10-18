@@ -9,7 +9,9 @@ interface IChartFilter {
 }
 
 interface IState {
-  input: string;
+    search: {
+      symbol: string
+    }
 }
 
 class ChartFilter extends React.Component<IChartFilter> {
@@ -32,7 +34,7 @@ class ChartFilter extends React.Component<IChartFilter> {
 
 export default connect(
   (state : IState) => ({
-    input: state.input
+    input: state.search.symbol
   }),
   { chartFilter }
 )(ChartFilter);
