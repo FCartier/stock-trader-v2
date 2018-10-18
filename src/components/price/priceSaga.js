@@ -1,17 +1,16 @@
 import { call, put, takeLatest } from "redux-saga/effects";
-import { FETCH_PRICE_SUCCESS } from "./priceActions";
-import { SELECTED_SYMBOL } from "../search/searchActions"
+import { FETCH_STATIC_PRICE, RECEIVED_NEW_PRICE } from "./priceActions";
 import { api } from "../../utils/apiUtil";
 
 /**** Workers ****/
 
 function* priceWorker({payload}) {
   const price = yield call(api.getPrice, payload);
-  yield put({ type: FETCH_PRICE_SUCCESS, payload: price });
+  yield put({ type: RECEIVED_NEW_PRICE, payload: price });
 }
 
 /**** Watchers ****/
 
 export function* priceWatcher() {
-  yield takeLatest(SELECTED_SYMBOL, priceWorker);
+  yield takeLatest(FETCH_STATIC_PRICE, priceWorker);
 }

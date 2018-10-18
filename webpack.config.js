@@ -1,10 +1,11 @@
 const path = require('path'),
  HtmlWebPackPlugin = require("html-webpack-plugin"),
  MiniCssExtractPlugin = require("mini-css-extract-plugin"),
- CleanWebpackPlugin = require('clean-webpack-plugin');
+ CleanWebpackPlugin = require('clean-webpack-plugin'),
+ webpack = require('webpack');
 
 module.exports = {
-    entry: ["babel-polyfill", './src/index.tsx', 'webpack-hot-middleware/client'],
+    entry: ["babel-polyfill", './src/index.tsx'],
     module: {
         rules: [
             {
@@ -37,7 +38,8 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './dist'
+        contentBase: './dist',
+        hot: true
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
@@ -47,6 +49,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ]
 };
