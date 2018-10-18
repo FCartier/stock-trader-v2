@@ -21,7 +21,3 @@ const MarketFooter: React.SFC<IMarketsProps> = ({ market }) => {
 };
 
 export default MarketFooter;
-
-export function sum(a: number, b: number): number {
-  return a + b;
-}
