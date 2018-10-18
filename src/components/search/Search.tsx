@@ -1,33 +1,32 @@
 import React, { Component } from "react";
 import Select from "react-virtualized-select";
 import "react-virtualized-select/styles.css";
-import { SELECTED_SYMBOL, selectedSymbol, SelectedSymbolReturnType } from "./searchActions";
+import { selectedSymbol, SelectedSymbolReturnType } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
-
-const searchIcon = require("./images/search.png")
+import * as searchIcon from "./images/search.png";
 
 
 interface ISearchProps {
-    results: any;    
-    selectedSymbol: (input: string) => void;
+  results: any;
+  selectedSymbol: (input: string) => void;
 }
 
 interface ISearchState {
-    selectedOption: null | object
+  selectedOption: null | object
 }
 
-class Search extends Component <ISearchProps, ISearchState> {
-  constructor (props: ISearchProps) {
+class Search extends Component<ISearchProps, ISearchState> {
+  constructor(props: ISearchProps) {
     super(props)
     this.state = {
       selectedOption: null
     }
   }
 
-  public handleChange = (selectedOption: {value: string}) => {
+  public handleChange = (selectedOption: { value: string }) => {
     this.setState({ selectedOption });
-    if(selectedOption)
+    if (selectedOption)
       this.props.selectedSymbol(selectedOption.value);
   };
 
@@ -40,27 +39,27 @@ class Search extends Component <ISearchProps, ISearchState> {
         </div>
         <div className="searchbox-container">
           <Select
-              value={selectedOption}
-              onChange={this.handleChange}
-              options={this.props.results}
-              id="select-component"
-            />
+            value={selectedOption}
+            onChange={this.handleChange}
+            options={this.props.results}
+            id="select-component"
+          />
         </div>
-         
+
       </div>
     );
   }
 }
 
 
-const mapStateToProps = (state: {search: {symbols: []}}) => {
+const mapStateToProps = (state: { search: { symbols: [] } }) => {
   return {
     results: formatSearchData(state.search.symbols)
   }
 }
 
-const mapDispatchToProps =  {
-    selectedSymbol
+const mapDispatchToProps = {
+  selectedSymbol
 }
 
 interface IMapProps {
@@ -68,7 +67,7 @@ interface IMapProps {
 }
 
 interface IMapState {
-  results: {symbol: string, name: string}[]
+  results: Array<{ symbol: string, name: string }>
 }
 
 export default connect<IMapState, IMapProps, {}>(mapStateToProps, mapDispatchToProps)(Search);
