@@ -1,7 +1,6 @@
 import * as React from "react";
 
 export interface IPriceProps {
-
   price?: {
     close: number;
     change: number;
