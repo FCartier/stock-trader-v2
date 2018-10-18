@@ -29,8 +29,8 @@ interface IAppState {
 }
 
 
-class App extends React.Component<{}, IAppState> {
-  constructor(props: {}) {
+class App extends React.Component<any, IAppState> {
+  constructor(props: any) {
     super(props)
     this.state = {
       isDark: true,

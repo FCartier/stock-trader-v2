@@ -1,6 +1,6 @@
 import { IPrice, IKeyStats } from "../types"
 
-export const formLiveData = (price: IPrice, keystats: IKeyStats) => {
+export const formLiveData = (price: any, keystats: any) => {
     if (price.askPrice && keystats.previousClose) {
       return {
         lastSalePrice: price.askPrice,
@@ -9,6 +9,7 @@ export const formLiveData = (price: IPrice, keystats: IKeyStats) => {
           ((price.askPrice - keystats.previousClose) / keystats.previousClose).toFixed(3)
       };
     } else if (keystats.previousClose && !price.askPrice) {
+      console.log("static triggered")
       return {
         lastSalePrice: keystats.previousClose,
         change: keystats.change,

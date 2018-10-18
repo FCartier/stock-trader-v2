@@ -31,8 +31,7 @@ function connect(symbol) {
       socket = io(SUBSCRIPTION_ENDPOINT);
       socket.on("connect", () => {   
         socket.emit("subscribe", symbol); 
-        //socket.on("message", priceReceivedHandler(emit));
-        testPriceComponent(emit)
+        socket.on("message", priceReceivedHandler(emit));
         sentMessage = true;
       });
       socket.on('connect_error', err =>  emit(END)) 

@@ -11,7 +11,6 @@ export interface IKeyStats {
 }
 
 export interface IPriceProps {
-    price: IPrice,
-    keystats: IKeyStats
+    price?: IPrice,
+    keystats?: IKeyStats
   }
-

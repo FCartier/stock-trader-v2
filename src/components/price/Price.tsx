@@ -10,12 +10,13 @@ const Price: React.SFC<IPriceProps> = ({ price, keystats }) => {
     <Container>
       <CurrencyTag>$</CurrencyTag>
       {priceData.lastSalePrice}
-      <div className={priceData.change > 0 ? "text-green" : "text-orange"}>
+      <div className={priceData.change > 0 ? green : orange}>
           {priceData.change} | {priceData.changePercent}
           <sup>%</sup>
       </div>
     </Container>
   ) : null
-
+}
+  
 
 export default Price;
