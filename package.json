@@ -51,6 +51,7 @@
     "@types/react-virtualized-select": "^3.0.7",
     "@types/recharts": "^1.1.0",
     "@types/redux": "^3.6.0",
+    "@types/socket.io-client": "^1.4.32",
     "babel-plugin-emotion": "^9.2.11",
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-polyfill": "^6.26.0",
