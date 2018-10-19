@@ -14,7 +14,7 @@ export const api = {
   filterChart: (symbolId, time) => request(`/stock/${symbolId}/chart/${time}`),
   getKeyStats: symbolId => request(`/stock/${symbolId}/quote`),
   getPeers: symbolId => request(`/stock/${symbolId}/peers`),
-  getPrice: symbolId => request(`/stock/${symbolId}/previous`),
+  getPrice: symbolId => request(`/stock/${symbolId}/quote`),
 
   /**** Price WebSocket ****/
   getPriceWebsocket: () => websocketRequest(`https://ws-api.iextrading.com/1.0/tops`),

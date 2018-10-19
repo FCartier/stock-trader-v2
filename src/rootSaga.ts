@@ -6,7 +6,6 @@ import { keyStatsWatcher } from "./components/keystats/keyStatsSaga";
 import { newsWatcher } from "./components/news/newsSaga";
 import { overviewWatcher } from "./components/overview/overviewSaga";
 import { peerWatcher } from "./components/peers/peerSaga";
-import { priceWatcher } from "./components/price/priceSaga";
 import { priceWebsocketWatcher } from "./components/price/priceWebsocket"
 
 export const APP_STARTED = "APP_STARTED";
@@ -29,8 +28,7 @@ export function* root() {
     fork(keyStatsWatcher), 
     fork(newsWatcher), 
     fork(overviewWatcher), 
-    fork(peerWatcher), 
-    fork(priceWatcher), 
+    fork(peerWatcher),
     fork(priceWebsocketWatcher)
   ]);
   yield put(onAppStart());
