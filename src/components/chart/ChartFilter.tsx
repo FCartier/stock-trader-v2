@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import * as React from "react";
 import { connect } from "react-redux";
 import { chartFilter } from "./chartActions";
 import { Filter } from "./styles"
@@ -14,7 +14,7 @@ interface IState {
     }
 }
 
-class ChartFilter extends React.Component<IChartFilter> {
+export class ChartFilter extends React.Component<IChartFilter> {
   public filter = (event: any) => {
     this.props.chartFilter(this.props.input, event.target.value);
   };
