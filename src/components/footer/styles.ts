@@ -13,5 +13,9 @@ export const MarketFoot = styled('ul')`
     width: 100%;
     padding: 0;
     margin: 0;
+    height: 5vh;
+    padding-top: 1vh;
     color: ${props => props.theme.textColor};
 `
+
+export const MarketItem = styled('li')
