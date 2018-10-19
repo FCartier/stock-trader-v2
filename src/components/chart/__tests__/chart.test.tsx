@@ -2,7 +2,7 @@ import { configure, shallow } from "enzyme";
 import * as Adapter from "enzyme-adapter-react-16";
 import * as React from "react";
 import { Chart } from "../Chart";
-import { ChartContainer } from "../chartContainer";
+import { ChartContainer } from "../ChartContainer";
 import { ChartFilter } from "../ChartFilter";
 import { testData, testUnformattedData } from "../__data__/chart.data";
 
