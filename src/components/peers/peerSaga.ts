@@ -1,6 +1,10 @@
 import { call, put, takeLatest } from "redux-saga/effects";
 import { FETCH_PEER_SUCCESS } from "./peerActions";
 import { SELECTED_SYMBOL, SelectedSymbol } from "../search/searchActions"
+<<<<<<< HEAD
+=======
+
+>>>>>>> d805dfe3699bc883a215374c9fcab3611250b7bf
 import { api } from "../../utils/apiUtil";
 
 /**** Workers ****/
