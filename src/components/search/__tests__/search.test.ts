@@ -1,6 +1,6 @@
 import formatSearchData from '../utils/formatSearchData';
-import unformattedSearchData from "./unformattedSearchData";
-import formattedSearchData from "./formattedSearchData";
+import unformattedSearchData from "../__data__/unformattedSearchData";
+import formattedSearchData from "../__data__/formattedSearchData";
 import {api} from '../../../utils/apiUtil';
 
 // describe('testing search format utility', () => {
@@ -12,11 +12,10 @@ import {api} from '../../../utils/apiUtil';
 test('adds 1 + 2 to equal 3', () => {
     expect(1 + 2).toBe(3);
 });
+
 /*
 test('the data is peanut butter', async () => {
     expect.assertions(1);
     await expect(api.getSymbols()).resolves.toBe(unformattedSearchData);
   });
-  
-
 */

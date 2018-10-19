@@ -5,8 +5,6 @@ import { NewsItem, NewsList } from './types';
 import { List, Header, Footer, Container } from "./styles"
 
 const News: React.SFC<NewsList> = ({news}) => {
-  console.log(news);
-
   return renderCondition(news) ? (
     <div>
       <Container>
@@ -31,7 +29,6 @@ const News: React.SFC<NewsList> = ({news}) => {
 };
 
 function renderCondition(news: NewsItem[]) {
-  console.log(news.length)
   if (news.length > 0) {
     return true
   }

@@ -13,7 +13,7 @@ export const data : IPriceProps = {
     }
 }
 
-// Here we should try to remove the price data and check how the
+// TODO: In sprint 5 - remove the price data and check how the
 // Price component will be rendered
 export const dataKeyStats : IPriceProps = {
     price: {
