@@ -1,13 +1,10 @@
+/* tslint:disable */
 import React from "react";
 import { injectGlobal }  from "react-emotion";
 import styled from "react-emotion"
 
 class Global extends React.Component {
-
-  componentDidMount() {
-    console.log(this.props.theme)
-  }
-  render() {
+  public render() {
     injectGlobal`
       @font-face {
         font-family: 'Lato';
@@ -55,7 +52,5 @@ export const ThemeChangeButton = styled('button')`
   overflow: hidden;
   color: grey;
 `
-
-
 
 export default Global;
