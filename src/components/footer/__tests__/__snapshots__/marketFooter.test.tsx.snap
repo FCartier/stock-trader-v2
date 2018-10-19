@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MarketFooter /> should render properly 1`] = `
+<ul
+  className="css-1klz5r1"
+>
+  <li
+    key="0"
+  >
+    <p>
+      <strong>
+        TRF Volume
+      </strong>
+        
+      0.37027
+      %
+    </p>
+  </li>
+  <li
+    key="1"
+  >
+    <p>
+      <strong>
+        NASDAQ
+      </strong>
+        
+      0.13443
+      %
+    </p>
+  </li>
+  <li
+    key="2"
+  >
+    <p>
+      <strong>
+        NYSE
+      </strong>
+        
+      0.12838
+      %
+    </p>
+  </li>
+  <li
+    key="3"
+  >
+    <p>
+      <strong>
+        NYSE Arca
+      </strong>
+        
+      0.11331
+      %
+    </p>
+  </li>
+</ul>
+`;

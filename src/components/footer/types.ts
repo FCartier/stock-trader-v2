@@ -1,9 +1,9 @@
 export interface MarketItem {
-    mic: String;
-    venueName: String;
+    mic: string;
+    venueName: string;
     marketPercent: number;
 }
   
 export interface MarketState {
-   market: [];
+   market: MarketItem[];
 }
