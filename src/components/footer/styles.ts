@@ -7,7 +7,7 @@ export const MarketFoot = styled('ul')`
     font-size: 10px;
     list-style-type: none;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-around;
     background-image: linear-gradient(to bottom right, ${props => props.theme.marketFooterTop}, ${props => props.theme.marketFooterBottom}); 
     overflow: hidden;
     width: 100%;
