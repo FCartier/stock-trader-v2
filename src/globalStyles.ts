@@ -18,8 +18,10 @@ class Global extends React.Component {
         min-height: 100%;
         margin: 0;
         font-family: 'Lato'; 
+
         display: flex;
         flex-direction: column;
+
       };
       html & body {
         height: 100%;
@@ -56,7 +58,4 @@ export const ThemeChangeButton = styled('button')`
   overflow: hidden;
   color: grey;
 `
-
-
-
 export default Global;
