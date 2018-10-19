@@ -7,8 +7,8 @@ interface Item {
   close: number
 }
 
-export function formatChartData(data: [] = []) {
-    return data.map((item: Item) => {
+export function formatChartData(data: Item[] = []) {
+    return data.map((item) => {
       let formattedDate;
       if (!item.minute) {
         formattedDate = formatDate(item.date);

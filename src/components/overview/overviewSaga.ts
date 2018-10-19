@@ -5,8 +5,7 @@ import { api } from "../../utils/apiUtil";
 
 /**** Workers ****/
 
-function* overviewWorker(action: SelectedSymbol) {
-  const { payload } = action
+function* overviewWorker({payload}: SelectedSymbol) {
   const overview = yield call(api.getOverview, payload);
   yield put({ type: FETCH_OVERVIEW_SUCCESS, payload: overview });
 }

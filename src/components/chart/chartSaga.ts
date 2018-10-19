@@ -5,14 +5,12 @@ import { api } from "../../utils/apiUtil";
 
 /**** Workers ****/
 
-function* chartWorker(action: SelectedSymbol) {
-  const { payload } = action
+function* chartWorker({payload}: SelectedSymbol) {
   const chart = yield call(api.getChart, payload);
   yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
 }
 
-function* filterChartWorker(action: FilterAction) {
-  const { payload } = action
+function* filterChartWorker({payload}: FilterAction) {
   const chart = yield call(api.filterChart, payload.input, payload.time);
   yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
 }

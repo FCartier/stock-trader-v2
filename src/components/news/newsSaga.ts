@@ -5,8 +5,7 @@ import { api } from "../../utils/apiUtil";
 
 /**** Workers ****/
 
-function* newsWorker(action: SelectedSymbol) {
-  const { payload } = action
+function* newsWorker({payload}: SelectedSymbol) {
   const news = yield call(api.getNews, payload);
   yield put({ type: FETCH_NEWS_SUCCESS, payload: news });
 }
