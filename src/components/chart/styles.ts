@@ -3,7 +3,7 @@ import { css } from 'emotion'
 
 
 export const Container = styled('div')`
-  height: 35em;
+  height: 35vh;
 `
 
 export const Filter = styled('div')`

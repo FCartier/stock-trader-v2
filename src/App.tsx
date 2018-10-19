@@ -9,29 +9,26 @@ import MarketFooter from "./components/footer";
 import Price from "./components/price";
 import Search from "./components/search/Search";
 
-import StockInfo from "./components/info"
+import StockInfo from "./components/info";
 
 import { Gradient } from "./globalStyles";
 import { Logo } from "./globalStyles";
 
 // @ts-ignore
 import * as logo from "./images/logo.png";
-import { ThemeProvider } from 'emotion-theming'
-import { darkTheme, lightTheme } from './themes'
-import { ThemeChangeButton } from './globalStyles'
+import { ThemeProvider } from "emotion-theming";
+import { darkTheme, lightTheme } from "./themes";
+import { ThemeChangeButton } from "./globalStyles";
 import "./grid.css";
 
-
-
 interface IAppState {
-  isDark: boolean, 
-  theme: object
+  isDark: boolean;
+  theme: object;
 }
-
 
 class App extends React.Component<any, IAppState> {
   constructor(props: any) {
-    super(props)
+    super(props);
     this.state = {
       isDark: true,
       theme: darkTheme
@@ -46,64 +43,65 @@ class App extends React.Component<any, IAppState> {
     });
   }
 
-
   public render() {
     return (
       <ThemeProvider theme={this.state.theme}>
-        <Gradient>
-          <div className="flexbox-container">
-            <div>
-              <Logo src={logo} alt="Adaptive Logo" />
-              <ThemeChangeButton onClick={() => this.handleClick()}>Change Theme</ThemeChangeButton>
-            </div>
-          </div>
-
-          <div className="flexbox-container searchbar-container">
-            <div className="searchbar">
-              <Search />
-            </div>
-            <div className="price-information">
-              <Price />
-            </div>
-          </div>
-
-          <hr />
-          
-          <div className="flexbox-container">
-            <StockInfo/>
-          </div>
-          <div className="Grid Grid--gutters Grid--1of3">
-            <div className="Grid-cell main">
+        <div>
+          <Gradient>
+            <div className="flexbox-container">
               <div>
-                <Chart />
+                <Logo src={logo} alt="Adaptive Logo" />
+                <ThemeChangeButton onClick={() => this.handleClick()}>
+                  Change Theme
+                </ThemeChangeButton>
               </div>
             </div>
 
-            <div className="Grid-cell">
-              <div>
-                <News />
+            <div className="flexbox-container searchbar-container">
+              <div className="searchbar">
+                <Search />
+              </div>
+              <div className="price-information">
+                <Price />
               </div>
             </div>
-          </div>
 
-          <div className="Grid Grid--gutters Grid--1of3">
-            <div className="Grid-cell main">
-              <KeyStats />
+            <hr />
+
+            <div className="flexbox-container">
+              <StockInfo />
             </div>
+            <div className="Grid Grid--gutters Grid--1of3">
+              <div className="Grid-cell main">
+                <div>
+                  <Chart />
+                </div>
+              </div>
 
-            <div className="Grid-cell">
-              <div>
-                <Overview />
-                <TopPeers />
+              <div className="Grid-cell">
+                <div>
+                  <News />
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <footer className="footer">
-              <MarketFooter />
-            </footer>
-          </div>
-        </Gradient>
+
+            <div className="Grid Grid--gutters Grid--1of3">
+              <div className="Grid-cell main">
+                <KeyStats />
+              </div>
+
+              <div className="Grid-cell">
+                <div>
+                  <Overview />
+                  <TopPeers />
+                </div>
+              </div>
+            </div>
+          </Gradient>
+          <footer className="footer">
+            <MarketFooter />
+          </footer>
+        </div>
       </ThemeProvider>
     );
   }
