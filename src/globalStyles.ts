@@ -4,6 +4,7 @@ import { injectGlobal }  from "react-emotion";
 import styled from "react-emotion"
 
 class Global extends React.Component {
+
   public render() {
     injectGlobal`
       @font-face {
@@ -17,6 +18,10 @@ class Global extends React.Component {
         min-height: 100%;
         margin: 0;
         font-family: 'Lato'; 
+
+        display: flex;
+        flex-direction: column;
+
       };
       html & body {
         height: 100%;
@@ -33,7 +38,8 @@ export const Gradient = styled('div')`
   background-image: linear-gradient(to bottom right,
      ${props => props.theme.backgroundColorTop},
      ${props => props.theme.backgroundColorBottom}); 
-  min-height: 100vh;
+  min-height: 95vh;
+  flex: 1;
   color: ${props => props.theme.textColor};
 `
 
@@ -52,5 +58,4 @@ export const ThemeChangeButton = styled('button')`
   overflow: hidden;
   color: grey;
 `
-
 export default Global;
