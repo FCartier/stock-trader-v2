@@ -1,11 +1,11 @@
 import { call, put, takeLatest } from "redux-saga/effects";
 import { FETCH_NEWS_SUCCESS } from "./newsActions";
-import { SELECTED_SYMBOL } from "../search/searchActions"
+import { SELECTED_SYMBOL, SelectedSymbol } from "../search/searchActions"
 import { api } from "../../utils/apiUtil";
 
 /**** Workers ****/
 
-function* newsWorker({payload}) {
+function* newsWorker({payload}: SelectedSymbol) {
   const news = yield call(api.getNews, payload);
   yield put({ type: FETCH_NEWS_SUCCESS, payload: news });
 }

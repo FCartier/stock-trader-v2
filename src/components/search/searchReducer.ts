@@ -3,9 +3,10 @@ import { SELECTED_SYMBOL } from "./searchActions";
 import { FETCH_SYMBOLS_SUCCESS } from "../../rootSaga";
 import SearchState from "./types";
 
-const initialState: SearchState ={
-  payload: ""
-};
+const initialState: SearchState = {
+  symbol: "", 
+  symbols: []
+}
 
 export const search: Reducer<SearchState> = (state = initialState, action) => {
   switch (action.type) {

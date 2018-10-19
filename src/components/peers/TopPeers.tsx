@@ -12,7 +12,7 @@ const TopPeers: React.SFC<ITopPeersProps> = ({ peers }) => {
       <SectionHeader title="TOP PEERS" />
       <div>
         <List>
-          {peers.map((peer: string, index: number) => {
+          {peers.slice(0, 6).map((peer: string, index: number) => {
             return <Item key={index}>{peer}</Item>;
           })}
         </List>

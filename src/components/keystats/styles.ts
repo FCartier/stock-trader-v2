@@ -2,7 +2,7 @@ import styled from 'react-emotion'
 
 
 export const Container = styled('div')`
-   margin-left: 1em
+   margin-left: 1em;
 `
 
 export const List = styled('ul')`
@@ -31,7 +31,7 @@ export const Row = styled('div')`
     margin-bottom: 30px;
   }
   @media (min-width: 1040px) {
-    display: flex
+    display: flex;
   }
   @media (max-width: 760px) {
     padding-right: 1rem

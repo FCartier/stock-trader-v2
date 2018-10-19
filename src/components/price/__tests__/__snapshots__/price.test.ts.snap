@@ -4,11 +4,13 @@ exports[`<Price /> should render properly 1`] = `
 <div
   className="css-k6d7ts"
 >
-  <Styled(sup)>
-    $
-  </Styled(sup)>
-  221.19
-  <div
+  <Styled(div)>
+    <Styled(sup)>
+      $
+    </Styled(sup)>
+    221.19
+  </Styled(div)>
+  <Styled(div)
     className="css-1dt5uw9"
   >
     0.000
@@ -17,6 +19,6 @@ exports[`<Price /> should render properly 1`] = `
     <sup>
       %
     </sup>
-  </div>
+  </Styled(div)>
 </div>
 `;

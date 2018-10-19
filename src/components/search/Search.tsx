@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Select from "react-virtualized-select";
 import "react-virtualized-select/styles.css";
-import { selectedSymbol, SelectedSymbolReturnType } from "./searchActions";
+import { selectedSymbol, SelectedSymbol } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
 import "./style.css"
@@ -67,7 +67,7 @@ const mapDispatchToProps = {
 }
 
 interface IMapProps {
-  selectedSymbol?: (input: string) => SelectedSymbolReturnType;
+  selectedSymbol?: (input: string) => SelectedSymbol;
 }
 
 interface IMapState {

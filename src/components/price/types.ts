@@ -14,3 +14,20 @@ export interface IPriceProps {
     price?: IPrice,
     keystats?: IKeyStats
   }
+
+export default interface Price {
+    askPrice: number,
+    askSize: number,
+    bidPrice: number, 
+    bidSize: number
+    lastSalePrice: number,
+    lastSaleSize: number,
+    lastSaleTime: number
+    lastUpdated: number,
+    marketPercent: number
+    sector: string,
+    securityType: string,
+    seq: number,
+    symbol: string,
+    volume: number
+}

@@ -1,3 +1,12 @@
+interface SymbolItem {
+    date: string,
+    iexId: string, 
+    isEnabled: boolean, 
+    name: string, 
+    type: string
+}
+
 export default interface SearchState {
-    payload: string;
-};
+    symbols: SymbolItem[],
+    symbol: string
+}
