@@ -1,3 +1,3 @@
-import ChartContainer from "./chartContainer"
+import ChartContainer from "./ChartContainer"
 
 export default ChartContainer
