@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import News from "./components/news";
 import Overview from "./components/overview";
 import KeyStats from "./components/keystats";

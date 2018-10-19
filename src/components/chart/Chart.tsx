@@ -18,7 +18,6 @@ interface IChartProps {
 
 
 export const Chart: React.SFC<IChartProps> = (props) => {
-  console.log(props)
   const { data } = props 
   return (
     <ResponsiveContainer>
