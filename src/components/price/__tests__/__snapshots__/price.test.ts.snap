@@ -1,198 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Price /> should render properly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Styled(div)>
-    <Styled(sup)>
-      $
-    </Styled(sup)>
-    221.19
-    <div
-      className="css-1dt5uw9"
-    >
-      0.000
-       | 
-      0.000
-      <sup>
-        %
-      </sup>
-    </div>
-  </Styled(div)>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <Styled(sup)>
-          $
-        </Styled(sup)>,
-        221.19,
-        <div
-          className="css-1dt5uw9"
-        >
-          0.000
-           | 
-          0.000
-          <sup>
-            %
-          </sup>
-        </div>,
-      ],
-      "className": "css-k6d7ts",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": "$",
-        },
-        "ref": null,
-        "rendered": "$",
-        "type": [Function],
-      },
-      221.19,
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "0.000",
-            " | ",
-            "0.000",
-            <sup>
-              %
-            </sup>,
-          ],
-          "className": "css-1dt5uw9",
-        },
-        "ref": null,
-        "rendered": Array [
-          "0.000",
-          " | ",
-          "0.000",
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "%",
-            },
-            "ref": null,
-            "rendered": "%",
-            "type": "sup",
-          },
-        ],
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <Styled(sup)>
-            $
-          </Styled(sup)>,
-          221.19,
-          <div
-            className="css-1dt5uw9"
-          >
-            0.000
-             | 
-            0.000
-            <sup>
-              %
-            </sup>
-          </div>,
-        ],
-        "className": "css-k6d7ts",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "$",
-          },
-          "ref": null,
-          "rendered": "$",
-          "type": [Function],
-        },
-        221.19,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "0.000",
-              " | ",
-              "0.000",
-              <sup>
-                %
-              </sup>,
-            ],
-            "className": "css-1dt5uw9",
-          },
-          "ref": null,
-          "rendered": Array [
-            "0.000",
-            " | ",
-            "0.000",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "%",
-              },
-              "ref": null,
-              "rendered": "%",
-              "type": "sup",
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
+<div
+  className="css-k6d7ts"
+>
+  <Styled(sup)>
+    $
+  </Styled(sup)>
+  221.19
+  <div
+    className="css-1dt5uw9"
+  >
+    0.000
+     | 
+    0.000
+    <sup>
+      %
+    </sup>
+  </div>
+</div>
 `;

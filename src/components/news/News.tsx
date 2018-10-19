@@ -30,7 +30,7 @@ const News: React.SFC<NewsList> = ({news}) => {
   ) : null;
 };
 
-function renderCondition(news: []) {
+function renderCondition(news: NewsItem[]) {
   console.log(news.length)
   if (news.length > 0) {
     return true

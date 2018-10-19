@@ -5,4 +5,5 @@ module.exports = {
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?|ts?)$",
   testPathIgnorePatterns: ["/lib/", "/node_modules/"],
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  snapshotSerializers: ["enzyme-to-json/serializer"]
 };
