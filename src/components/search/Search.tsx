@@ -71,7 +71,7 @@ interface IMapProps {
 }
 
 interface IMapState {
-  results: Array<{ symbol: string, name: string }>
+  results: Array<{ value: string, label: string }>
 }
 
 export default connect<IMapState, IMapProps, {}>(mapStateToProps, mapDispatchToProps)(Search);
