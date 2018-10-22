@@ -1,5 +1,5 @@
 import { call, put, takeLatest } from "redux-saga/effects";
-import { FETCH_CHART_SUCCESS, FILTER_CHART, FilterAction } from "./chartActions";
+import { FETCH_CHART_SUCCESS, FILTER_CHART, FilterAction, FETCH_CHART_FAILED } from "./chartActions";
 import { SELECTED_SYMBOL, SelectedSymbol } from "../search/searchActions";
 import { api } from "../../utils/apiUtil";
 
@@ -10,7 +10,7 @@ function* chartWorker({payload}: SelectedSymbol) {
     const chart = yield call(api.getChart, payload);
     yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
   } catch (error) {
-    console.log(error)
+    yield put({ type: FETCH_CHART_FAILED });
   }
 }
 
@@ -19,7 +19,7 @@ function* filterChartWorker({payload}: FilterAction) {
     const chart = yield call(api.filterChart, payload.input, payload.time);
     yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
   } catch (error) {
-    console.log(error)
+    yield put({ type: FETCH_CHART_FAILED });
   }
 }
 
