@@ -2,33 +2,39 @@ import * as React from "react";
 import { Chart } from "./Chart";
 import { formatChartData } from "./utils/formatChartData";
 import ChartFilter from "./ChartFilter";
-import { connect } from 'react-redux'
-import { GlobalState } from '../../StoreTypes'
-import { Container } from './styles'
+import { connect } from "react-redux";
+import { GlobalState } from "../../StoreTypes";
+import { Container } from "./styles";
+import NoData from "../reusables/NoData";
 
 interface IChartContainerProps {
-  chart?: []
+  chart?: [];
 }
 
-export const ChartContainer: React.SFC<IChartContainerProps> = (props) => {
-  
+export const ChartContainer: React.SFC<IChartContainerProps> = props => {
   const { chart } = props;
 
-  return chart.length ? (
+  return (
     <div>
-        <Container>
-          <ChartFilter/>
-          <Chart data={formatChartData(chart)} />
-        </Container>
+      <Container>
+        {chart.length ? (
+          <>
+            <ChartFilter />
+            <Chart data={formatChartData(chart)} />
+          </>
+        ) : (
+          <NoData componentName="chart" />
+        )}
+      </Container>
     </div>
-  ) : null
+  );
 };
 
 const mapStateToProps = (state: GlobalState) => ({
   chart: state.chart
-})
+});
 
 export default connect(
-    mapStateToProps,
-    null
-)(ChartContainer)
+  mapStateToProps,
+  null
+)(ChartContainer);
