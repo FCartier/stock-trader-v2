@@ -1,6 +1,5 @@
 import * as React from "react";
-import { MarketFoot } from "./styles";
-import NoData from "../reusables/NoData";
+import { MarketFoot } from "./styles"
 
 export interface IMarketItem {
   mic: string;
@@ -13,21 +12,11 @@ interface IMarketsProps {
 }
 
 const MarketFooter: React.SFC<IMarketsProps> = ({ market }) => {
-  return (
-    <MarketFoot>
-      {market.length ? (
-        market.map((item: IMarketItem, index: number) => (
-          <li key={index}>
-            <p>
-              <strong>{item.venueName}</strong> {item.marketPercent}%
-            </p>
-          </li>
-        ))
-      ) : (
-        <NoData componentName="market footer" />
-      )}
-    </MarketFoot>
-  );
+  return market.length ? (
+      <MarketFoot>
+        {market.map((item: IMarketItem, index: number) => <li key={index}><p><strong>{item.venueName}</strong>  {item.marketPercent}%</p></li>)}
+      </MarketFoot>
+  ) : null;
 };
 
 export default MarketFooter;

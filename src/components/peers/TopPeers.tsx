@@ -1,29 +1,24 @@
 import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader";
 import { List, Item } from "./styles";
-import NoData from "../reusables/NoData";
 
 interface ITopPeersProps {
   peers?: string[];
 }
 
 const TopPeers: React.SFC<ITopPeersProps> = ({ peers }) => {
-  return (
+  return peers.length ? (
     <div>
       <SectionHeader title="TOP PEERS" />
       <div>
-        {peers.length ? (
-          <List>
-            {peers.slice(0, 6).map((peer: string, index: number) => {
-              return <Item key={index}>{peer}</Item>;
-            })}
-          </List>
-        ) : (
-          <NoData componentName="top peers" />
-        )}
+        <List>
+          {peers.slice(0, 6).map((peer: string, index: number) => {
+            return <Item key={index}>{peer}</Item>;
+          })}
+        </List>
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default TopPeers;

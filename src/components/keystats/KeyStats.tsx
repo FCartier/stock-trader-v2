@@ -1,27 +1,26 @@
 import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader";
-import { Container, Row, Column, List } from "./styles";
-import NoData from "../reusables/NoData";
+import { Container, Row, Column, List } from "./styles"
+
 
 interface IKeyStatsProps {
-  keystats?: {
-    close: number;
-    low: number;
-    high: number;
-    open: number;
-    latestVolume: number;
-    week52High: number;
-    week52Low: number;
-    avgTotalVolume: number;
-  };
-}
+    keystats?: {
+        close: number;
+        low: number;
+        high: number;
+        open: number;
+        latestVolume: number;
+        week52High: number;
+        week52Low: number;
+        avgTotalVolume: number;
+    };
+  }
 
-const KeyStats: React.SFC<IKeyStatsProps> = ({ keystats }) => {
-  return (
+const KeyStats: React.SFC<IKeyStatsProps> = ({keystats}) => {
+  return keystats.high ? (
     <div>
-      <Container>
-        <SectionHeader title="KEY STATS" />
-        {keystats.high ? (
+        <Container>
+          <SectionHeader title="KEY STATS" />
           <Row>
             <Column>
               <List>
@@ -56,12 +55,9 @@ const KeyStats: React.SFC<IKeyStatsProps> = ({ keystats }) => {
               </List>
             </Column>
           </Row>
-        ) : (
-          <NoData componentName="key stats" />
-        )}
-      </Container>
+        </Container>
     </div>
-  );
+  ) : null
 };
 
 export default KeyStats;
