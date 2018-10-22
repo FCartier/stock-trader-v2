@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`news component news component should render properly 1`] = `
+<div>
+  <Styled(div)>
+    <Component
+      title="NEWS"
+    />
+    <Styled(ul)>
+      <li
+        key="0"
+      >
+        <Styled(p)>
+          <a
+            href="https://api.iextrading.com/1.0/stock/aapl/article/5177023215303596"
+          >
+            Apple gets Street-high $310 price target from Wedbush
+          </a>
+        </Styled(p)>
+        <Styled(p)>
+          SeekingAlpha
+        </Styled(p)>
+      </li>
+      <li
+        key="1"
+      >
+        <Styled(p)>
+          <a
+            href="https://api.iextrading.com/1.0/stock/aapl/article/5492149748213271"
+          >
+            Cramer's 5 favorite tech stocks right now, including Apple, Salesforce and Adobe
+          </a>
+        </Styled(p)>
+        <Styled(p)>
+          CNBC
+        </Styled(p)>
+      </li>
+      <li
+        key="2"
+      >
+        <Styled(p)>
+          <a
+            href="https://api.iextrading.com/1.0/stock/aapl/article/7855847081717757"
+          >
+            2018 Third Quarter Review - Buying Dividend Growth Stocks Without Looking
+          </a>
+        </Styled(p)>
+        <Styled(p)>
+          SeekingAlpha
+        </Styled(p)>
+      </li>
+      <li
+        key="3"
+      >
+        <Styled(p)>
+          <a
+            href="https://api.iextrading.com/1.0/stock/aapl/article/7640904710004543"
+          >
+            Five Stocks To Buy At The Bottom
+          </a>
+        </Styled(p)>
+        <Styled(p)>
+          SeekingAlpha
+        </Styled(p)>
+      </li>
+      <li
+        key="4"
+      >
+        <Styled(p)>
+          <a
+            href="https://api.iextrading.com/1.0/stock/aapl/article/6820541619208908"
+          >
+            Apple: There's More In The Making
+          </a>
+        </Styled(p)>
+        <Styled(p)>
+          SeekingAlpha
+        </Styled(p)>
+      </li>
+    </Styled(ul)>
+  </Styled(div)>
+</div>
+`;

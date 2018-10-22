@@ -1,7 +1,5 @@
 import styled from 'react-emotion'
 
-
-
 export const MarketFoot = styled('ul')`
     display: flex;
     font-size: 10px;

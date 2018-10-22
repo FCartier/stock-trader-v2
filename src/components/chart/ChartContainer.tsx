@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Chart } from "./Chart";
 import { formatChartData } from "./utils/formatChartData";
 import ChartFilter from "./ChartFilter";
@@ -10,7 +10,7 @@ interface IChartContainerProps {
   chart?: []
 }
 
-const ChartContainer: React.SFC<IChartContainerProps> = (props) => {
+export const ChartContainer: React.SFC<IChartContainerProps> = (props) => {
   
   const { chart } = props;
 

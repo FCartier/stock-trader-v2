@@ -1,23 +1,21 @@
-import React from "react";
+import * as React from "react";
 import { MarketFoot } from "./styles"
 
-interface IMarketItem {
+export interface IMarketItem {
   mic: string;
   venueName: string;
   marketPercent: number;
 }
 
 interface IMarketsProps {
-  market?: [];
+  market?: IMarketItem[];
 }
 
-const MarketFooter: React.SFC<IMarketsProps> = ({market}) => {
+const MarketFooter: React.SFC<IMarketsProps> = ({ market }) => {
   return market.length ? (
-    <div>
       <MarketFoot>
-        {market.map((item: IMarketItem, index: number)  => <li key={index}><p><strong>{item.venueName}</strong>  {item.marketPercent}%</p></li>)}
+        {market.map((item: IMarketItem, index: number) => <li key={index}><p><strong>{item.venueName}</strong>  {item.marketPercent}%</p></li>)}
       </MarketFoot>
-    </div>
   ) : null;
 };
 

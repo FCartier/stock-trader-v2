@@ -1,5 +1,5 @@
 // @ts-ignore
-import date from "date-and-time";
+import * as date from "date-and-time";
 
 interface Item {
   minute: string, 

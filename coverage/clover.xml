@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1539849897916" clover="3.2.0">
+  <project timestamp="1539849897916" name="All files">
+    <metrics statements="22" coveredstatements="21" conditionals="12" coveredconditionals="6" methods="5" coveredmethods="4" elements="39" coveredelements="31" complexity="0" loc="22" ncloc="22" packages="7" files="7" classes="7">
+      <package name="keystats">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <file name="KeyStats.tsx" path="C:\Users\FlorianCartier\Documents\workspace\stock-trader-v2\src\components\keystats\KeyStats.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="61" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="keystats.__data__">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="keyStats.data.ts" path="C:\Users\FlorianCartier\Documents\workspace\stock-trader-v2\src\components\keystats\__data__\keyStats.data.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="overview">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <file name="Overview.tsx" path="C:\Users\FlorianCartier\Documents\workspace\stock-trader-v2\src\components\overview\Overview.tsx">
+          <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="2" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="cond" truecount="2" falsecount="0"/>
+          <line num="27" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="overview.__tests__">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="overview.data.ts" path="C:\Users\FlorianCartier\Documents\workspace\stock-trader-v2\src\components\overview\__tests__\overview.data.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="price">
+        <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <file name="Price.tsx" path="C:\Users\FlorianCartier\Documents\workspace\stock-trader-v2\src\components\price\Price.tsx">
+          <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="2" methods="2" coveredmethods="2"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="38" count="1" type="stmt"/>
+          <line num="39" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="43" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="price.__data__">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="price.data.ts" path="C:\Users\FlorianCartier\Documents\workspace\stock-trader-v2\src\components\price\__data__\price.data.ts">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="reusables">
+        <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <file name="SectionHeader.tsx" path="C:\Users\FlorianCartier\Documents\workspace\stock-trader-v2\src\components\reusables\SectionHeader.tsx">
+          <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

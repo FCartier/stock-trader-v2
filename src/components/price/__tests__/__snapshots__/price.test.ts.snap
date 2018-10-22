@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Price /> should render properly 1`] = `
+<div
+  className="css-k6d7ts"
+>
+  <Styled(div)>
+    <Styled(sup)>
+      $
+    </Styled(sup)>
+    221.19
+  </Styled(div)>
+  <Styled(div)
+    className="css-1dt5uw9"
+  >
+    0.000
+     | 
+    0.000
+    <sup>
+      %
+    </sup>
+  </Styled(div)>
+</div>
+`;

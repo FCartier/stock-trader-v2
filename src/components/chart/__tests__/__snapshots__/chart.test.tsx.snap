@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`chart component chart component should render properly 1`] = `
+<div
+  className="recharts-responsive-container"
+  style={
+    Object {
+      "height": "100%",
+      "maxHeight": undefined,
+      "minHeight": undefined,
+      "minWidth": undefined,
+      "width": "100%",
+    }
+  }
+>
+  <ResizeDetector
+    handleHeight={true}
+    handleWidth={true}
+    onResize={[Function]}
+    refreshRate={1000}
+    resizableElementId=""
+    skipOnMount={false}
+  />
+</div>
+`;
+
+exports[`chart component chart container component should render properly 1`] = `
+<div>
+  <Styled(div)>
+    <Connect(ChartFilter) />
+    <Component
+      data={
+        Array [
+          Object {
+            "date": "Oct 13",
+            "value": 68.1963,
+          },
+          Object {
+            "date": "Oct 13",
+            "value": 68.1963,
+          },
+          Object {
+            "date": "Oct 13",
+            "value": 68.1963,
+          },
+          Object {
+            "date": "Oct 13",
+            "value": 68.1963,
+          },
+          Object {
+            "date": "Oct 13",
+            "value": 68.1963,
+          },
+          Object {
+            "date": "Oct 13",
+            "value": 68.1963,
+          },
+          Object {
+            "date": "Oct 13",
+            "value": 68.1963,
+          },
+          Object {
+            "date": "Oct 13",
+            "value": 68.1963,
+          },
+        ]
+      }
+    />
+  </Styled(div)>
+</div>
+`;
+
+exports[`chart component chart filter component should render properly 1`] = `
+<Styled(div)>
+  <button
+    onClick={[Function]}
+    value="1d"
+  >
+    1d
+  </button>
+  <button
+    onClick={[Function]}
+    value="1m"
+  >
+    1m
+  </button>
+  <button
+    onClick={[Function]}
+    value="6m"
+  >
+    6m
+  </button>
+  <button
+    onClick={[Function]}
+    value="1y"
+  >
+    1y
+  </button>
+  <button
+    onClick={[Function]}
+    value="5y"
+  >
+    5y
+  </button>
+</Styled(div)>
+`;

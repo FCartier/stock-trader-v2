@@ -1,5 +1,5 @@
 /* tslint:disable */
-import React from "react";
+import * as React from "react";
 import { injectGlobal }  from "react-emotion";
 import styled from "react-emotion"
 
@@ -18,10 +18,8 @@ class Global extends React.Component {
         min-height: 100%;
         margin: 0;
         font-family: 'Lato'; 
-
         display: flex;
         flex-direction: column;
-
       };
       html & body {
         height: 100%;

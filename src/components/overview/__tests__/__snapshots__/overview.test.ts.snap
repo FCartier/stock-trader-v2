@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`overview component overview component should display all data fields 1`] = `
+<div>
+  <div
+    className="overview"
+  >
+    <Component
+      title="COMPANY OVERVIEW"
+    />
+    <div
+      className="overview-content"
+    >
+      <h2>
+        American Assets Trust Inc.
+      </h2>
+      <p>
+        http://www.americanassetstrust.com
+      </p>
+      <p>
+        American Assets Trust Inc is a self-administered real estate investment trust based in the United States. The company mainly invests in, operates, and develops retail, office, residential, and mixed-use properties in California, Oregon, and Hawaii.
+      </p>
+    </div>
+  </div>
+</div>
+`;

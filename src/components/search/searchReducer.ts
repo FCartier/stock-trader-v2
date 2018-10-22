@@ -1,7 +1,7 @@
+import { Reducer } from "redux";
 import { SELECTED_SYMBOL } from "./searchActions";
 import { FETCH_SYMBOLS_SUCCESS } from "../../rootSaga";
 import SearchState from "./types";
-import { Reducer } from "redux";
 
 const initialState: SearchState = {
   symbol: "", 

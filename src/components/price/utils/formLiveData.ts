@@ -1,6 +1,6 @@
 import { IPrice, IKeyStats } from "../types"
 
-export const formLiveData = (price: any, keystats: any) => {
+export const formLiveData = (price: IPrice, keystats: IKeyStats) => {
     if (price.askPrice && keystats.previousClose) {
       return {
         lastSalePrice: price.askPrice,
