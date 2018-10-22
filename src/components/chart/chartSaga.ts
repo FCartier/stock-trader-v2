@@ -6,13 +6,21 @@ import { api } from "../../utils/apiUtil";
 /**** Workers ****/
 
 function* chartWorker({payload}: SelectedSymbol) {
-  const chart = yield call(api.getChart, payload);
-  yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
+  try {
+    const chart = yield call(api.getChart, payload);
+    yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 function* filterChartWorker({payload}: FilterAction) {
-  const chart = yield call(api.filterChart, payload.input, payload.time);
-  yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
+  try {
+    const chart = yield call(api.filterChart, payload.input, payload.time);
+    yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 /**** Watchers ****/

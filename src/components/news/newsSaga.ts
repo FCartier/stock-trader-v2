@@ -6,8 +6,12 @@ import { api } from "../../utils/apiUtil";
 /**** Workers ****/
 
 function* newsWorker({payload}: SelectedSymbol) {
-  const news = yield call(api.getNews, payload);
-  yield put({ type: FETCH_NEWS_SUCCESS, payload: news });
+  try {
+    const news = yield call(api.getNews, payload);
+    yield put({ type: FETCH_NEWS_SUCCESS, payload: news });  
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 /**** Watchers ****/

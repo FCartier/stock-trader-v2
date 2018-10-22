@@ -6,8 +6,12 @@ import { api } from "../../utils/apiUtil";
 /**** Workers ****/
 
 function* peerWorker({payload}: SelectedSymbol) {
-  const toppeers = yield call(api.getPeers, payload);
-  yield put({ type: FETCH_PEER_SUCCESS, payload: toppeers });
+  try {
+    const toppeers = yield call(api.getPeers, payload);
+    yield put({ type: FETCH_PEER_SUCCESS, payload: toppeers });
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 /**** Watchers ****/

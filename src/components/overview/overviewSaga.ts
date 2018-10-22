@@ -6,11 +6,13 @@ import { api } from "../../utils/apiUtil";
 /**** Workers ****/
 
 function* overviewWorker({payload}: SelectedSymbol) {
-  const overview = yield call(api.getOverview, payload);
-  yield put({ type: FETCH_OVERVIEW_SUCCESS, payload: overview });
+  try {
+    const overview = yield call(api.getOverview, payload);
+    yield put({ type: FETCH_OVERVIEW_SUCCESS, payload: overview });
+  } catch (error) {
+    console.log(error)
+  }
 }
-
-
 
 /**** Watchers ****/
 

@@ -6,8 +6,12 @@ import { api } from "../../utils/apiUtil";
 /**** Workers ****/
 
 function* marketWorker() {
-  const market = yield call(api.getMarket);
-  yield put({ type: FETCH_MARKET_SUCCESS, payload: market });
+  try {
+    const market = yield call(api.getMarket);
+    yield put({ type: FETCH_MARKET_SUCCESS, payload: market });
+  } catch (error) {
+    console.log(error)    
+  }
 }
 
 /**** Watchers ****/
