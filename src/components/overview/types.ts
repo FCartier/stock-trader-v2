@@ -1,8 +1,10 @@
 import { fetchStatus } from "../reusables/fetchStatus";
 
 export default interface OverviewState {
-    status: fetchStatus;
+  overview: {
     companyName: string;
     website: string;
     description: string;
-};
+  };
+  status: fetchStatus;
+}

@@ -6,7 +6,6 @@ import NoData from "../reusables/NoData";
 
 interface IKeyStatsProps {
   keystats?: {
-    status: fetchStatus;
     close: number;
     low: number;
     high: number;
@@ -16,14 +15,15 @@ interface IKeyStatsProps {
     week52Low: number;
     avgTotalVolume: number;
   };
+  status?: fetchStatus;
 }
 
-const KeyStats: React.SFC<IKeyStatsProps> = ({ keystats }) => {
-  return keystats.status !== fetchStatus.pending ? (
+const KeyStats: React.SFC<IKeyStatsProps> = ({ keystats, status }) => {
+  return status !== fetchStatus.pending ? (
     <div>
       <Container>
         <SectionHeader title="KEY STATS" />
-        {keystats.status === fetchStatus.success ? (
+        {status === fetchStatus.success ? (
           <Row>
             <Column>
               <List>

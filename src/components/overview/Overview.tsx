@@ -5,20 +5,20 @@ import NoData from "../reusables/NoData";
 
 export interface IOverviewProps {
   overview?: {
-    status: fetchStatus;
     companyName: string;
     website: string;
     description: string;
   };
+  status?: fetchStatus;
 }
 
-const Overview: React.SFC<IOverviewProps> = ({ overview }) => {
-  return overview.status !== fetchStatus.pending ? (
+const Overview: React.SFC<IOverviewProps> = ({ overview, status }) => {
+  return status !== fetchStatus.pending ? (
     <div>
       <div className="overview">
         <SectionHeader title="COMPANY OVERVIEW" />
         <div className="overview-content">
-          {overview.status === fetchStatus.success ? (
+          {status === fetchStatus.success ? (
             <>
               <h2>{overview.companyName}</h2>
               <p>{overview.website}</p>

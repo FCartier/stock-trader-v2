@@ -7,15 +7,17 @@ import KeyStatState from "./types";
 import { fetchStatus } from "../reusables/fetchStatus";
 
 const initialState: KeyStatState = {
-  status: fetchStatus.pending,
-  close: 0,
-  low: 0,
-  high: 0,
-  open: 0,
-  latestVolume: 0,
-  week52High: 0,
-  week52Low: 0,
-  avgTotalVolume: 0
+  keystats: {
+    close: 0,
+    low: 0,
+    high: 0,
+    open: 0,
+    latestVolume: 0,
+    week52High: 0,
+    week52Low: 0,
+    avgTotalVolume: 0
+  },
+  status: fetchStatus.pending
 };
 
 export const keystats: Reducer<KeyStatState> = (

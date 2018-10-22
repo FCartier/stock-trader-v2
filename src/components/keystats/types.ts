@@ -1,7 +1,7 @@
 import { fetchStatus } from "../reusables/fetchStatus";
 
 export default interface KeyStatState {
-    status: fetchStatus;
+  keystats: {
     close: number;
     low: number;
     high: number;
@@ -10,4 +10,6 @@ export default interface KeyStatState {
     week52High: number;
     week52Low: number;
     avgTotalVolume: number;
-};
+  };
+  status: fetchStatus;
+}

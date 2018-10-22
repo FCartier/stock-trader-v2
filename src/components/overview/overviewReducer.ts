@@ -7,10 +7,12 @@ import OverviewState from "./types";
 import { fetchStatus } from "../reusables/fetchStatus";
 
 const initialState: OverviewState = {
-  status: fetchStatus.pending,
-  companyName: "",
-  website: "",
-  description: ""
+  overview: {
+    companyName: "",
+    website: "",
+    description: ""
+  },
+  status: fetchStatus.pending
 };
 
 export const overview: Reducer<OverviewState> = (
@@ -19,7 +21,7 @@ export const overview: Reducer<OverviewState> = (
 ) => {
   switch (action.type) {
     case FETCH_OVERVIEW_SUCCESS:
-      return { ...action.payload, status: fetchStatus.success };
+      return { overview: action.payload, status: fetchStatus.success };
     case FETCH_OVERVIEW_FAILED:
       return { ...state, status: fetchStatus.failed };
     default:

@@ -1,7 +1,6 @@
 import { fetchStatus } from "../../reusables/fetchStatus";
 
 export const testData = {
-    status: fetchStatus.success,
     close: 221.19,
     low: 219.34,
     high: 222.64, 
