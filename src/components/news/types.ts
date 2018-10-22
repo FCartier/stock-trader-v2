@@ -1,3 +1,5 @@
+import { fetchStatus } from "../reusables/fetchStatus";
+
 export interface NewsItem {
     url: string;
     headline: string;
@@ -5,5 +7,6 @@ export interface NewsItem {
 }
   
 export interface NewsList {
+    status?: fetchStatus;
     news?: NewsItem[];
 }
