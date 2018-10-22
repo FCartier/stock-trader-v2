@@ -4,18 +4,12 @@ const path = require('path'),
  CleanWebpackPlugin = require('clean-webpack-plugin'),
  webpack = require('webpack');
 
-module.exports = {
-    entry: ["babel-polyfill", './src/index.tsx'],
+ let config = {
+    entry: ['./src/index.tsx'],
     module: {
         rules: [
-            {
-                test: /\.(js|jsx|ts|tsx)$/,
-                exclude: /node_modules/,
-                use: [
-                    {loader: "babel-loader"},
-                    {loader: 'ts-loader'}
-                ]
-            },
+            { test: /\.(js|jsx)$/, use: "babel-loader"},
+            { test: /\.(ts|tsx)$/, use: 'ts-loader' },
             {
                 test: /\.html$/,
                 use: [{
@@ -36,20 +30,42 @@ module.exports = {
     resolve: {
         extensions: [ '.tsx', '.ts', '.js', '.jsx', '.json']
     },
-    devtool: 'inline-source-map',
-    devServer: {
-        contentBase: './dist',
-        hot: true
-    },
-    plugins: [
-        new CleanWebpackPlugin(['dist']),
-        new HtmlWebPackPlugin({
-            template: "./src/index.html"
-        }),
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
-        }),
-        new webpack.HotModuleReplacementPlugin()
-    ]
+  };
+
+module.exports = (env, argv) => {
+    if (argv.mode === 'development') {
+        config.devtool = 'inline-source-map';
+        config.plugins = [
+            new CleanWebpackPlugin(['dist']),
+            new HtmlWebPackPlugin({
+                template: "./src/index.html"
+            }),
+            new MiniCssExtractPlugin({
+                filename: "[name].css",
+                chunkFilename: "[id].css"
+            }),
+            new webpack.HotModuleReplacementPlugin()
+        ];
+        config.devServer = {
+            contentBase: './dist',
+            hot: true
+        }
+      }
+    
+      if (argv.mode === 'production') {
+        config.mode = 'production';
+        config.devtool = 'source-map';
+        config.plugins = [
+            new CleanWebpackPlugin(['dist']),
+            new HtmlWebPackPlugin({
+                template: "./src/index.html"
+            }),
+            new MiniCssExtractPlugin({
+                filename: "[name].css",
+                chunkFilename: "[id].css"
+            })
+        ]
+      }
+
+    return config;
 };
