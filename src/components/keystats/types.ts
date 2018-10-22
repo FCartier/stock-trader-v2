@@ -1,4 +1,7 @@
+import { fetchStatus } from "../reusables/fetchStatus";
+
 export default interface KeyStatState {
+    status: fetchStatus;
     close: number;
     low: number;
     high: number;
