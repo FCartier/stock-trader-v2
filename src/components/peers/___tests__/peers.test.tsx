@@ -1,3 +1,4 @@
+import * as React from "react";
 import { configure, shallow } from "enzyme";
 import * as Adapter from "enzyme-adapter-react-16";
 import TopPeers from "../TopPeers";
@@ -7,7 +8,12 @@ configure({ adapter: new Adapter() });
 
 describe("peers component", () => {
   test("peers component should render properly", () => {
-    const component = shallow(TopPeers({ peers: testData }));
+    const component = shallow(<TopPeers  peers={testData} />);
+    expect(component).toMatchSnapshot();
+  });
+
+  test("peers component should render correctly with empty array", () => {
+    const component = shallow(<TopPeers  peers={[]} />);
     expect(component).toMatchSnapshot();
   });
 });
