@@ -11,7 +11,7 @@ export const news: Reducer<NewsState> = (state = initialState, action) => {
     case FETCH_NEWS_SUCCESS:
       return { news: action.payload, status: fetchStatus.success };
     case FETCH_NEWS_FAILED:
-      return { status: fetchStatus.failed };
+      return { ...state, status: fetchStatus.failed };
     default:
       return state;
   }

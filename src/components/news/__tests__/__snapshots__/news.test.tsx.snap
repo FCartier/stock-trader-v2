@@ -1,6 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`news component news component should render properly 1`] = `
+exports[`news component news component should render properly before fetch 1`] = `""`;
+
+exports[`news component news component should render properly with fetch failed 1`] = `
+<div>
+  <Styled(div)>
+    <Component
+      title="NEWS"
+    />
+    <NoData
+      componentName="news"
+    />
+  </Styled(div)>
+</div>
+`;
+
+exports[`news component news component should render properly with fetch success 1`] = `
 <div>
   <Styled(div)>
     <Component

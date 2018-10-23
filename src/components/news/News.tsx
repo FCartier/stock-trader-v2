@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import { SectionHeader } from "../reusables/SectionHeader";
 import { NewsItem, NewsList } from "./types";
 import { List, Header, Footer, Container } from "./styles";
