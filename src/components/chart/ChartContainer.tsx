@@ -33,9 +33,9 @@ export const ChartContainer: React.SFC<IChartContainerProps> = ({
   ) : null;
 };
 
-const mapStateToProps = (state: GlobalState) => ({
-  chart: state.chart.chart,
-  status: state.chart.status
+const mapStateToProps = ({ chart: { chart, status } }: GlobalState) => ({
+  chart,
+  status
 });
 
 export default connect(

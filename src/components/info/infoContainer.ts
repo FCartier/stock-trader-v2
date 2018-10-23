@@ -1,12 +1,12 @@
-import StockInfo from './StockInfo'
-import { connect } from 'react-redux'
-import { GlobalState } from '../../StoreTypes'
+import StockInfo from "./StockInfo";
+import { connect } from "react-redux";
+import { GlobalState } from "../../StoreTypes";
 
-const mapStateToProps = (state: GlobalState) => ({
-  keystats: state.keystats.keystats
-})
+const mapStateToProps = ({ keystats: { keystats } }: GlobalState) => ({
+  keystats
+});
 
 export default connect(
-    mapStateToProps,
-    null
-  )(StockInfo)
+  mapStateToProps,
+  null
+)(StockInfo);
