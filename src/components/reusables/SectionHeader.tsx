@@ -1,5 +1,5 @@
 import React from "react";
-import { CategoryHeader } from "./styles"
+import { CategoryHeader } from "./styles";
 
 interface SectionHeaderProps {
     title: string,

@@ -1,4 +1,4 @@
-import { Action, ActionCreator } from 'redux'
+import { Action, ActionCreator } from 'redux';
 
 export const ERROR_ACTION = "ERROR_ACTION";
 export type ERROR_ACTION = typeof ERROR_ACTION;

@@ -15,10 +15,10 @@ function* overviewWorker({ payload }: SelectedSymbol) {
   } catch {
     yield put({ type: FETCH_OVERVIEW_FAILED });
   }
-}
+};
 
 /**** Watchers ****/
 
 export function* overviewWatcher() {
   yield takeLatest(SELECTED_SYMBOL, overviewWorker);
-}
+};

@@ -1,3 +1,3 @@
-import PriceContainer from "./priceContainer"
+import PriceContainer from "./priceContainer";
 
-export default PriceContainer
+export default PriceContainer;

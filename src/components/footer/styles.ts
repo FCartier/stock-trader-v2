@@ -1,4 +1,4 @@
-import styled from 'react-emotion'
+import styled from 'react-emotion';
 
 export const MarketFoot = styled('ul')`
     display: flex;
@@ -16,4 +16,4 @@ export const MarketFoot = styled('ul')`
     color: ${props => props.theme.textColor};
 `
 
-export const MarketItem = styled('li')
+export const MarketItem = styled('li');

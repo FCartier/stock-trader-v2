@@ -1,5 +1,5 @@
-import styled from 'react-emotion'
-import { css } from "emotion"
+import styled from 'react-emotion';
+import { css } from "emotion";
 
 
 export const StockInfoBox = styled('p')`
@@ -9,6 +9,7 @@ export const StockInfoBox = styled('p')`
   float: left;
   margin: 2px;
 `
+
 export const stockInfo = css`
   width: 100%;
 `

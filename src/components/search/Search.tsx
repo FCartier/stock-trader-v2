@@ -4,13 +4,14 @@ import "react-virtualized-select/styles.css";
 import { selectedSymbol, SelectedSymbol } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
-import "./style.css"
+import "./style.css";
 
 // @ts-ignore
 import * as searchIcon from "./images/search.png";
 
 
 interface ISearchProps {
+  /// TODO
   results: any;
   selectedSymbol: (input: string) => void;
 }
@@ -21,18 +22,18 @@ interface ISearchState {
 
 class Search extends Component<ISearchProps, ISearchState> {
   constructor(props: ISearchProps) {
-    super(props)
+    super(props);
     this.state = {
       selectedOption: null
-    }
-  }
+    };
+  };
 
   public handleChange = (selectedOption: { value: string }) => {
     this.setState({ selectedOption });
     if (selectedOption){
       this.props.selectedSymbol(selectedOption.value);
     }
-  };
+  }
 
   public render() {
     const { selectedOption } = this.state;
@@ -54,7 +55,6 @@ class Search extends Component<ISearchProps, ISearchState> {
     );
   }
 }
-
 
 const mapStateToProps = (state: { search: { symbols: [] } }) => {
   return {

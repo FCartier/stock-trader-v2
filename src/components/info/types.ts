@@ -6,4 +6,4 @@ export interface IStockInfo {
     openTime: number;
     closeTime: number;
   };
-}
+};

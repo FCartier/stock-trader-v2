@@ -1,5 +1,4 @@
-import styled from 'react-emotion'
-
+import styled from 'react-emotion';
 
 export const Container = styled('div')`
    margin-left: 1em;

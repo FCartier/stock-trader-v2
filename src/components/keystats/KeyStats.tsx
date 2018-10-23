@@ -16,7 +16,7 @@ interface IKeyStatsProps {
     avgTotalVolume: number;
   };
   status?: fetchStatus;
-}
+};
 
 const KeyStats: React.SFC<IKeyStatsProps> = ({ keystats, status }) => {
   return status !== fetchStatus.pending ? (
@@ -59,8 +59,8 @@ const KeyStats: React.SFC<IKeyStatsProps> = ({ keystats, status }) => {
             </Column>
           </Row>
         ) : (
-          <NoData componentName="key stats" />
-        )}
+            <NoData componentName="key stats" />
+          )}
       </Container>
     </div>
   ) : null;

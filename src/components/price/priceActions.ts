@@ -6,10 +6,9 @@ export type FETCH_STATIC_PRICE = typeof FETCH_STATIC_PRICE;
 export const RECEIVED_NEW_PRICE = 'RECEIVED_NEW_PRICE'
 export type RECEIVED_NEW_PRICE = typeof RECEIVED_NEW_PRICE;
 
-
 export interface StaticPriceAction extends Action {
   type: typeof FETCH_STATIC_PRICE
-  payload: any
+  payload: string
 };
 
 export interface PriceAction extends Action {

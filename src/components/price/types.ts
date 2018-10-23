@@ -13,12 +13,12 @@ export interface IKeyStats {
 export interface IPriceProps {
     price?: IPrice,
     keystats?: IKeyStats
-  }
+}
 
 export default interface Price {
     askPrice: number,
     askSize: number,
-    bidPrice: number, 
+    bidPrice: number,
     bidSize: number
     lastSalePrice: number,
     lastSaleSize: number,
@@ -30,4 +30,4 @@ export default interface Price {
     seq: number,
     symbol: string,
     volume: number
-}
+};

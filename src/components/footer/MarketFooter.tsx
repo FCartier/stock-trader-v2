@@ -1,7 +1,6 @@
 import * as React from "react";
 import { MarketFoot } from "./styles";
 import { fetchStatus } from "../reusables/fetchStatus";
-import NoData from "../reusables/NoData";
 
 export interface IMarketItem {
   mic: string;
