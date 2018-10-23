@@ -1,21 +1,24 @@
 import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader";
 import { List, Item } from "./styles";
+import { fetchStatus } from "../reusables/fetchStatus";
+import NoData from "../reusables/NoData";
+import PeersState from './types'
 
-interface ITopPeersProps {
-  peers?: string[];
-}
-
-const TopPeers: React.SFC<ITopPeersProps> = ({ peers }) => {
-  return peers.length ? (
+const TopPeers: React.SFC<PeersState> = ({ peers, status }) => {
+  return status !== fetchStatus.pending ? (
     <div>
       <SectionHeader title="TOP PEERS" />
       <div>
-        <List>
-          {peers.slice(0, 6).map((peer: string, index: number) => {
-            return <Item key={index}>{peer}</Item>;
-          })}
-        </List>
+        {status === fetchStatus.success ? (
+          <List>
+            {peers.slice(0, 6).map((peer: string, index: number) => {
+              return <Item key={index}>{peer}</Item>;
+            })}
+          </List>
+        ) : (
+          <NoData componentName="top peers" />
+        )}
       </div>
     </div>
   ) : null;
