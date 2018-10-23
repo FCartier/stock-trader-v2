@@ -1,5 +1,5 @@
 import { peers } from "../peerReducer";
-import { FETCH_PEER_SUCCESS } from "../peerActions";
+import { FETCH_PEER_SUCCESS, FETCH_PEER_FAILED } from "../peerActions";
 import { AnyAction } from "redux";
 import PeerState from "../types";
 import { testData } from "../__data__/peers.data";
@@ -18,6 +18,14 @@ describe("peers reducer", () => {
     expect(peers(initialState, action)).toEqual({
       peers: testData,
       status: fetchStatus.success
+    });
+  });
+
+  test("peers reducer should handle FETCH_PEER_FAILED", () => {
+    const action: AnyAction = { type: FETCH_PEER_FAILED };
+    expect(peers(initialState, action)).toEqual({
+      ...initialState,
+      status: fetchStatus.failed
     });
   });
 });
