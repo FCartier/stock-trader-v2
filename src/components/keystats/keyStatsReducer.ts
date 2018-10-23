@@ -26,7 +26,7 @@ export const keystats: Reducer<KeyStatState> = (
 ) => {
   switch (action.type) {
     case FETCH_KEYSTATS_SUCCESS:
-      return { ...action.payload, status: fetchStatus.success };
+      return { keystats: action.payload, status: fetchStatus.success };
     case FETCH_KEYSTATS_FAILED:
       return { ...state, status: fetchStatus.failed };
     default:
