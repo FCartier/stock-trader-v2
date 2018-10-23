@@ -14,8 +14,12 @@ export const FETCH_SYMBOLS_SUCCESS = "FETCH_SYMBOLS_SUCCESS"
 
 function* appStartedWorker() {
     yield take([APP_STARTED]);
-    const symbols = yield call(api.getSymbols);
-    yield put({ type: FETCH_SYMBOLS_SUCCESS, payload: symbols });
+    try {
+      const symbols = yield call(api.getSymbols);
+      yield put({ type: FETCH_SYMBOLS_SUCCESS, payload: symbols });
+    } catch {
+      console.log("Unable to fetch symbols")
+    }
 }
 
 

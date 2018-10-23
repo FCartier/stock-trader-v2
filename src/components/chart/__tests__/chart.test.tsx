@@ -5,6 +5,7 @@ import { Chart } from "../Chart";
 import { ChartContainer } from "../ChartContainer";
 import { ChartFilter } from "../ChartFilter";
 import { testData, testUnformattedData } from "../__data__/chart.data";
+import { fetchStatus } from "../../reusables/fetchStatus";
 
 configure({ adapter: new Adapter() });
 
@@ -22,7 +23,12 @@ describe("chart component", () => {
   });
 
   test("chart container component should render properly", () => {
-    const component = shallow(ChartContainer({chart:testUnformattedData as []}))
-    expect(component).toMatchSnapshot()
-  })
+    const component = shallow(
+      ChartContainer({
+        chart: testUnformattedData as [],
+        status: fetchStatus.success
+      })
+    );
+    expect(component).toMatchSnapshot();
+  });
 });
