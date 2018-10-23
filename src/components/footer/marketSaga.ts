@@ -1,5 +1,5 @@
 import { call, put, takeLatest } from "redux-saga/effects";
-import { FETCH_MARKET_SUCCESS } from "./marketActions";
+import { FETCH_MARKET_SUCCESS, FETCH_MARKET_FAILED } from "./marketActions";
 import { APP_STARTED } from "../../rootSaga";
 import { api } from "../../utils/apiUtil";
 
@@ -9,8 +9,8 @@ function* marketWorker() {
   try {
     const market = yield call(api.getMarket);
     yield put({ type: FETCH_MARKET_SUCCESS, payload: market });
-  } catch (error) {
-    console.log(error)    
+  } catch {
+    yield put({ type: FETCH_MARKET_FAILED });
   }
 }
 

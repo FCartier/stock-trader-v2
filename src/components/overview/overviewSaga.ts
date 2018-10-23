@@ -12,7 +12,7 @@ function* overviewWorker({ payload }: SelectedSymbol) {
   try {
     const overview = yield call(api.getOverview, payload);
     yield put({ type: FETCH_OVERVIEW_SUCCESS, payload: overview });
-  } catch (error) {
+  } catch {
     yield put({ type: FETCH_OVERVIEW_FAILED });
   }
 }

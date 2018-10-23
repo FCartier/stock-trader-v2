@@ -9,7 +9,7 @@ function* peerWorker({ payload }: SelectedSymbol) {
   try {
     const toppeers = yield call(api.getPeers, payload);
     yield put({ type: FETCH_PEER_SUCCESS, payload: toppeers });
-  } catch (error) {
+  } catch {
     yield put({ type: FETCH_PEER_FAILED });
   }
 }

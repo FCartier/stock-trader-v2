@@ -9,7 +9,7 @@ function* keyStatsWorker({ payload }: SelectedSymbol) {
   try {
     const keystats = yield call(api.getKeyStats, payload);
     yield put({ type: FETCH_KEYSTATS_SUCCESS, payload: keystats });
-  } catch (error) {
+  } catch {
     yield put({ type: FETCH_KEYSTATS_FAILED });
   }
 }

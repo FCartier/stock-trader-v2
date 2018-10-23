@@ -9,7 +9,7 @@ function* newsWorker({ payload }: SelectedSymbol) {
   try {
     const news = yield call(api.getNews, payload);
     yield put({ type: FETCH_NEWS_SUCCESS, payload: news });
-  } catch (error) {
+  } catch {
     yield put({ type: FETCH_NEWS_FAILED });
   }
 }

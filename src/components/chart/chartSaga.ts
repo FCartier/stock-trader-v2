@@ -9,7 +9,7 @@ function* chartWorker({payload}: SelectedSymbol) {
   try {
     const chart = yield call(api.getChart, payload);
     yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
-  } catch (error) {
+  } catch {
     yield put({ type: FETCH_CHART_FAILED });
   }
 }
@@ -18,7 +18,7 @@ function* filterChartWorker({payload}: FilterAction) {
   try {
     const chart = yield call(api.filterChart, payload.input, payload.time);
     yield put({ type: FETCH_CHART_SUCCESS, payload: chart });
-  } catch (error) {
+  } catch {
     yield put({ type: FETCH_CHART_FAILED });
   }
 }
