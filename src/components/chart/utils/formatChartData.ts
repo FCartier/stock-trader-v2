@@ -7,9 +7,14 @@ interface Item {
   close: number
 }
 
-export function formatChartData(data: Item[] = []) {
+interface FormattedItem{
+  date: string;
+  value: number;
+}
+
+export function formatChartData(data: Item[] = []) : FormattedItem[] {
     return data.map((item) => {
-      let formattedDate;
+      let formattedDate : string;
       if (!item.minute) {
         formattedDate = formatDate(item.date);
       } else {
@@ -19,7 +24,7 @@ export function formatChartData(data: Item[] = []) {
     }); 
 }
 
-function formatDate(input: string) {
+function formatDate(input: string) : string {
   const day = new Date(input);
   return date.format(day, "MMM YY");
 }
