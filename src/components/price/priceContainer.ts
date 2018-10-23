@@ -5,7 +5,7 @@ import { GlobalState } from "../../StoreTypes";
 const mapStateToProps = (state: GlobalState) => {
     return {
       price: state.price,
-      keystats: state.keystats
+      keystats: state.keystats.keystats
     }
 }
 
