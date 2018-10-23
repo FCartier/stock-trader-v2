@@ -1,30 +1,734 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`chart component chart component should render properly 1`] = `
-<div
-  className="recharts-responsive-container"
-  style={
-    Object {
-      "height": "100%",
-      "maxHeight": undefined,
-      "minHeight": undefined,
-      "minWidth": undefined,
-      "width": "100%",
-    }
-  }
+<ResponsiveContainer
+  debounce={0}
+  height="100%"
+  width="100%"
 >
-  <ResizeDetector
-    handleHeight={true}
-    handleWidth={true}
-    onResize={[Function]}
-    refreshRate={1000}
-    resizableElementId=""
-    skipOnMount={false}
-  />
+  <AreaChart
+    barCategoryGap="10%"
+    barGap={4}
+    data={
+      Array [
+        Object {
+          "date": "Oct 13",
+          "value": 68.1963,
+        },
+        Object {
+          "date": "Oct 13",
+          "value": 68.0008,
+        },
+        Object {
+          "date": "Oct 13",
+          "value": 68.6669,
+        },
+        Object {
+          "date": "Oct 13",
+          "value": 69.576,
+        },
+        Object {
+          "date": "Oct 13",
+          "value": 68.7975,
+        },
+        Object {
+          "date": "Oct 13",
+          "value": 69.31,
+        },
+        Object {
+          "date": "Oct 13",
+          "value": 67.5836,
+        },
+        Object {
+          "date": "Oct 13",
+          "value": 68.6586,
+        },
+        Object {
+          "date": "Oct 13",
+          "value": 68.3716,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.0221,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.9011,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.7309,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.5363,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 67.4275,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.489,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.2901,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.4166,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.4987,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 69.4889,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 69.072,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.2349,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.3561,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 67.7575,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.5648,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.389,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 68.9074,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 70.1783,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 71.8308,
+        },
+        Object {
+          "date": "Nov 13",
+          "value": 73.161,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 72.5242,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 74.5098,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 74.3359,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 74.7175,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 73.6807,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 74.524,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 74.4082,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 73.857,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 73.7491,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 72.9452,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 73.3491,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 73.0189,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 72.4637,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 71.6335,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 72.2334,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 75.0055,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 74.6871,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 74.1911,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 73.6899,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 72.957,
+        },
+        Object {
+          "date": "Dec 13",
+          "value": 73.8122,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 72.7741,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 71.1756,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 71.5637,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 71.0516,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 71.5019,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 70.5887,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 70.1178,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 70.4849,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 71.8874,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 73.3307,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 72.9215,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 71.1348,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 72.24,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 72.561,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 73.1754,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 71.8453,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 72.4281,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 66.6391,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 65.8826,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 65.7553,
+        },
+        Object {
+          "date": "Jan 14",
+          "value": 65.8629,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 65.9852,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 66.9404,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 67.4404,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 67.8335,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 68.7825,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 70.0147,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 70.9372,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 70.9319,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 72.0583,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 72,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 72.2647,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 71.1238,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 70.3006,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 69.5197,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 69.8241,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 69.0975,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 68.4741,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 69.84,
+        },
+        Object {
+          "date": "Feb 14",
+          "value": 69.6507,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 69.8519,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.3125,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.4607,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2476,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2066,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2701,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 69.4456,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.9544,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 71.0232,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+        Object {
+          "date": "Mar 14",
+          "value": 70.2344,
+        },
+      ]
+    }
+    layout="horizontal"
+    margin={
+      Object {
+        "bottom": 0,
+        "left": 20,
+        "right": 30,
+        "top": 5,
+      }
+    }
+    reverseStackOrder={false}
+    stackOffset="none"
+  >
+    <defs>
+      <linearGradient
+        id="colorUv"
+        x1="0"
+        x2="0"
+        y1="0"
+        y2="1"
+      >
+        <stop
+          offset="5%"
+          stopColor="#72a2e9"
+          stopOpacity={0.8}
+        />
+        <stop
+          offset="95%"
+          stopColor="#72a2e9"
+          stopOpacity={0}
+        />
+      </linearGradient>
+    </defs>
+    <CartesianGrid
+      fill="none"
+      horizontal={true}
+      horizontalFill={Array []}
+      horizontalPoints={Array []}
+      stroke="#ccc"
+      strokeDasharray="3 3"
+      vertical={true}
+      verticalFill={Array []}
+      verticalPoints={Array []}
+    />
+    <XAxis
+      allowDataOverflow={false}
+      allowDecimals={true}
+      allowDuplicatedCategory={true}
+      dataKey="date"
+      domain={
+        Array [
+          0,
+          "auto",
+        ]
+      }
+      height={30}
+      hide={false}
+      mirror={false}
+      orientation="bottom"
+      padding={
+        Object {
+          "left": 0,
+          "right": 0,
+        }
+      }
+      reversed={false}
+      scale="auto"
+      tickCount={5}
+      type="category"
+      width={0}
+      xAxisId={0}
+    />
+    <YAxis
+      allowDataOverflow={false}
+      allowDecimals={true}
+      allowDuplicatedCategory={true}
+      dataKey="value"
+      domain={
+        Array [
+          [Function],
+          [Function],
+        ]
+      }
+      height={0}
+      hide={false}
+      mirror={false}
+      orientation="right"
+      padding={
+        Object {
+          "bottom": 0,
+          "top": 0,
+        }
+      }
+      reversed={false}
+      scale="auto"
+      tickCount={5}
+      tickLine={false}
+      type="number"
+      width={60}
+      yAxisId={0}
+    />
+    <ReferenceLine
+      className="referenceLine"
+      fill="none"
+      fillOpacity={1}
+      ifOverflow="discard"
+      isFront={false}
+      stroke="orange"
+      strokeWidth={1}
+      xAxisId={0}
+      y={75.0055}
+      yAxisId={0}
+    />
+    <Area
+      activeDot={true}
+      animationBegin={0}
+      animationDuration={1500}
+      animationEasing="ease"
+      connectNulls={false}
+      dataKey="value"
+      dot={false}
+      fill="url(#colorUv)"
+      fillOpacity={1}
+      hide={false}
+      isAnimationActive={true}
+      legendType="line"
+      points={Array []}
+      stroke="#72a2e9"
+      type="monotone"
+      xAxisId={0}
+      yAxisId={0}
+    />
+  </AreaChart>
+</ResponsiveContainer>
+`;
+
+exports[`chart component chart container chart container component should render properly before fetch 1`] = `""`;
+
+exports[`chart component chart container chart container component should render properly with fetch failed 1`] = `
+<div>
+  <Styled(div)>
+    <NoData
+      componentName="chart"
+    />
+  </Styled(div)>
 </div>
 `;
 
-exports[`chart component chart container component should render properly 1`] = `
+exports[`chart component chart container chart container component should render properly with fetch success 1`] = `
 <div>
   <Styled(div)>
     <Connect(ChartFilter) />

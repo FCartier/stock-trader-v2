@@ -10,29 +10,29 @@ describe("news saga", () => {
 
   test("news saga should handle news api fetch success", () => {
     const gen = newsWorker(payload);
-    const getnews = jest.spyOn(api, "getNews").mockReturnValue(testData);
+    const getNews = jest.spyOn(api, "getNews").mockReturnValue(testData);
 
-    expect(gen.next().value).toEqual(call(getnews, payload.payload));
+    expect(gen.next().value).toEqual(call(getNews, payload.payload));
     expect(gen.next(testData).value).toEqual(
       put({ type: FETCH_NEWS_SUCCESS, payload: testData })
     );
     expect(gen.next().done).toBeTruthy();
 
-    getnews.mockRestore();
+    getNews.mockRestore();
   });
 
   test("news saga should handle news api fetch failed", () => {
     const gen = newsWorker(payload);
-    const getnews = jest
+    const getNews = jest
       .spyOn(api, "getNews")
       .mockRejectedValue(new Error());
 
-    expect(gen.next().value).toEqual(call(getnews, payload.payload));
+    expect(gen.next().value).toEqual(call(getNews, payload.payload));
     expect(gen.throw(new Error()).value).toEqual(
       put({ type: FETCH_NEWS_FAILED })
     );
     expect(gen.next().done).toBeTruthy();
 
-    getnews.mockRestore();
+    getNews.mockRestore();
   });
 });

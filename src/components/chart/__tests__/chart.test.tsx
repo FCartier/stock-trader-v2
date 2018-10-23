@@ -11,7 +11,7 @@ configure({ adapter: new Adapter() });
 
 describe("chart component", () => {
   test("chart component should render properly", () => {
-    const component = shallow(Chart({ data: testData }));
+    const component = shallow(<Chart data={testData} />);
     expect(component).toMatchSnapshot();
   });
 
@@ -22,13 +22,35 @@ describe("chart component", () => {
     expect(component).toMatchSnapshot();
   });
 
-  test("chart container component should render properly", () => {
-    const component = shallow(
-      ChartContainer({
-        chart: testUnformattedData as [],
-        status: fetchStatus.success
-      })
-    );
-    expect(component).toMatchSnapshot();
+  describe("chart container", () => {
+    test("chart container component should render properly before fetch", () => {
+      const component = shallow(
+        <ChartContainer
+          chart={[]}
+          status={fetchStatus.pending}
+        />
+      );
+      expect(component).toMatchSnapshot();
+    });
+
+    test("chart container component should render properly with fetch success", () => {
+      const component = shallow(
+        <ChartContainer
+          chart={testUnformattedData as []}
+          status={fetchStatus.success}
+        />
+      );
+      expect(component).toMatchSnapshot();
+    });
+
+    test("chart container component should render properly with fetch failed", () => {
+      const component = shallow(
+        <ChartContainer
+          chart={testUnformattedData as []}
+          status={fetchStatus.failed}
+        />
+      );
+      expect(component).toMatchSnapshot();
+    });
   });
 });
