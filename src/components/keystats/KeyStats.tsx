@@ -1,26 +1,29 @@
 import * as React from "react";
 import { SectionHeader } from "../reusables/SectionHeader";
-import { Container, Row, Column, List } from "./styles"
-
+import { Container, Row, Column, List } from "./styles";
+import { fetchStatus } from "../reusables/fetchStatus";
+import NoData from "../reusables/NoData";
 
 interface IKeyStatsProps {
-    keystats?: {
-        close: number;
-        low: number;
-        high: number;
-        open: number;
-        latestVolume: number;
-        week52High: number;
-        week52Low: number;
-        avgTotalVolume: number;
-    };
-  }
+  keystats?: {
+    close: number;
+    low: number;
+    high: number;
+    open: number;
+    latestVolume: number;
+    week52High: number;
+    week52Low: number;
+    avgTotalVolume: number;
+  };
+  status?: fetchStatus;
+}
 
-const KeyStats: React.SFC<IKeyStatsProps> = ({keystats}) => {
-  return keystats.high ? (
+const KeyStats: React.SFC<IKeyStatsProps> = ({ keystats, status }) => {
+  return status !== fetchStatus.pending ? (
     <div>
-        <Container>
-          <SectionHeader title="KEY STATS" />
+      <Container>
+        <SectionHeader title="KEY STATS" />
+        {status === fetchStatus.success ? (
           <Row>
             <Column>
               <List>
@@ -55,9 +58,12 @@ const KeyStats: React.SFC<IKeyStatsProps> = ({keystats}) => {
               </List>
             </Column>
           </Row>
-        </Container>
+        ) : (
+          <NoData componentName="key stats" />
+        )}
+      </Container>
     </div>
-  ) : null
+  ) : null;
 };
 
 export default KeyStats;

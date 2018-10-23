@@ -1,3 +1,5 @@
+import { fetchStatus } from "../../reusables/fetchStatus";
+
 export const testData = {
     close: 221.19,
     low: 219.34,

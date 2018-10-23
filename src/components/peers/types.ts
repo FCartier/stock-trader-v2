@@ -1,3 +1,6 @@
+import { fetchStatus } from "../reusables/fetchStatus";
+
 export default interface PeerState {
-    peers: string[];
+    peers?: string[];
+    status?: fetchStatus;
 }

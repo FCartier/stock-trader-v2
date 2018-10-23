@@ -1,9 +1,12 @@
+import { fetchStatus } from "../reusables/fetchStatus";
+
 export interface MarketItem {
-    mic: string;
-    venueName: string;
-    marketPercent: number;
+  mic: string;
+  venueName: string;
+  marketPercent: number;
 }
-  
+
 export interface MarketState {
-   market: MarketItem[];
+  market: MarketItem[];
+  status: fetchStatus;
 }
