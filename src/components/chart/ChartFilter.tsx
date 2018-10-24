@@ -5,19 +5,20 @@ import { Filter } from "./styles"
 import { ChartEventData } from "./types";
 
 interface IChartFilter {
-   chartFilter: (input: string, event: any) => void,
-   input: string
-}
+  chartFilter: (input: string, event: any) => void,
+  input: string
+};
 
 interface IState {
-    search: {
-      symbol: string
-    }
-}
+  search: {
+    symbol: string
+  }
+};
 
 export class ChartFilter extends React.Component<IChartFilter> {
   public filter = (event: any) => {
     console.log("event : " + event);
+    console.log("props : " + this.props);
     this.props.chartFilter(this.props.input, event.target.value);
   };
 
@@ -32,10 +33,10 @@ export class ChartFilter extends React.Component<IChartFilter> {
       </Filter>
     );
   }
-}
+};
 
 export default connect(
-  (state : IState) => ({
+  (state: IState) => ({
     input: state.search.symbol
   }),
   { chartFilter }

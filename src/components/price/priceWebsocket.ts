@@ -8,7 +8,7 @@ import { IOverviewProps } from "../overview/Overview";
 
 const SUBSCRIPTION_ENDPOINT = 'https://ws-api.iextrading.com/1.0/tops';
 
-let socket: any;
+let socket : SocketIOClient.Socket;
 let currentSymbol: string;
 
 const priceReceivedHandler = (emit: (fn: PriceAction) => void, rawData: string) => {
