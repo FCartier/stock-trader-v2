@@ -10,29 +10,21 @@ describe("peers saga", () => {
 
   test("peers saga should handle peers api fetch success", () => {
     const gen = peerWorker(payload);
-    const getPeers = jest.spyOn(api, "getPeers").mockReturnValue(testData);
 
-    expect(gen.next().value).toEqual(call(getPeers, payload.payload));
+    expect(gen.next().value).toEqual(call(api.getPeers, payload.payload));
     expect(gen.next(testData).value).toEqual(
       put({ type: FETCH_PEER_SUCCESS, payload: testData })
     );
     expect(gen.next().done).toBeTruthy();
-
-    getPeers.mockRestore();
   });
 
   test("peers saga should handle peers api fetch failed", () => {
     const gen = peerWorker(payload);
-    const getPeers = jest
-      .spyOn(api, "getPeers")
-      .mockRejectedValue(new Error());
 
-    expect(gen.next().value).toEqual(call(getPeers, payload.payload));
+    expect(gen.next().value).toEqual(call(api.getPeers, payload.payload));
     expect(gen.throw(new Error()).value).toEqual(
       put({ type: FETCH_PEER_FAILED })
     );
     expect(gen.next().done).toBeTruthy();
-
-    getPeers.mockRestore();
   });
 });
