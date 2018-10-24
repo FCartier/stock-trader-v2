@@ -5,6 +5,7 @@ import ChartFilter from "./ChartFilter";
 import { connect } from 'react-redux'
 import { GlobalState } from '../../StoreTypes'
 import { Container } from './styles'
+import { Link } from "react-router-dom"
 
 interface IChartContainerProps {
   chart?: []
@@ -17,6 +18,7 @@ export const ChartContainer: React.SFC<IChartContainerProps> = (props) => {
   return chart.length ? (
     <div>
         <Container>
+          <Link to="../chart">Chart</Link>
           <ChartFilter/>
           <Chart data={formatChartData(chart)} />
         </Container>
