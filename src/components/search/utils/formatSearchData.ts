@@ -1,7 +1,6 @@
 import { SymbolItem } from '../types';
 
 const formatSearchData = (data: SymbolItem[]) => {
-  console.log(data)
   const formattedData: Array<{value: string, label: string}> = []
   if(data){
     data.forEach((item: SymbolItem) => {

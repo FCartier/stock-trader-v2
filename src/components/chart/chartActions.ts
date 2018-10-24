@@ -1,4 +1,4 @@
-import { Action, ActionCreator } from 'redux'
+import { Action, ActionCreator } from 'redux';
 
 export const FILTER_CHART = "FILTER CHART";
 export type FILTER_CHART = typeof FILTER_CHART;

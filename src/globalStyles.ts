@@ -1,7 +1,7 @@
 /* tslint:disable */
 import * as React from "react";
 import { injectGlobal }  from "react-emotion";
-import styled from "react-emotion"
+import styled from "react-emotion";
 
 class Global extends React.Component {
 

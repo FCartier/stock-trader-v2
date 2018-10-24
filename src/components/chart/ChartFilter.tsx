@@ -2,6 +2,7 @@ import * as React from "react";
 import { connect } from "react-redux";
 import { chartFilter } from "./chartActions";
 import { Filter } from "./styles"
+import { ChartEventData } from "./types";
 
 interface IChartFilter {
    chartFilter: (input: string, event: any) => void,
@@ -16,6 +17,7 @@ interface IState {
 
 export class ChartFilter extends React.Component<IChartFilter> {
   public filter = (event: any) => {
+    console.log("event : " + event);
     this.props.chartFilter(this.props.input, event.target.value);
   };
 
