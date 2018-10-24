@@ -15,13 +15,6 @@ describe("chart component", () => {
     expect(component).toMatchSnapshot();
   });
 
-  test("chart filter component should render properly", () => {
-    const component = shallow(
-      <ChartFilter chartFilter={jest.fn()} input="AAPL" />
-    );
-    expect(component).toMatchSnapshot();
-  });
-
   describe("chart container", () => {
     test("chart container component should render properly before fetch", () => {
       const component = shallow(
