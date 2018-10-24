@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 import { GlobalState } from '../../StoreTypes'
 import { Container } from './styles'
 
+
 interface IChartContainerProps {
   chart?: []
 }
