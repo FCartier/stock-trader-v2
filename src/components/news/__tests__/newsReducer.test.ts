@@ -21,7 +21,7 @@ describe("news reducer", () => {
     });
   });
 
-  test("peers reducer should handle FETCH_NEWS_FAILED", () => {
+  test("news reducer should handle FETCH_NEWS_FAILED", () => {
     const action: AnyAction = { type: FETCH_NEWS_FAILED };
     expect(news(initialState, action)).toEqual({
       ...initialState,
