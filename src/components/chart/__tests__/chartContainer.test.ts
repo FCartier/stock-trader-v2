@@ -1,4 +1,4 @@
-import { mapStateToProps } from "../chartContainer";
+import { mapStateToProps } from "../ChartContainer";
 import { globalState } from "../../../__data__/globalState.data";
 import { testData } from "../__data__/chart.data";
 import { fetchStatus } from "../../reusables/fetchStatus";
