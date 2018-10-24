@@ -1,0 +1,2465 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search should render properly 1`] = `
+<div
+  className="full-height"
+>
+  <div
+    className="icon-container"
+  >
+    <img
+      alt="search icon"
+      className="search-icon"
+      src="test-file-stub"
+    />
+  </div>
+  <div
+    className="searchbox-container"
+  >
+    <VirtualizedSelect
+      async={false}
+      id="select-component"
+      maxHeight={200}
+      onChange={[Function]}
+      optionHeight={35}
+      options={
+        Array [
+          Object {
+            "label": "Agilent Technologies Inc. (A)",
+            "value": "A",
+          },
+          Object {
+            "label": "Alcoa Corporation (AA)",
+            "value": "AA",
+          },
+          Object {
+            "label": "Perth Mint Physical Gold (AAAU)",
+            "value": "AAAU",
+          },
+          Object {
+            "label": "Altaba Inc. (AABA)",
+            "value": "AABA",
+          },
+          Object {
+            "label": "AAC Holdings Inc. (AAC)",
+            "value": "AAC",
+          },
+          Object {
+            "label": "AdvisorShares Dorsey Wright ADR (AADR)",
+            "value": "AADR",
+          },
+          Object {
+            "label": "American Airlines Group Inc. (AAL)",
+            "value": "AAL",
+          },
+          Object {
+            "label": "Altisource Asset Management Corp Com (AAMC)",
+            "value": "AAMC",
+          },
+          Object {
+            "label": "Atlantic American Corporation (AAME)",
+            "value": "AAME",
+          },
+          Object {
+            "label": "Aaron's Inc. (AAN)",
+            "value": "AAN",
+          },
+          Object {
+            "label": "Applied Optoelectronics Inc. (AAOI)",
+            "value": "AAOI",
+          },
+          Object {
+            "label": "AAON Inc. (AAON)",
+            "value": "AAON",
+          },
+          Object {
+            "label": "Advance Auto Parts Inc W/I (AAP)",
+            "value": "AAP",
+          },
+          Object {
+            "label": "Apple Inc. (AAPL)",
+            "value": "AAPL",
+          },
+          Object {
+            "label": "American Assets Trust Inc. (AAT)",
+            "value": "AAT",
+          },
+          Object {
+            "label": "Almaden Minerals Ltd. (AAU)",
+            "value": "AAU",
+          },
+          Object {
+            "label": "Atlas Air Worldwide Holdings (AAWW)",
+            "value": "AAWW",
+          },
+          Object {
+            "label": "iShares MSCI All Country Asia ex Japan Index Fund (AAXJ)",
+            "value": "AAXJ",
+          },
+          Object {
+            "label": "Axon Enterprise Inc. (AAXN)",
+            "value": "AAXN",
+          },
+          Object {
+            "label": "AllianceBernstein Holding L.P. Units (AB)",
+            "value": "AB",
+          },
+          Object {
+            "label": "Renmin Tianli Group Inc. (ABAC)",
+            "value": "ABAC",
+          },
+          Object {
+            "label": "ABB Ltd (ABB)",
+            "value": "ABB",
+          },
+          Object {
+            "label": "AbbVie Inc. (ABBV)",
+            "value": "ABBV",
+          },
+          Object {
+            "label": "AmerisourceBergen Corporation (ABC)",
+            "value": "ABC",
+          },
+          Object {
+            "label": "Ameris Bancorp (ABCB)",
+            "value": "ABCB",
+          },
+          Object {
+            "label": "Cambium Learning Group Inc. (ABCD)",
+            "value": "ABCD",
+          },
+          Object {
+            "label": "Alcentra Capital Corp. (ABDC)",
+            "value": "ABDC",
+          },
+          Object {
+            "label": "Abeona Therapeutics Inc. (ABEO)",
+            "value": "ABEO",
+          },
+          Object {
+            "label": " (ABEOW)",
+            "value": "ABEOW",
+          },
+          Object {
+            "label": "Ambev S.A. American Depositary Shares (Each representing 1) (ABEV)",
+            "value": "ABEV",
+          },
+          Object {
+            "label": "Asbury Automotive Group Inc (ABG)",
+            "value": "ABG",
+          },
+          Object {
+            "label": "Ability Inc. (ABIL)",
+            "value": "ABIL",
+          },
+          Object {
+            "label": "ARCA biopharma Inc. (ABIO)",
+            "value": "ABIO",
+          },
+          Object {
+            "label": "ABM Industries Incorporated (ABM)",
+            "value": "ABM",
+          },
+          Object {
+            "label": "ABIOMED Inc. (ABMD)",
+            "value": "ABMD",
+          },
+          Object {
+            "label": "Arbor Realty Trust (ABR)",
+            "value": "ABR",
+          },
+          Object {
+            "label": "Arbor Realty Trust Preferred Series A (ABR-A)",
+            "value": "ABR-A",
+          },
+          Object {
+            "label": "Arbor Realty Trust Cumulative Redeemable Preferred Series B (ABR-B)",
+            "value": "ABR-B",
+          },
+          Object {
+            "label": "Arbor Realty Trust Cumulative Redeemable Preferred Series C (ABR-C)",
+            "value": "ABR-C",
+          },
+          Object {
+            "label": "Abbott Laboratories (ABT)",
+            "value": "ABT",
+          },
+          Object {
+            "label": "Allegiance Bancshares Inc. (ABTX)",
+            "value": "ABTX",
+          },
+          Object {
+            "label": "Arbutus Biopharma Corporation (ABUS)",
+            "value": "ABUS",
+          },
+          Object {
+            "label": "Barrick Gold Corporation (ABX)",
+            "value": "ABX",
+          },
+          Object {
+            "label": "Associated Capital Group Inc. (AC)",
+            "value": "AC",
+          },
+          Object {
+            "label": "ACADIA Pharmaceuticals Inc. (ACAD)",
+            "value": "ACAD",
+          },
+          Object {
+            "label": "Atlantic Capital Bancshares Inc. (ACBI)",
+            "value": "ACBI",
+          },
+          Object {
+            "label": "American Campus Communities Inc (ACC)",
+            "value": "ACC",
+          },
+          Object {
+            "label": "Acco Brands Corporation (ACCO)",
+            "value": "ACCO",
+          },
+          Object {
+            "label": "Acer Therapeutics Inc. (ACER)",
+            "value": "ACER",
+          },
+          Object {
+            "label": "ALPS Clean Energy (ACES)",
+            "value": "ACES",
+          },
+          Object {
+            "label": "Aceto Corporation (ACET)",
+            "value": "ACET",
+          },
+          Object {
+            "label": "Arch Capital Group Ltd. (ACGL)",
+            "value": "ACGL",
+          },
+          Object {
+            "label": "Arch Capital Group Ltd. Depositary Shares Each Representing 1/1000th Interest in a Share of5.45% Non-Cumulative Preferred Shares Series F (ACGLO)",
+            "value": "ACGLO",
+          },
+          Object {
+            "label": "Arch Capital Group Ltd. Depositary Shares Representing Interest in 5.25% Non-Cumulative Preferred Series E Shrs (ACGLP)",
+            "value": "ACGLP",
+          },
+          Object {
+            "label": "Aluminum Corporation of China Limited American Depositary Shares (ACH)",
+            "value": "ACH",
+          },
+          Object {
+            "label": "Acadia Healthcare Company Inc. (ACHC)",
+            "value": "ACHC",
+          },
+          Object {
+            "label": "Achillion Pharmaceuticals Inc. (ACHN)",
+            "value": "ACHN",
+          },
+          Object {
+            "label": "Achieve Life Sciences Inc. (ACHV)",
+            "value": "ACHV",
+          },
+          Object {
+            "label": "Acacia Communications Inc. (ACIA)",
+            "value": "ACIA",
+          },
+          Object {
+            "label": "SPDR MSCI ACWI IMI (ACIM)",
+            "value": "ACIM",
+          },
+          Object {
+            "label": "AC Immune SA (ACIU)",
+            "value": "ACIU",
+          },
+          Object {
+            "label": "ACI Worldwide Inc. (ACIW)",
+            "value": "ACIW",
+          },
+          Object {
+            "label": "Axcelis Technologies Inc. (ACLS)",
+            "value": "ACLS",
+          },
+          Object {
+            "label": "AECOM (ACM)",
+            "value": "ACM",
+          },
+          Object {
+            "label": "ACM Research Inc. (ACMR)",
+            "value": "ACMR",
+          },
+          Object {
+            "label": "Accenture plc Class A (Ireland) (ACN)",
+            "value": "ACN",
+          },
+          Object {
+            "label": "ACNB Corporation (ACNB)",
+            "value": "ACNB",
+          },
+          Object {
+            "label": "Acorda Therapeutics Inc. (ACOR)",
+            "value": "ACOR",
+          },
+          Object {
+            "label": "Aberdeen Income Credit Strategies Fund (ACP)",
+            "value": "ACP",
+          },
+          Object {
+            "label": "Ares Commercial Real Estate Corporation (ACRE)",
+            "value": "ACRE",
+          },
+          Object {
+            "label": "Aclaris Therapeutics Inc. (ACRS)",
+            "value": "ACRS",
+          },
+          Object {
+            "label": "AcelRx Pharmaceuticals Inc. (ACRX)",
+            "value": "ACRX",
+          },
+          Object {
+            "label": "American Customer Satisfaction (ACSI)",
+            "value": "ACSI",
+          },
+          Object {
+            "label": "Acasti Pharma Inc. (ACST)",
+            "value": "ACST",
+          },
+          Object {
+            "label": "AdvisorShares Vice ETF (ACT)",
+            "value": "ACT",
+          },
+          Object {
+            "label": "Acacia Research Corporation (ACTG)",
+            "value": "ACTG",
+          },
+          Object {
+            "label": "Acme United Corporation. (ACU)",
+            "value": "ACU",
+          },
+          Object {
+            "label": "AllianzGI Diversified Income & Convertible Fund of Beneficial Interest (ACV)",
+            "value": "ACV",
+          },
+          Object {
+            "label": "iShares Edge MSCI Multifactor Global (ACWF)",
+            "value": "ACWF",
+          },
+          Object {
+            "label": "iShares MSCI ACWI Index Fund (ACWI)",
+            "value": "ACWI",
+          },
+          Object {
+            "label": "iShares Edge MSCI Min Vol Global (ACWV)",
+            "value": "ACWV",
+          },
+          Object {
+            "label": "iShares MSCI ACWI Ex US Index Fund (ACWX)",
+            "value": "ACWX",
+          },
+          Object {
+            "label": "AeroCentury Corp. (ACY)",
+            "value": "ACY",
+          },
+          Object {
+            "label": "Adaptimmune Therapeutics plc (ADAP)",
+            "value": "ADAP",
+          },
+          Object {
+            "label": "Adobe Systems Incorporated (ADBE)",
+            "value": "ADBE",
+          },
+          Object {
+            "label": "Agree Realty Corporation (ADC)",
+            "value": "ADC",
+          },
+          Object {
+            "label": "Advanced Emissions Solutions Inc. (ADES)",
+            "value": "ADES",
+          },
+          Object {
+            "label": "Analog Devices Inc. (ADI)",
+            "value": "ADI",
+          },
+          Object {
+            "label": "Adial Pharmaceuticals Inc (ADIL)",
+            "value": "ADIL",
+          },
+          Object {
+            "label": "Adial Pharmaceuticals Inc Warrant (ADILW)",
+            "value": "ADILW",
+          },
+          Object {
+            "label": "Archer-Daniels-Midland Company (ADM)",
+            "value": "ADM",
+          },
+          Object {
+            "label": "ADMA Biologics Inc (ADMA)",
+            "value": "ADMA",
+          },
+          Object {
+            "label": "Adamis Pharmaceuticals Corporation (ADMP)",
+            "value": "ADMP",
+          },
+          Object {
+            "label": "Adamas Pharmaceuticals Inc. (ADMS)",
+            "value": "ADMS",
+          },
+          Object {
+            "label": "Adient plc (ADNT)",
+            "value": "ADNT",
+          },
+          Object {
+            "label": "ADOMANI Inc. (ADOM)",
+            "value": "ADOM",
+          },
+          Object {
+            "label": "Automatic Data Processing Inc. (ADP)",
+            "value": "ADP",
+          },
+          Object {
+            "label": "Invesco BLDRS Asia 50 ADR Index Fund (ADRA)",
+            "value": "ADRA",
+          },
+          Object {
+            "label": "Invesco BLDRS Developed Markets 100 ADR Index Fund (ADRD)",
+            "value": "ADRD",
+          },
+          Object {
+            "label": "Invesco BLDRS Emerging Markets 50 ADR Index Fund (ADRE)",
+            "value": "ADRE",
+          },
+          Object {
+            "label": "Aduro Biotech Inc. (ADRO)",
+            "value": "ADRO",
+          },
+          Object {
+            "label": "Invesco BLDRS Europe Select ADR Index Fund (ADRU)",
+            "value": "ADRU",
+          },
+          Object {
+            "label": "Alliance Data Systems Corporation (ADS)",
+            "value": "ADS",
+          },
+          Object {
+            "label": "Autodesk Inc. (ADSK)",
+            "value": "ADSK",
+          },
+          Object {
+            "label": "Advanced Disposal Services Inc. (ADSW)",
+            "value": "ADSW",
+          },
+          Object {
+            "label": "ADT Inc. (ADT)",
+            "value": "ADT",
+          },
+          Object {
+            "label": "ADTRAN Inc. (ADTN)",
+            "value": "ADTN",
+          },
+          Object {
+            "label": "Addus HomeCare Corporation (ADUS)",
+            "value": "ADUS",
+          },
+          Object {
+            "label": "Adverum Biotechnologies Inc. (ADVM)",
+            "value": "ADVM",
+          },
+          Object {
+            "label": "Adams Diversified Equity Fund Inc. (ADX)",
+            "value": "ADX",
+          },
+          Object {
+            "label": "Advaxis Inc. (ADXS)",
+            "value": "ADXS",
+          },
+          Object {
+            "label": "Advaxis Inc. Warrants (ADXSW)",
+            "value": "ADXSW",
+          },
+          Object {
+            "label": "Adams Resources & Energy Inc. (AE)",
+            "value": "AE",
+          },
+          Object {
+            "label": "AEGON N.V. Perp. Cap. Secs. Floating Rate (Netherlands) (AEB)",
+            "value": "AEB",
+          },
+          Object {
+            "label": "AEGON N.V. Perp. Cap. Securities (Netherlands) (AED)",
+            "value": "AED",
+          },
+          Object {
+            "label": "Ameren Corporation (AEE)",
+            "value": "AEE",
+          },
+          Object {
+            "label": "Aberdeen Emerging Markets Equity Income Fund Inc. (AEF)",
+            "value": "AEF",
+          },
+          Object {
+            "label": "AEGON N.V. (AEG)",
+            "value": "AEG",
+          },
+          Object {
+            "label": "Aegion Corp (AEGN)",
+            "value": "AEGN",
+          },
+          Object {
+            "label": "AEGON N.V. Perp. Cap Secs. (AEH)",
+            "value": "AEH",
+          },
+          Object {
+            "label": "Aehr Test Systems (AEHR)",
+            "value": "AEHR",
+          },
+          Object {
+            "label": "Advanced Energy Industries Inc. (AEIS)",
+            "value": "AEIS",
+          },
+          Object {
+            "label": "American Equity Investment Life Holding Company (AEL)",
+            "value": "AEL",
+          },
+          Object {
+            "label": "Agnico Eagle Mines Limited (AEM)",
+            "value": "AEM",
+          },
+          Object {
+            "label": "Aethlon Medical Inc. (AEMD)",
+            "value": "AEMD",
+          },
+          Object {
+            "label": "American Eagle Outfitters Inc. (AEO)",
+            "value": "AEO",
+          },
+          Object {
+            "label": "American Electric Power Company Inc. (AEP)",
+            "value": "AEP",
+          },
+          Object {
+            "label": "Aercap Holdings N.V. (AER)",
+            "value": "AER",
+          },
+          Object {
+            "label": "Aerie Pharmaceuticals Inc. (AERI)",
+            "value": "AERI",
+          },
+          Object {
+            "label": "The AES Corporation (AES)",
+            "value": "AES",
+          },
+          Object {
+            "label": "Aetna Inc. (AET)",
+            "value": "AET",
+          },
+          Object {
+            "label": "American Electric Technologies Inc. (AETI)",
+            "value": "AETI",
+          },
+          Object {
+            "label": "ADDvantage Technologies Group Inc. (AEY)",
+            "value": "AEY",
+          },
+          Object {
+            "label": "AudioEye Inc. (AEYE)",
+            "value": "AEYE",
+          },
+          Object {
+            "label": "Aeterna Zentaris Inc. (AEZS)",
+            "value": "AEZS",
+          },
+          Object {
+            "label": "AllianceBernstein National Municipal Income Fund Inc (AFB)",
+            "value": "AFB",
+          },
+          Object {
+            "label": "Allied Capital Corporation 6.875% Notes due April 15 2047 (AFC)",
+            "value": "AFC",
+          },
+          Object {
+            "label": "American Financial Group Inc. (AFG)",
+            "value": "AFG",
+          },
+          Object {
+            "label": " (AFGE)",
+            "value": "AFGE",
+          },
+          Object {
+            "label": " (AFGH)",
+            "value": "AFGH",
+          },
+          Object {
+            "label": "Atlas Financial Holdings Inc. (AFH)",
+            "value": "AFH",
+          },
+          Object {
+            "label": "Atlas Financial Holdings Inc. 6.625% Senior Unsecured Notes Due 2022 (AFHBL)",
+            "value": "AFHBL",
+          },
+          Object {
+            "label": "Armstrong Flooring Inc. (AFI)",
+            "value": "AFI",
+          },
+          Object {
+            "label": "Anfield Universal Fixed Income (AFIF)",
+            "value": "AFIF",
+          },
+          Object {
+            "label": "American Finance Trust Inc. (AFIN)",
+            "value": "AFIN",
+          },
+          Object {
+            "label": "VanEck Vectors-Africa Index (AFK)",
+            "value": "AFK",
+          },
+          Object {
+            "label": "AFLAC Incorporated (AFL)",
+            "value": "AFL",
+          },
+          Object {
+            "label": "Affimed N.V. (AFMD)",
+            "value": "AFMD",
+          },
+          Object {
+            "label": "AmTrust Financial Services Inc. (AFSI)",
+            "value": "AFSI",
+          },
+          Object {
+            "label": "AmTrust Financial Services Inc. Preferred Series A (AFSI-A)",
+            "value": "AFSI-A",
+          },
+          Object {
+            "label": "AmTrust Financial Services Inc. Depository Shares Series B (AFSI-B)",
+            "value": "AFSI-B",
+          },
+          Object {
+            "label": "AmTrust Financial Services Inc. Depository Shares Series C (AFSI-C)",
+            "value": "AFSI-C",
+          },
+          Object {
+            "label": "AmTrust Financial Services Inc. Depositary Shares Series D (AFSI-D)",
+            "value": "AFSI-D",
+          },
+          Object {
+            "label": "AmTrust Financial Services Inc. Depositary Shares Series E (AFSI-E)",
+            "value": "AFSI-E",
+          },
+          Object {
+            "label": "AmTrust Financial Services Inc. Depositary Shares Series F (AFSI-F)",
+            "value": "AFSI-F",
+          },
+          Object {
+            "label": " (AFSS)",
+            "value": "AFSS",
+          },
+          Object {
+            "label": " (AFST)",
+            "value": "AFST",
+          },
+          Object {
+            "label": "Apollo Senior Floating Rate Fund Inc. (AFT)",
+            "value": "AFT",
+          },
+          Object {
+            "label": "CSOP FTSE China A50 (AFTY)",
+            "value": "AFTY",
+          },
+          Object {
+            "label": "First Majestic Silver Corp. (Canada) (AG)",
+            "value": "AG",
+          },
+          Object {
+            "label": "AGCO Corporation (AGCO)",
+            "value": "AGCO",
+          },
+          Object {
+            "label": "Aberdeen Global Dynamic Dividend Fund (AGD)",
+            "value": "AGD",
+          },
+          Object {
+            "label": "Agenus Inc. (AGEN)",
+            "value": "AGEN",
+          },
+          Object {
+            "label": "DB Agriculture Long ETN due April 1 2038 (AGF)",
+            "value": "AGF",
+          },
+          Object {
+            "label": "AgroFresh Solutions Inc. (AGFS)",
+            "value": "AGFS",
+          },
+          Object {
+            "label": "AgroFresh Solutions Inc. Warrants (AGFSW)",
+            "value": "AGFSW",
+          },
+          Object {
+            "label": "iShares Core U.S. Aggregate Bond (AGG)",
+            "value": "AGG",
+          },
+          Object {
+            "label": "IQ Enhanced Core Bond U.S. (AGGE)",
+            "value": "AGGE",
+          },
+          Object {
+            "label": "IQ Enhanced Core Plus Bond U.S. (AGGP)",
+            "value": "AGGP",
+          },
+          Object {
+            "label": "WisdomTree Yield Enhanced U.S. Aggregate Bond Fund (AGGY)",
+            "value": "AGGY",
+          },
+          Object {
+            "label": "Alamos Gold Inc. Class A (AGI)",
+            "value": "AGI",
+          },
+          Object {
+            "label": "Agios Pharmaceuticals Inc. (AGIO)",
+            "value": "AGIO",
+          },
+          Object {
+            "label": "Aeglea BioTherapeutics Inc. (AGLE)",
+            "value": "AGLE",
+          },
+          Object {
+            "label": "Federal Agricultural Mortgage Corporation (AGM)",
+            "value": "AGM",
+          },
+          Object {
+            "label": "Federal Agricultural Mortgage Corporation 5.875% Non-CUmulative Preferred Stock Series A (AGM-A)",
+            "value": "AGM-A",
+          },
+          Object {
+            "label": "Federal Agricultural Mortgage Corporation Non Cumulative Preferred Stock Series B (AGM-B)",
+            "value": "AGM-B",
+          },
+          Object {
+            "label": "Federal Agricultural Mortgage Corporation Preferred Series C Fixed to Fltg (AGM-C)",
+            "value": "AGM-C",
+          },
+          Object {
+            "label": "Federal Agricultural Mortgage Corporation (AGM.A)",
+            "value": "AGM.A",
+          },
+          Object {
+            "label": "AGM Group Holdings Inc. (AGMH)",
+            "value": "AGMH",
+          },
+          Object {
+            "label": "Allergan plc (AGN)",
+            "value": "AGN",
+          },
+          Object {
+            "label": "AGNC Investment Corp. (AGNC)",
+            "value": "AGNC",
+          },
+          Object {
+            "label": "AGNC Investment Corp. Depositary Shares representing 1/1000th Series B Preferred Stock (AGNCB)",
+            "value": "AGNCB",
+          },
+          Object {
+            "label": "AGNC Investment Corp. Depositary Shares Each Representing a 1/1000th Interest in a Share of 7.00% Series C Fixed-To-Floating Rate Cumulative Redeemable Preferre (AGNCN)",
+            "value": "AGNCN",
+          },
+          Object {
+            "label": "WisdomTree Barclays U.S. Aggregate Bond Negative D (AGND)",
+            "value": "AGND",
+          },
+          Object {
+            "label": "Assured Guaranty Ltd. (AGO)",
+            "value": "AGO",
+          },
+          Object {
+            "label": "Assured Guaranty Ltd. (AGO-B)",
+            "value": "AGO-B",
+          },
+          Object {
+            "label": "Assured Guaranty Ltd. (AGO-E)",
+            "value": "AGO-E",
+          },
+          Object {
+            "label": "Assured Guaranty Ltd. (AGO-F)",
+            "value": "AGO-F",
+          },
+          Object {
+            "label": "ProShares Ultra Silver (AGQ)",
+            "value": "AGQ",
+          },
+          Object {
+            "label": "Avangrid Inc. (AGR)",
+            "value": "AGR",
+          },
+          Object {
+            "label": "Adecoagro S.A. (AGRO)",
+            "value": "AGRO",
+          },
+          Object {
+            "label": "Agile Therapeutics Inc. (AGRX)",
+            "value": "AGRX",
+          },
+          Object {
+            "label": "PlayAGS Inc. (AGS)",
+            "value": "AGS",
+          },
+          Object {
+            "label": "iShares MSCI Argentina and Global Exposure (AGT)",
+            "value": "AGT",
+          },
+          Object {
+            "label": "Applied Genetic Technologies Corporation (AGTC)",
+            "value": "AGTC",
+          },
+          Object {
+            "label": "Argan Inc. (AGX)",
+            "value": "AGX",
+          },
+          Object {
+            "label": "Agilysys Inc. (AGYS)",
+            "value": "AGYS",
+          },
+          Object {
+            "label": "iShares Agency Bond (AGZ)",
+            "value": "AGZ",
+          },
+          Object {
+            "label": "WisdomTree Barclays U.S. Aggregate Bond Zero Durat (AGZD)",
+            "value": "AGZD",
+          },
+          Object {
+            "label": "A.H. Belo Corporation (TX) (AHC)",
+            "value": "AHC",
+          },
+          Object {
+            "label": "Armada Hoffler Properties Inc. (AHH)",
+            "value": "AHH",
+          },
+          Object {
+            "label": "Aspen Insurance Holdings Limited (AHL)",
+            "value": "AHL",
+          },
+          Object {
+            "label": "Aspen Insurance Holdings Limited 5.95% Fixed-to-Floating Rate Perpetual Non-Cumulative Preference Shares (AHL-C)",
+            "value": "AHL-C",
+          },
+          Object {
+            "label": "Aspen Insurance Holdings Limited 5.625% Perpetual Non-Cumulative Preference Shares (AHL-D)",
+            "value": "AHL-D",
+          },
+          Object {
+            "label": "Avista Healthcare Public Acquisition Corp. (AHPA)",
+            "value": "AHPA",
+          },
+          Object {
+            "label": "Avista Healthcare Public Acquisition Corp. Unit (AHPAU)",
+            "value": "AHPAU",
+          },
+          Object {
+            "label": "Avista Healthcare Public Acquisition Corp. Warrants (AHPAW)",
+            "value": "AHPAW",
+          },
+          Object {
+            "label": "Allied Healthcare Products Inc. (AHPI)",
+            "value": "AHPI",
+          },
+          Object {
+            "label": "Ashford Hospitality Trust Inc (AHT)",
+            "value": "AHT",
+          },
+          Object {
+            "label": "Ashford Hospitality Trust Inc 8.45% Series D Cumulative Preferred Stock (AHT-D)",
+            "value": "AHT-D",
+          },
+          Object {
+            "label": "Ashford Hospitality Trust Inc 7.375% Series F Cumulative Preferred Stock (AHT-F)",
+            "value": "AHT-F",
+          },
+          Object {
+            "label": "Ashford Hospitality Trust Inc 7.375% Series G Cumulative Preferred Stock (AHT-G)",
+            "value": "AHT-G",
+          },
+          Object {
+            "label": "Ashford Hospitality Trust Inc 7.50% Series H Cumulative Preferred Stock (AHT-H)",
+            "value": "AHT-H",
+          },
+          Object {
+            "label": "Ashford Hospitality Trust Inc 7.50% Series I Cumulative Preferred Stock (AHT-I)",
+            "value": "AHT-I",
+          },
+          Object {
+            "label": "Arlington Asset Investment Corp Class A (new) (AI)",
+            "value": "AI",
+          },
+          Object {
+            "label": "Arlington Asset Investment Corp 7.00% Series B Cumulative Perpetual Redeemable Preferred Stock (AI-B)",
+            "value": "AI-B",
+          },
+          Object {
+            "label": "iShares Asia 50 ETF (AIA)",
+            "value": "AIA",
+          },
+          Object {
+            "label": " (AIC)",
+            "value": "AIC",
+          },
+          Object {
+            "label": "AI Powered Equity (AIEQ)",
+            "value": "AIEQ",
+          },
+          Object {
+            "label": "Apollo Tactical Income Fund Inc. (AIF)",
+            "value": "AIF",
+          },
+          Object {
+            "label": "American International Group Inc. (AIG)",
+            "value": "AIG",
+          },
+          Object {
+            "label": "American International Group Inc. Warrant expiring January 19 2021 (AIG+)",
+            "value": "AIG+",
+          },
+          Object {
+            "label": "Senmiao Technology Limited (AIHS)",
+            "value": "AIHS",
+          },
+          Object {
+            "label": "AI Powered International Equity (AIIQ)",
+            "value": "AIIQ",
+          },
+          Object {
+            "label": "Altra Industrial Motion Corp. (AIMC)",
+            "value": "AIMC",
+          },
+          Object {
+            "label": "Aimmune Therapeutics Inc. (AIMT)",
+            "value": "AIMT",
+          },
+          Object {
+            "label": "Albany International Corporation (AIN)",
+            "value": "AIN",
+          },
+          Object {
+            "label": "Ashford Inc. (Holding Company) (AINC)",
+            "value": "AINC",
+          },
+          Object {
+            "label": "Apollo Investment Corporation (AINV)",
+            "value": "AINV",
+          },
+          Object {
+            "label": "Precision Therapeutics Inc. (AIPT)",
+            "value": "AIPT",
+          },
+          Object {
+            "label": "Global X Future Analytics Tech ETF (AIQ)",
+            "value": "AIQ",
+          },
+          Object {
+            "label": "AAR Corp. (AIR)",
+            "value": "AIR",
+          },
+          Object {
+            "label": "Airgain Inc. (AIRG)",
+            "value": "AIRG",
+          },
+          Object {
+            "label": "Air Industries Group (AIRI)",
+            "value": "AIRI",
+          },
+          Object {
+            "label": "First Trust RBA American Industrial Renaissance ET (AIRR)",
+            "value": "AIRR",
+          },
+          Object {
+            "label": "Air T Inc. (AIRT)",
+            "value": "AIRT",
+          },
+          Object {
+            "label": "Applied Industrial Technologies Inc. (AIT)",
+            "value": "AIT",
+          },
+          Object {
+            "label": "Apartment Investment and Management Company (AIV)",
+            "value": "AIV",
+          },
+          Object {
+            "label": "Apartment Investment and Management Company Preferred Series Class A (AIV-A)",
+            "value": "AIV-A",
+          },
+          Object {
+            "label": "Arlington Asset Investment Corp 6.625% Notes due 2023 (AIW)",
+            "value": "AIW",
+          },
+          Object {
+            "label": "Apollo Investment Corporation 6.875% Senior Notes due 2043 (AIY)",
+            "value": "AIY",
+          },
+          Object {
+            "label": "Assurant Inc. (AIZ)",
+            "value": "AIZ",
+          },
+          Object {
+            "label": "Assurant Inc. 6.50% Series D Mandatory Convertible Preferred Stock $1.00 par value (AIZP)",
+            "value": "AIZP",
+          },
+          Object {
+            "label": "Arthur J. Gallagher & Co. (AJG)",
+            "value": "AJG",
+          },
+          Object {
+            "label": "Aerojet Rocketdyne Holdings Inc. (AJRD)",
+            "value": "AJRD",
+          },
+          Object {
+            "label": "Great Ajax Corp. (AJX)",
+            "value": "AJX",
+          },
+          Object {
+            "label": "Great Ajax Corp. 7.25% Convertible Senior Notes due 2024 (AJXA)",
+            "value": "AJXA",
+          },
+          Object {
+            "label": "Akamai Technologies Inc. (AKAM)",
+            "value": "AKAM",
+          },
+          Object {
+            "label": "Achaogen Inc. (AKAO)",
+            "value": "AKAO",
+          },
+          Object {
+            "label": "Akebia Therapeutics Inc. (AKBA)",
+            "value": "AKBA",
+          },
+          Object {
+            "label": "Akcea Therapeutics Inc. (AKCA)",
+            "value": "AKCA",
+          },
+          Object {
+            "label": "Akers Biosciences Inc (AKER)",
+            "value": "AKER",
+          },
+          Object {
+            "label": "Asanko Gold Inc. (AKG)",
+            "value": "AKG",
+          },
+          Object {
+            "label": "Embotelladora Andina S.A. (AKO.A)",
+            "value": "AKO.A",
+          },
+          Object {
+            "label": "Embotelladora Andina S.A. (AKO.B)",
+            "value": "AKO.B",
+          },
+          Object {
+            "label": "Alliance California Municipal Income Fund Inc (AKP)",
+            "value": "AKP",
+          },
+          Object {
+            "label": "Acadia Realty Trust (AKR)",
+            "value": "AKR",
+          },
+          Object {
+            "label": "Akorn Inc. (AKRX)",
+            "value": "AKRX",
+          },
+          Object {
+            "label": "AK Steel Holding Corporation (AKS)",
+            "value": "AKS",
+          },
+          Object {
+            "label": "Akoustis Technologies Inc. (AKTS)",
+            "value": "AKTS",
+          },
+          Object {
+            "label": "Akari Therapeutics Plc (AKTX)",
+            "value": "AKTX",
+          },
+          Object {
+            "label": "Air Lease Corporation Class A (AL)",
+            "value": "AL",
+          },
+          Object {
+            "label": "Albemarle Corporation (ALB)",
+            "value": "ALB",
+          },
+          Object {
+            "label": "Albireo Pharma Inc. (ALBO)",
+            "value": "ALBO",
+          },
+          Object {
+            "label": "Alico Inc. (ALCO)",
+            "value": "ALCO",
+          },
+          Object {
+            "label": "WisdomTree Asia Local Debt Fund (ALD)",
+            "value": "ALD",
+          },
+          Object {
+            "label": "Alder BioPharmaceuticals Inc. (ALDR)",
+            "value": "ALDR",
+          },
+          Object {
+            "label": "Aldeyra Therapeutics Inc. (ALDX)",
+            "value": "ALDX",
+          },
+          Object {
+            "label": "Allete Inc. (ALE)",
+            "value": "ALE",
+          },
+          Object {
+            "label": "Alexander & Baldwin Inc. REIT Holding Company (ALEX)",
+            "value": "ALEX",
+          },
+          Object {
+            "label": "AlphaClone Alternative Alpha (ALFA)",
+            "value": "ALFA",
+          },
+          Object {
+            "label": "Alamo Group Inc. (ALG)",
+            "value": "ALG",
+          },
+          Object {
+            "label": "Align Technology Inc. (ALGN)",
+            "value": "ALGN",
+          },
+          Object {
+            "label": "Allegro Merger Corp. (ALGR)",
+            "value": "ALGR",
+          },
+          Object {
+            "label": "Allegro Merger Corp. Right (ALGRR)",
+            "value": "ALGRR",
+          },
+          Object {
+            "label": "Allegro Merger Corp. Unit (ALGRU)",
+            "value": "ALGRU",
+          },
+          Object {
+            "label": "Allegro Merger Corp. Warrant (ALGRW)",
+            "value": "ALGRW",
+          },
+          Object {
+            "label": "Allegiant Travel Company (ALGT)",
+            "value": "ALGT",
+          },
+          Object {
+            "label": "Alimera Sciences Inc. (ALIM)",
+            "value": "ALIM",
+          },
+          Object {
+            "label": "ALJ Regional Holdings Inc. (ALJJ)",
+            "value": "ALJJ",
+          },
+          Object {
+            "label": "Alaska Air Group Inc. (ALK)",
+            "value": "ALK",
+          },
+          Object {
+            "label": "Alkermes plc (ALKS)",
+            "value": "ALKS",
+          },
+          Object {
+            "label": "Allstate Corporation (The) (ALL)",
+            "value": "ALL",
+          },
+          Object {
+            "label": "Allstate Corporation (The) Dep Shs Repstg 1/1000th Perp Pfd Ser A (ALL-A)",
+            "value": "ALL-A",
+          },
+          Object {
+            "label": "Allstate Corporation (The) 5.100% Fixed-to-Floating Rate Subordinated Debentures due 2053 (ALL-B)",
+            "value": "ALL-B",
+          },
+          Object {
+            "label": "Allstate Corporation (The) Dep Shs Repstg 1/1000th Int Shs Pfd Stk Ser C (ALL-C*)",
+            "value": "ALL-C*",
+          },
+          Object {
+            "label": "The Allstate Corporation Leopards Each Representing A 1/1000th Interest In A Share Of Fixed Rate Noncumulative Perpetual Preferred Stock Series D (ALL-D)",
+            "value": "ALL-D",
+          },
+          Object {
+            "label": "Allstate Corporation Depositary Shares Series E (ALL-E)",
+            "value": "ALL-E",
+          },
+          Object {
+            "label": "Allstate Corporation (The) Leopards Dep Shares Representing 1/1000th Perp Pfd (ALL-F)",
+            "value": "ALL-F",
+          },
+          Object {
+            "label": "Allstate Corporation (The) Depositary Shares Series G (ALL-G)",
+            "value": "ALL-G",
+          },
+          Object {
+            "label": "Allegion plc (ALLE)",
+            "value": "ALLE",
+          },
+          Object {
+            "label": "Allakos Inc. (ALLK)",
+            "value": "ALLK",
+          },
+          Object {
+            "label": "Allot Communications Ltd. (ALLT)",
+            "value": "ALLT",
+          },
+          Object {
+            "label": "Ally Financial Inc. (ALLY)",
+            "value": "ALLY",
+          },
+          Object {
+            "label": "GMAC Capital Trust I Fixed Rate Floating Rate Trust Preferred Securities Series 2 (ALLY-A)",
+            "value": "ALLY-A",
+          },
+          Object {
+            "label": "Allena Pharmaceuticals Inc. (ALNA)",
+            "value": "ALNA",
+          },
+          Object {
+            "label": "Alnylam Pharmaceuticals Inc. (ALNY)",
+            "value": "ALNY",
+          },
+          Object {
+            "label": "Alio Gold Inc. (Canada) (ALO)",
+            "value": "ALO",
+          },
+          Object {
+            "label": "AstroNova Inc. (ALOT)",
+            "value": "ALOT",
+          },
+          Object {
+            "label": "Alabama Power Company 5.00% Class A Preferred Stock Cumulative Par Value $1 Per Share (Stated Capital $25 Per Share) (ALP-Q)",
+            "value": "ALP-Q",
+          },
+          Object {
+            "label": "Alpine Immune Sciences Inc. (ALPN)",
+            "value": "ALPN",
+          },
+          Object {
+            "label": "Alliqua BioMedical Inc. (ALQA)",
+            "value": "ALQA",
+          },
+          Object {
+            "label": "Alarm.com Holdings Inc. (ALRM)",
+            "value": "ALRM",
+          },
+          Object {
+            "label": "Aileron Therapeutics Inc. (ALRN)",
+            "value": "ALRN",
+          },
+          Object {
+            "label": "Alaska Communications Systems Group Inc. (ALSK)",
+            "value": "ALSK",
+          },
+          Object {
+            "label": "Allison Transmission Holdings Inc. (ALSN)",
+            "value": "ALSN",
+          },
+          Object {
+            "label": "Altimmune Inc. (ALT)",
+            "value": "ALT",
+          },
+          Object {
+            "label": "Altair Engineering Inc. (ALTR)",
+            "value": "ALTR",
+          },
+          Object {
+            "label": "ProShares Morningstar Alternatives Solution (ALTS)",
+            "value": "ALTS",
+          },
+          Object {
+            "label": "Global X SuperDividend Alternatives ETF (ALTY)",
+            "value": "ALTY",
+          },
+          Object {
+            "label": "Autoliv Inc. (ALV)",
+            "value": "ALV",
+          },
+          Object {
+            "label": "Alexander's Inc. (ALX)",
+            "value": "ALX",
+          },
+          Object {
+            "label": "Alexion Pharmaceuticals Inc. (ALXN)",
+            "value": "ALXN",
+          },
+          Object {
+            "label": "Antero Midstream Partners LP representing limited partner interests (AM)",
+            "value": "AM",
+          },
+          Object {
+            "label": "AMAG Pharmaceuticals Inc. (AMAG)",
+            "value": "AMAG",
+          },
+          Object {
+            "label": "Amalgamated Bank (AMAL)",
+            "value": "AMAL",
+          },
+          Object {
+            "label": "Applied Materials Inc. (AMAT)",
+            "value": "AMAT",
+          },
+          Object {
+            "label": "Ambarella Inc. (AMBA)",
+            "value": "AMBA",
+          },
+          Object {
+            "label": "Ambac Financial Group Inc. (AMBC)",
+            "value": "AMBC",
+          },
+          Object {
+            "label": "Ambac Financial Group Inc. Warrants (AMBCW)",
+            "value": "AMBCW",
+          },
+          Object {
+            "label": "Ambow Education Holding Ltd. American Depository Shares each representing two Class A (AMBO)",
+            "value": "AMBO",
+          },
+          Object {
+            "label": "Amber Road Inc. (AMBR)",
+            "value": "AMBR",
+          },
+          Object {
+            "label": "AMC Entertainment Holdings Inc. Class A (AMC)",
+            "value": "AMC",
+          },
+          Object {
+            "label": "iShares Russell 1000 Pure U.S. Revenue ETF (AMCA)",
+            "value": "AMCA",
+          },
+          Object {
+            "label": "AirMedia Group Inc (AMCN)",
+            "value": "AMCN",
+          },
+          Object {
+            "label": "AMC Networks Inc. (AMCX)",
+            "value": "AMCX",
+          },
+          Object {
+            "label": "Advanced Micro Devices Inc. (AMD)",
+            "value": "AMD",
+          },
+          Object {
+            "label": "Amedica Corporation (AMDA)",
+            "value": "AMDA",
+          },
+          Object {
+            "label": "AMETEK Inc. (AME)",
+            "value": "AME",
+          },
+          Object {
+            "label": "Amedisys Inc (AMED)",
+            "value": "AMED",
+          },
+          Object {
+            "label": "Apollo Medical Holdings Inc. (AMEH)",
+            "value": "AMEH",
+          },
+          Object {
+            "label": "Affiliated Managers Group Inc. (AMG)",
+            "value": "AMG",
+          },
+          Object {
+            "label": "Amgen Inc. (AMGN)",
+            "value": "AMGN",
+          },
+          Object {
+            "label": "Antero Midstream GP LP of Beneficial Interests (AMGP)",
+            "value": "AMGP",
+          },
+          Object {
+            "label": "American Homes 4 Rent of Beneficial Interest (AMH)",
+            "value": "AMH",
+          },
+          Object {
+            "label": "American Homes 4 Rent 6.5% Series D Cumulative Perpetual Preferred Shares of Beneficial Interest (AMH-D)",
+            "value": "AMH-D",
+          },
+          Object {
+            "label": "American Homes 4 Rent 6.35% Series E Cumulative Redeemable Perpetual Preferred Shares of Beneficial Interest (AMH-E)",
+            "value": "AMH-E",
+          },
+          Object {
+            "label": "American Homes 4 Rent 5.875% Series F Cumulative Redeemable Perpetual Preferred Shares (AMH-F)",
+            "value": "AMH-F",
+          },
+          Object {
+            "label": "American Homes 4 Rent Series G cumulative redeemable perpetual preferred shares of beneficial interest (AMH-G)",
+            "value": "AMH-G",
+          },
+          Object {
+            "label": "American Homes 4 Rent Series H cumulative redeemable perpetual Preferred Shares of Beneficial Interest (AMH-H)",
+            "value": "AMH-H",
+          },
+          Object {
+            "label": "American Midstream Partners LP representing Limited Partner Interests (AMID)",
+            "value": "AMID",
+          },
+          Object {
+            "label": "JPMorgan Chase Capital XVI JP Morgan Alerian MLP ETN (AMJ)",
+            "value": "AMJ",
+          },
+          Object {
+            "label": "Credit Suisse X-Links Monthly Pay 2xLeveraged Alerian MLP Index Exchange Traded Notes due May 16 2036 (AMJL)",
+            "value": "AMJL",
+          },
+          Object {
+            "label": "Amkor Technology Inc. (AMKR)",
+            "value": "AMKR",
+          },
+          Object {
+            "label": "Alerian MLP (AMLP)",
+            "value": "AMLP",
+          },
+          Object {
+            "label": "Alliance MMA Inc. (AMMA)",
+            "value": "AMMA",
+          },
+          Object {
+            "label": "AMN Healthcare Services Inc (AMN)",
+            "value": "AMN",
+          },
+          Object {
+            "label": "American National Bankshares Inc. (AMNB)",
+            "value": "AMNB",
+          },
+          Object {
+            "label": "Allied Motion Technologies Inc. (AMOT)",
+            "value": "AMOT",
+          },
+          Object {
+            "label": "America Movil S.A.B. de C.V. Class An Depositary Shares (AMOV)",
+            "value": "AMOV",
+          },
+          Object {
+            "label": "Ameriprise Financial Inc. (AMP)",
+            "value": "AMP",
+          },
+          Object {
+            "label": "Ampio Pharmaceuticals Inc. (AMPE)",
+            "value": "AMPE",
+          },
+          Object {
+            "label": "Amphastar Pharmaceuticals Inc. (AMPH)",
+            "value": "AMPH",
+          },
+          Object {
+            "label": "Alta Mesa Resources Inc. (AMR)",
+            "value": "AMR",
+          },
+          Object {
+            "label": "American River Bankshares (AMRB)",
+            "value": "AMRB",
+          },
+          Object {
+            "label": "Ameresco Inc. Class A (AMRC)",
+            "value": "AMRC",
+          },
+          Object {
+            "label": "Ameri Holdings Inc. (AMRH)",
+            "value": "AMRH",
+          },
+          Object {
+            "label": "Ameri Holdings Inc. Warrant (AMRHW)",
+            "value": "AMRHW",
+          },
+          Object {
+            "label": "A-Mark Precious Metals Inc. (AMRK)",
+            "value": "AMRK",
+          },
+          Object {
+            "label": "Amarin Corporation plc (AMRN)",
+            "value": "AMRN",
+          },
+          Object {
+            "label": "Amyris Inc. (AMRS)",
+            "value": "AMRS",
+          },
+          Object {
+            "label": "Alta Mesa Resources Inc. Warrant (AMRWW)",
+            "value": "AMRWW",
+          },
+          Object {
+            "label": "Amneal Pharmaceuticals Inc. Class A (AMRX)",
+            "value": "AMRX",
+          },
+          Object {
+            "label": "American Shared Hospital Services (AMS)",
+            "value": "AMS",
+          },
+          Object {
+            "label": "American Superconductor Corporation (AMSC)",
+            "value": "AMSC",
+          },
+          Object {
+            "label": "AMERISAFE Inc. (AMSF)",
+            "value": "AMSF",
+          },
+          Object {
+            "label": "American Software Inc. Class A Common Stock (AMSWA)",
+            "value": "AMSWA",
+          },
+          Object {
+            "label": "American Tower Corporation (REIT) (AMT)",
+            "value": "AMT",
+          },
+          Object {
+            "label": "TD Ameritrade Holding Corporation (AMTD)",
+            "value": "AMTD",
+          },
+          Object {
+            "label": "Aemetis Inc (AMTX)",
+            "value": "AMTX",
+          },
+          Object {
+            "label": "ETRACS Alerian MLP Index ETN (AMU)",
+            "value": "AMU",
+          },
+          Object {
+            "label": "ETRACS Alerian MLP Index ETN Series B due July 18 2042 (AMUB)",
+            "value": "AMUB",
+          },
+          Object {
+            "label": "American Woodmark Corporation (AMWD)",
+            "value": "AMWD",
+          },
+          Object {
+            "label": "America Movil S.A.B. de C.V.n Depository Receipt Series L (AMX)",
+            "value": "AMX",
+          },
+          Object {
+            "label": "InfraCap MLP (AMZA)",
+            "value": "AMZA",
+          },
+          Object {
+            "label": "Amazon.com Inc. (AMZN)",
+            "value": "AMZN",
+          },
+          Object {
+            "label": "AutoNation Inc. (AN)",
+            "value": "AN",
+          },
+          Object {
+            "label": "AnaptysBio Inc. (ANAB)",
+            "value": "ANAB",
+          },
+          Object {
+            "label": "American National Insurance Company (ANAT)",
+            "value": "ANAT",
+          },
+          Object {
+            "label": "Anchor Bancorp (ANCB)",
+            "value": "ANCB",
+          },
+          Object {
+            "label": "Access National Corporation (ANCX)",
+            "value": "ANCX",
+          },
+          Object {
+            "label": "The Andersons Inc. (ANDE)",
+            "value": "ANDE",
+          },
+          Object {
+            "label": "Andeavor Logistics LP representing Limited Partner Interests (ANDX)",
+            "value": "ANDX",
+          },
+          Object {
+            "label": "Arista Networks Inc. (ANET)",
+            "value": "ANET",
+          },
+          Object {
+            "label": "Abercrombie & Fitch Company (ANF)",
+            "value": "ANF",
+          },
+          Object {
+            "label": "Amira Nature Foods Ltd (ANFI)",
+            "value": "ANFI",
+          },
+          Object {
+            "label": "ANGI Homeservices Inc. (ANGI)",
+            "value": "ANGI",
+          },
+          Object {
+            "label": "VanEck Vectors Fallen Angel High Yield Bond (ANGL)",
+            "value": "ANGL",
+          },
+          Object {
+            "label": "AngioDynamics Inc. (ANGO)",
+            "value": "ANGO",
+          },
+          Object {
+            "label": "Anworth Mortgage Asset Corporation (ANH)",
+            "value": "ANH",
+          },
+          Object {
+            "label": "Anworth Mortgage Asset Corporation Series A Preferred Stock (ANH-A)",
+            "value": "ANH-A",
+          },
+          Object {
+            "label": "Anworth Mortgage Asset Corporation Preferred Stock Series B 6.25% (ANH-B)",
+            "value": "ANH-B",
+          },
+          Object {
+            "label": "Anworth Mortgage Asset Corporation 7.625% Series C Cumulative Redeemable Preferred Stock (ANH-C)",
+            "value": "ANH-C",
+          },
+          Object {
+            "label": "Anika Therapeutics Inc. (ANIK)",
+            "value": "ANIK",
+          },
+          Object {
+            "label": "ANI Pharmaceuticals Inc. (ANIP)",
+            "value": "ANIP",
+          },
+          Object {
+            "label": "Anixa Biosciences Inc. (ANIX)",
+            "value": "ANIX",
+          },
+          Object {
+            "label": "ANSYS Inc. (ANSS)",
+            "value": "ANSS",
+          },
+          Object {
+            "label": "Anthem Inc. (ANTM)",
+            "value": "ANTM",
+          },
+          Object {
+            "label": "Aegean Marine Petroleum Network Inc. (ANW)",
+            "value": "ANW",
+          },
+          Object {
+            "label": "Sphere 3D Corp. (ANY)",
+            "value": "ANY",
+          },
+          Object {
+            "label": "iShares Core Aggressive Allocation (AOA)",
+            "value": "AOA",
+          },
+          Object {
+            "label": "American Outdoor Brands Corporation (AOBC)",
+            "value": "AOBC",
+          },
+          Object {
+            "label": "Aberdeen Total Dynamic Dividend Fund (AOD)",
+            "value": "AOD",
+          },
+          Object {
+            "label": "iShares Core Conservative Allocation (AOK)",
+            "value": "AOK",
+          },
+          Object {
+            "label": "iShares Core Moderate Allocation (AOM)",
+            "value": "AOM",
+          },
+          Object {
+            "label": "Aon plc Class A (UK) (AON)",
+            "value": "AON",
+          },
+          Object {
+            "label": "iShares Core Growth Allocation (AOR)",
+            "value": "AOR",
+          },
+          Object {
+            "label": "A.O. Smith Corporation (AOS)",
+            "value": "AOS",
+          },
+          Object {
+            "label": "Alpha and Omega Semiconductor Limited (AOSL)",
+            "value": "AOSL",
+          },
+          Object {
+            "label": "Ampco-Pittsburgh Corporation (AP)",
+            "value": "AP",
+          },
+          Object {
+            "label": "Apache Corporation (APA)",
+            "value": "APA",
+          },
+          Object {
+            "label": "Artisan Partners Asset Management Inc. Class A (APAM)",
+            "value": "APAM",
+          },
+          Object {
+            "label": "Asia Pacific Fund Inc. (The) (APB)",
+            "value": "APB",
+          },
+          Object {
+            "label": "Anadarko Petroleum Corporation (APC)",
+            "value": "APC",
+          },
+          Object {
+            "label": "Air Products and Chemicals Inc. (APD)",
+            "value": "APD",
+          },
+          Object {
+            "label": "Applied DNA Sciences Inc (APDN)",
+            "value": "APDN",
+          },
+          Object {
+            "label": " (APDNW)",
+            "value": "APDNW",
+          },
+          Object {
+            "label": "American Public Education Inc. (APEI)",
+            "value": "APEI",
+          },
+          Object {
+            "label": "Apollo Endosurgery Inc. (APEN)",
+            "value": "APEN",
+          },
+          Object {
+            "label": "Morgan Stanley Asia-Pacific Fund Inc. (APF)",
+            "value": "APF",
+          },
+          Object {
+            "label": "Amphenol Corporation (APH)",
+            "value": "APH",
+          },
+          Object {
+            "label": "AmpliPhi Biosciences Corporation (APHB)",
+            "value": "APHB",
+          },
+          Object {
+            "label": "Apple Hospitality REIT Inc. (APLE)",
+            "value": "APLE",
+          },
+          Object {
+            "label": "Apellis Pharmaceuticals Inc. (APLS)",
+            "value": "APLS",
+          },
+          Object {
+            "label": "Apollo Global Management LLC Class A Representing Class A Limitied Liability Company Interests (APO)",
+            "value": "APO",
+          },
+          Object {
+            "label": "Apollo Global Management LLC 6.375% Series A Preferred Shares (APO-A)",
+            "value": "APO-A",
+          },
+          Object {
+            "label": "Apollo Global Management LLC 6.375% Series B Preferred Shares (APO-B)",
+            "value": "APO-B",
+          },
+          Object {
+            "label": "Apogee Enterprises Inc. (APOG)",
+            "value": "APOG",
+          },
+          Object {
+            "label": "Cellect Biotechnology Ltd. (APOP)",
+            "value": "APOP",
+          },
+          Object {
+            "label": "Cellect Biotechnology Ltd. Warrants to Purchase ADR (1 WT and $7.50 to purchase 1 ADS) (APOPW)",
+            "value": "APOPW",
+          },
+          Object {
+            "label": "AppFolio Inc. (APPF)",
+            "value": "APPF",
+          },
+          Object {
+            "label": "Appian Corporation (APPN)",
+            "value": "APPN",
+          },
+          Object {
+            "label": "Digital Turbine Inc. (APPS)",
+            "value": "APPS",
+          },
+          Object {
+            "label": "Apricus Biosciences Inc. (APRI)",
+            "value": "APRI",
+          },
+          Object {
+            "label": "Blue Apron Holdings Inc. Class A (APRN)",
+            "value": "APRN",
+          },
+          Object {
+            "label": "Alpha Pro Tech Ltd. (APT)",
+            "value": "APT",
+          },
+          Object {
+            "label": "Apptio Inc. (APTI)",
+            "value": "APTI",
+          },
+          Object {
+            "label": "Aptose Biosciences Inc. (APTO)",
+            "value": "APTO",
+          },
+          Object {
+            "label": "Preferred Apartment Communities Inc. (APTS)",
+            "value": "APTS",
+          },
+          Object {
+            "label": "Aptiv PLC (APTV)",
+            "value": "APTV",
+          },
+          Object {
+            "label": "Aptinyx Inc. (APTX)",
+            "value": "APTX",
+          },
+          Object {
+            "label": "AmeriGas Partners L.P. (APU)",
+            "value": "APU",
+          },
+          Object {
+            "label": "Aptevo Therapeutics Inc. (APVO)",
+            "value": "APVO",
+          },
+          Object {
+            "label": "Asia Pacific Wire & Cable Corporation Limited (APWC)",
+            "value": "APWC",
+          },
+          Object {
+            "label": "Apergy Corporation (APY)",
+            "value": "APY",
+          },
+          Object {
+            "label": "Aquantia Corp. (AQ)",
+            "value": "AQ",
+          },
+          Object {
+            "label": "AquaBounty Technologies Inc. (AQB)",
+            "value": "AQB",
+          },
+          Object {
+            "label": "Aqua Metals Inc. (AQMS)",
+            "value": "AQMS",
+          },
+          Object {
+            "label": "Algonquin Power & Utilities Corp. (AQN)",
+            "value": "AQN",
+          },
+          Object {
+            "label": "Aquestive Therapeutics Inc. (AQST)",
+            "value": "AQST",
+          },
+          Object {
+            "label": "Evoqua Water Technologies Corp. (AQUA)",
+            "value": "AQUA",
+          },
+          Object {
+            "label": "Aquinox Pharmaceuticals Inc. (AQXP)",
+            "value": "AQXP",
+          },
+          Object {
+            "label": "Antero Resources Corporation (AR)",
+            "value": "AR",
+          },
+          Object {
+            "label": "American Renal Associates Holdings Inc (ARA)",
+            "value": "ARA",
+          },
+          Object {
+            "label": "Accuray Incorporated (ARAY)",
+            "value": "ARAY",
+          },
+          Object {
+            "label": "ARC Document Solutions Inc. (ARC)",
+            "value": "ARC",
+          },
+          Object {
+            "label": "ArcBest Corporation (ARCB)",
+            "value": "ARCB",
+          },
+          Object {
+            "label": "Ares Capital Corporation (ARCC)",
+            "value": "ARCC",
+          },
+          Object {
+            "label": "Arco Platform Limited (ARCE)",
+            "value": "ARCE",
+          },
+          Object {
+            "label": "Arch Coal Inc. Class A (ARCH)",
+            "value": "ARCH",
+          },
+          Object {
+            "label": "Appliance Recycling Centers of America Inc. (ARCI)",
+            "value": "ARCI",
+          },
+          Object {
+            "label": "Arrow Reserve Capital Management (ARCM)",
+            "value": "ARCM",
+          },
+          Object {
+            "label": "Arcos Dorados Holdings Inc. Class A Shares (ARCO)",
+            "value": "ARCO",
+          },
+          Object {
+            "label": "Arcturus Therapeutics Ltd. (ARCT)",
+            "value": "ARCT",
+          },
+          Object {
+            "label": "ARC Group Worldwide Inc. (ARCW)",
+            "value": "ARCW",
+          },
+          Object {
+            "label": "Ardagh Group S.A. (ARD)",
+            "value": "ARD",
+          },
+          Object {
+            "label": "Ares Dynamic Credit Allocation Fund Inc. (ARDC)",
+            "value": "ARDC",
+          },
+          Object {
+            "label": "Aradigm Corporation (ARDM)",
+            "value": "ARDM",
+          },
+          Object {
+            "label": "Aridis Pharmaceuticals Inc. (ARDS)",
+            "value": "ARDS",
+          },
+          Object {
+            "label": "Ardelyx Inc. (ARDX)",
+            "value": "ARDX",
+          },
+          Object {
+            "label": "Alexandria Real Estate Equities Inc. (ARE)",
+            "value": "ARE",
+          },
+          Object {
+            "label": "Alexandria Real Estate Equities Inc. 7.00% Series D Cumulative Convertible Preferred Stock (ARE-D)",
+            "value": "ARE-D",
+          },
+          Object {
+            "label": "Ares Management L.P. representing Limited Partner Interests (ARES)",
+            "value": "ARES",
+          },
+          Object {
+            "label": "Ares Management L.P. 7.00% Series A Preferred Shares Representing Limited Partner Interests (ARES-A)",
+            "value": "ARES-A",
+          },
+          Object {
+            "label": "Approach Resources Inc. (AREX)",
+            "value": "AREX",
+          },
+          Object {
+            "label": "Argo Group International Holdings Ltd. 6.5% Senior Notes Due 2042 (ARGD)",
+            "value": "ARGD",
+          },
+          Object {
+            "label": "Argo Group International Holdings Ltd. (ARGO)",
+            "value": "ARGO",
+          },
+          Object {
+            "label": "Global X MSCI Argentina (ARGT)",
+            "value": "ARGT",
+          },
+          Object {
+            "label": "argenx SE (ARGX)",
+            "value": "ARGX",
+          },
+          Object {
+            "label": "Apollo Commercial Real Estate Finance Inc (ARI)",
+            "value": "ARI",
+          },
+          Object {
+            "label": "Apollo Commercial Real Estate Finance 8.00% Series C Cumulative Redeemable Perpetual Preferred Stock (ARI-C)",
+            "value": "ARI-C",
+          },
+          Object {
+            "label": "American Railcar Industries Inc. (ARII)",
+            "value": "ARII",
+          },
+          Object {
+            "label": "ARK Genomic Revolution Multi-Sector (ARKG)",
+            "value": "ARKG",
+          },
+          Object {
+            "label": "ARK Innovation (ARKK)",
+            "value": "ARKK",
+          },
+          Object {
+            "label": "ARK Industrial Innovation (ARKQ)",
+            "value": "ARKQ",
+          },
+          Object {
+            "label": "Ark Restaurants Corp. (ARKR)",
+            "value": "ARKR",
+          },
+          Object {
+            "label": "ARK Web x.0 (ARKW)",
+            "value": "ARKW",
+          },
+          Object {
+            "label": "American Realty Investors Inc. (ARL)",
+            "value": "ARL",
+          },
+          Object {
+            "label": "Arlo Technologies Inc. (ARLO)",
+            "value": "ARLO",
+          },
+          Object {
+            "label": "Alliance Resource Partners L.P. (ARLP)",
+            "value": "ARLP",
+          },
+          Object {
+            "label": "Aramark (ARMK)",
+            "value": "ARMK",
+          },
+          Object {
+            "label": "Arena Pharmaceuticals Inc. (ARNA)",
+            "value": "ARNA",
+          },
+          Object {
+            "label": "Arconic Inc. (ARNC)",
+            "value": "ARNC",
+          },
+          Object {
+            "label": " (ARNC-)",
+            "value": "ARNC-",
+          },
+          Object {
+            "label": "Archrock Inc. (AROC)",
+            "value": "AROC",
+          },
+          Object {
+            "label": "Arrow Financial Corporation (AROW)",
+            "value": "AROW",
+          },
+          Object {
+            "label": "Aerpio Pharmaceuticals Inc. (ARPO)",
+            "value": "ARPO",
+          },
+          Object {
+            "label": "ArQule Inc. (ARQL)",
+            "value": "ARQL",
+          },
+          Object {
+            "label": "ARMOUR Residential REIT Inc. (ARR)",
+            "value": "ARR",
+          },
+          Object {
+            "label": "Armour Residential REIT INC Preferred Series A (ARR-A)",
+            "value": "ARR-A",
+          },
+          Object {
+            "label": "ARMOUR Residential REIT Inc. Preferred Series B (ARR-B)",
+            "value": "ARR-B",
+          },
+          Object {
+            "label": "ARRIS International plc (ARRS)",
+            "value": "ARRS",
+          },
+          Object {
+            "label": "Array BioPharma Inc. (ARRY)",
+            "value": "ARRY",
+          },
+          Object {
+            "label": "Artesian Resources Corporation Class A Non-Voting Common Stock (ARTNA)",
+            "value": "ARTNA",
+          },
+          Object {
+            "label": "Art's-Way Manufacturing Co. Inc. (ARTW)",
+            "value": "ARTW",
+          },
+          Object {
+            "label": "Arotech Corporation (ARTX)",
+            "value": "ARTX",
+          },
+          Object {
+            "label": "Arvinas Inc. (ARVN)",
+            "value": "ARVN",
+          },
+          Object {
+            "label": "Tactile Analytics (ARVR)",
+            "value": "ARVR",
+          },
+          Object {
+            "label": "Arrow Electronics Inc. (ARW)",
+            "value": "ARW",
+          },
+          Object {
+            "label": "Arrowhead Pharmaceuticals Inc. (ARWR)",
+            "value": "ARWR",
+          },
+          Object {
+            "label": "ASA Gold and Precious Metals Limited (ASA)",
+            "value": "ASA",
+          },
+          Object {
+            "label": "Associated Banc-Corp (ASB)",
+            "value": "ASB",
+          },
+          Object {
+            "label": "Associated Banc-Corp Warrants (ASB+)",
+            "value": "ASB+",
+          },
+          Object {
+            "label": "Associated Banc-Corp Depositary shares Series C (ASB-C)",
+            "value": "ASB-C",
+          },
+          Object {
+            "label": "Associated Banc-Corp Depositary Shares Series D (ASB-D)",
+            "value": "ASB-D",
+          },
+          Object {
+            "label": "Associated Banc-Corp Depositary Shares Series E (ASB-E)",
+            "value": "ASB-E",
+          },
+          Object {
+            "label": "Ardmore Shipping Corporation (ASC)",
+            "value": "ASC",
+          },
+          Object {
+            "label": "Ascent Capital Group Inc. Series A Common Stock (ASCMA)",
+            "value": "ASCMA",
+          },
+          Object {
+            "label": "Global X FTSE Southeast Asia (ASEA)",
+            "value": "ASEA",
+          },
+          Object {
+            "label": "FlexShares Real Assets Allocation Index Fund (ASET)",
+            "value": "ASET",
+          },
+          Object {
+            "label": "Asta Funding Inc. (ASFI)",
+            "value": "ASFI",
+          },
+          Object {
+            "label": "Liberty All-Star Growth Fund Inc. (ASG)",
+            "value": "ASG",
+          },
+          Object {
+            "label": "ASGN Incorporated (ASGN)",
+            "value": "ASGN",
+          },
+          Object {
+            "label": "Ashland Global Holdings Inc. (ASH)",
+            "value": "ASH",
+          },
+          Object {
+            "label": "Xtrackers Harvest CSI 300 China A-Shares (ASHR)",
+            "value": "ASHR",
+          },
+          Object {
+            "label": "Xtrackers Harvest CSI 500 China A-Shares Small Cap (ASHS)",
+            "value": "ASHS",
+          },
+          Object {
+            "label": "Xtrackers MSCI China A Inclusion Equity (ASHX)",
+            "value": "ASHX",
+          },
+          Object {
+            "label": "AdvanSix Inc. (ASIX)",
+            "value": "ASIX",
+          },
+          Object {
+            "label": "ASLAN Pharmaceuticals Limited (ASLN)",
+            "value": "ASLN",
+          },
+          Object {
+            "label": "Avino Silver & Gold Mines Ltd. (Canada) (ASM)",
+            "value": "ASM",
+          },
+          Object {
+            "label": "Assembly Biosciences Inc. (ASMB)",
+            "value": "ASMB",
+          },
+          Object {
+            "label": "ASML Holding N.V. (ASML)",
+            "value": "ASML",
+          },
+          Object {
+            "label": "Ascena Retail Group Inc. (ASNA)",
+            "value": "ASNA",
+          },
+          Object {
+            "label": "Ascendis Pharma A/S (ASND)",
+            "value": "ASND",
+          },
+          Object {
+            "label": "Arsanis Inc. (ASNS)",
+            "value": "ASNS",
+          },
+          Object {
+            "label": "Aspen Aerogels Inc. (ASPN)",
+            "value": "ASPN",
+          },
+          Object {
+            "label": "Altisource Portfolio Solutions S.A. (ASPS)",
+            "value": "ASPS",
+          },
+          Object {
+            "label": "Aspen Group Inc. (ASPU)",
+            "value": "ASPU",
+          },
+          Object {
+            "label": "Grupo Aeroportuario del Sureste S.A. de C.V. (ASR)",
+            "value": "ASR",
+          },
+          Object {
+            "label": "Assertio Therapeutics Inc. (ASRT)",
+            "value": "ASRT",
+          },
+          Object {
+            "label": "AmeriServ Financial Inc. (ASRV)",
+            "value": "ASRV",
+          },
+          Object {
+            "label": "AmeriServ Financial Inc. AmeriServ Financial Trust I (ASRVP)",
+            "value": "ASRVP",
+          },
+          Object {
+            "label": "Asterias Biotherapeutics Inc. Common Series A (AST)",
+            "value": "AST",
+          },
+          Object {
+            "label": "Astrotech Corporation (ASTC)",
+            "value": "ASTC",
+          },
+          Object {
+            "label": "Astec Industries Inc. (ASTE)",
+            "value": "ASTE",
+          },
+          Object {
+            "label": "Asure Software Inc (ASUR)",
+            "value": "ASUR",
+          },
+          Object {
+            "label": "ASV Holdings Inc. (ASV)",
+            "value": "ASV",
+          },
+          Object {
+            "label": "ASE Technology Holding Co. Ltd. American Depositary Shares (each representing Two) (ASX)",
+            "value": "ASX",
+          },
+          Object {
+            "label": "Amtech Systems Inc. (ASYS)",
+            "value": "ASYS",
+          },
+          Object {
+            "label": "Atlantic Power Corporation (Canada) (AT)",
+            "value": "AT",
+          },
+          Object {
+            "label": "ATA Inc. (ATAI)",
+            "value": "ATAI",
+          },
+          Object {
+            "label": "America First Multifamily Investors L.P. (ATAX)",
+            "value": "ATAX",
+          },
+          Object {
+            "label": "Alphatec Holdings Inc. (ATEC)",
+            "value": "ATEC",
+          },
+          Object {
+            "label": "A10 Networks Inc. (ATEN)",
+            "value": "ATEN",
+          },
+          Object {
+            "label": "Adtalem Global Education Inc. (ATGE)",
+            "value": "ATGE",
+          },
+          Object {
+            "label": "Athene Holding Ltd. Class A (ATH)",
+            "value": "ATH",
+          },
+          Object {
+            "label": "Autohome Inc. American Depositary Shares each representing one class A. (ATHM)",
+            "value": "ATHM",
+          },
+          Object {
+            "label": "athenahealth Inc. (ATHN)",
+            "value": "ATHN",
+          },
+          Object {
+            "label": "Athersys Inc. (ATHX)",
+            "value": "ATHX",
+          },
+          Object {
+            "label": "Allegheny Technologies Incorporated (ATI)",
+            "value": "ATI",
+          },
+          Object {
+            "label": "Attis Industries Inc. (ATIS)",
+            "value": "ATIS",
+          },
+          Object {
+            "label": "Attis Industries Inc. Warrants (ATISW)",
+            "value": "ATISW",
+          },
+          Object {
+            "label": "Atkore International Group Inc. (ATKR)",
+            "value": "ATKR",
+          },
+          Object {
+            "label": "Atlanticus Holdings Corporation (ATLC)",
+            "value": "ATLC",
+          },
+          Object {
+            "label": "Ames National Corporation (ATLO)",
+            "value": "ATLO",
+          },
+          Object {
+            "label": "Barclays ETN Plus Select MLP (ATMP)",
+            "value": "ATMP",
+          },
+          Object {
+            "label": "ATN International Inc. (ATNI)",
+            "value": "ATNI",
+          },
+          Object {
+            "label": "Actinium Pharmaceuticals Inc. (Delaware) (ATNM)",
+            "value": "ATNM",
+          },
+          Object {
+            "label": "Athenex Inc. (ATNX)",
+            "value": "ATNX",
+          },
+          Object {
+            "label": "Atmos Energy Corporation (ATO)",
+            "value": "ATO",
+          },
+          Object {
+            "label": "Atomera Incorporated (ATOM)",
+            "value": "ATOM",
+          },
+          Object {
+            "label": "Atossa Genetics Inc. (ATOS)",
+            "value": "ATOS",
+          },
+          Object {
+            "label": "AptarGroup Inc. (ATR)",
+            "value": "ATR",
+          },
+          Object {
+            "label": "Atara Biotherapeutics Inc. (ATRA)",
+            "value": "ATRA",
+          },
+          Object {
+            "label": "AtriCure Inc. (ATRC)",
+            "value": "ATRC",
+          },
+          Object {
+            "label": "Atrion Corporation (ATRI)",
+            "value": "ATRI",
+          },
+          Object {
+            "label": "Astronics Corporation (ATRO)",
+            "value": "ATRO",
+          },
+          Object {
+            "label": "Antares Pharma Inc. (ATRS)",
+            "value": "ATRS",
+          },
+          Object {
+            "label": "Air Transport Services Group Inc (ATSG)",
+            "value": "ATSG",
+          },
+          Object {
+            "label": "Atento S.A. (ATTO)",
+            "value": "ATTO",
+          },
+          Object {
+            "label": "Attunity Ltd. (ATTU)",
+            "value": "ATTU",
+          },
+          Object {
+            "label": "Actuant Corporation (ATU)",
+            "value": "ATU",
+          },
+          Object {
+            "label": "Altice USA Inc. Class A (ATUS)",
+            "value": "ATUS",
+          },
+          Object {
+            "label": "Acorn International Inc. ADS (ATV)",
+            "value": "ATV",
+          },
+          Object {
+            "label": "Activision Blizzard Inc (ATVI)",
+            "value": "ATVI",
+          },
+          Object {
+            "label": "Avenue Therapeutics Inc. (ATXI)",
+            "value": "ATXI",
+          },
+          Object {
+            "label": "AngloGold Ashanti Limited (AU)",
+            "value": "AU",
+          },
+          Object {
+            "label": "Auburn National Bancorporation Inc. (AUBN)",
+            "value": "AUBN",
+          },
+          Object {
+            "label": "AudioCodes Ltd. (AUDC)",
+            "value": "AUDC",
+          },
+          Object {
+            "label": "Auryn Resources Inc. (AUG)",
+            "value": "AUG",
+          },
+          Object {
+            "label": "Defiance Future Tech (AUGR)",
+            "value": "AUGR",
+          },
+          Object {
+            "label": "Golden Minerals Company (AUMN)",
+            "value": "AUMN",
+          },
+          Object {
+            "label": "AU Optronics Corp American Depositary Shares (AUO)",
+            "value": "AUO",
+          },
+          Object {
+            "label": "Aurinia Pharmaceuticals Inc (AUPH)",
+            "value": "AUPH",
+          },
+          Object {
+            "label": "WisdomTree Australia Dividend Index (AUSE)",
+            "value": "AUSE",
+          },
+          Object {
+            "label": "Global X Funds Adaptive U.S. Factor (AUSF)",
+            "value": "AUSF",
+          },
+          Object {
+            "label": "Autolus Therapeutics plc (AUTL)",
+            "value": "AUTL",
+          },
+          Object {
+            "label": "AutoWeb Inc. (AUTO)",
+            "value": "AUTO",
+          },
+          Object {
+            "label": "Yamana Gold Inc. (Canada) (AUY)",
+            "value": "AUY",
+          },
+          Object {
+            "label": "Avista Corporation (AVA)",
+            "value": "AVA",
+          },
+          Object {
+            "label": "Grupo Aval Acciones y Valores S.A. ADR (Each representing 20 preferred shares) (AVAL)",
+            "value": "AVAL",
+          },
+          Object {
+            "label": "AeroVironment Inc. (AVAV)",
+            "value": "AVAV",
+          },
+          Object {
+            "label": "AvalonBay Communities Inc. (AVB)",
+            "value": "AVB",
+          },
+          Object {
+            "label": "American Vanguard Corporation ($0.10 Par Value) (AVD)",
+            "value": "AVD",
+          },
+          Object {
+            "label": "Avadel Pharmaceuticals plc (AVDL)",
+            "value": "AVDL",
+          },
+          Object {
+            "label": "AVEO Pharmaceuticals Inc. (AVEO)",
+            "value": "AVEO",
+          },
+          Object {
+            "label": "Broadcom Inc. (AVGO)",
+            "value": "AVGO",
+          },
+          Object {
+            "label": "Avinger Inc. (AVGR)",
+            "value": "AVGR",
+          },
+        ]
+      }
+      value={null}
+    />
+  </div>
+</div>
+`;
