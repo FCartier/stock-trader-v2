@@ -28,7 +28,7 @@ describe("keystats reducer", () => {
     expect(keystats(undefined, action)).toEqual(initialState);
   });
 
-  test("keystats reducer should handle FETCH_NEWS_SUCCESS", () => {
+  test("keystats reducer should handle FETCH_KEYSTATS_SUCCESS", () => {
     const action: AnyAction = {
       type: FETCH_KEYSTATS_SUCCESS,
       payload: testData
@@ -39,7 +39,7 @@ describe("keystats reducer", () => {
     });
   });
 
-  test("keystats reducer should handle FETCH_NEWS_FAILED", () => {
+  test("keystats reducer should handle FETCH_KEYSTATS_FAILED", () => {
     const action: AnyAction = { type: FETCH_KEYSTATS_FAILED };
     expect(keystats(initialState, action)).toEqual({
       ...initialState,
