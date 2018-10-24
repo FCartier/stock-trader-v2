@@ -17,8 +17,6 @@ interface IState {
 
 export class ChartFilter extends React.Component<IChartFilter> {
   public filter = (event: any) => {
-    console.log("event : " + event);
-    console.log("props : " + this.props);
     this.props.chartFilter(this.props.input, event.target.value);
   };
 
