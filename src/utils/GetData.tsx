@@ -29,7 +29,6 @@ const getData = (Component: React.ComponentType) => {
 
 
 export const ComponentContainer = styled('div')`
-  
   @media (min-width: 800px) {
     margin: 10vh 25vh 10vh 25vh;
   }
