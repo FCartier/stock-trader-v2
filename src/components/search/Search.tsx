@@ -35,7 +35,7 @@ class Search extends Component<ISearchProps, ISearchState> {
     this.setState({
       selectedOption: selectedOption.value
     })
-    history.push(`${selectedOption.value}`)
+    history.replace(`/${selectedOption.value}`)
   };
 
   public render() {
