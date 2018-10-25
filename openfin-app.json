@@ -7,10 +7,10 @@
         "uuid": "OpenfinPOC-3z536jur4mq",
         "autoShow": true,
         "defaultCentered": true,
-        "defaultHeight": "1920px",
-        "defaultWidth": "1080px",
-        "minHeight": "1280px",
-        "minWidth": "720px"
+        "defaultHeight": 2048,
+        "defaultWidth": 1152,
+        "minHeight": 768,
+        "minWidth": 432
     },
     "runtime": {
         "arguments": "",

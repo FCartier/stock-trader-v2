@@ -8,8 +8,7 @@
     "start": "webpack-dev-server --mode development --open",
     "watch": "webpack --watch",
     "lint": "tslint --project .",
-    "test": "jest",
-    "openfin": "openfin -c ./openfin-app.json -l"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
