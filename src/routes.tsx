@@ -4,6 +4,7 @@ import ConnectedApp from "./ConnectedApp";
 import Nav from "./Nav";
 import getData from "./utils/GetData"
 
+import App from "./App"
 
 import News from "./components/news";
 import Overview from "./components/overview"
@@ -20,7 +21,7 @@ export default () => {
         <Nav />
         <Switch>
           <Route exact path="/"/>
-          <Route exact path="/:symbol" component={ConnectedApp} />
+          <Route exact path="/:symbol" component={getData(App)} />
           <Route path="/:symbol/overview" component={getData(Overview)} />
           <Route path="/:symbol/chart" component={getData(Chart)} />
           <Route path="/:symbol/peers" component={getData(TopPeers)} />

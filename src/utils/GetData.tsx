@@ -26,17 +26,4 @@ const getData = (Component: React.ComponentType) => {
   );
 };
 
-
-
-export const ComponentContainer = styled('div')`
-  @media (min-width: 800px) {
-    margin: 10vh 25vh 10vh 25vh;
-  }
-  @media (max-width: 800px) {
-    margin: 3vh 10vh 3vh 10vh;
-  }
-`
-
-
-
 export default getData;

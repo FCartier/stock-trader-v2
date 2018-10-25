@@ -15,16 +15,11 @@ interface AppProps {
 }
 
 class App extends React.Component<AppProps> {
-  public shouldRenderApp(symbol: string){
-    if (symbol) {
-      this.props.selectedSymbol(symbol)
-      return true;
-    }
-  }
+
   
   public render() {
-    const { symbol } = this.props
-    return this.shouldRenderApp(symbol) ? (
+ 
+    return (
       <div>
         <div className="flexbox-container">
           <StockInfo />
@@ -56,7 +51,7 @@ class App extends React.Component<AppProps> {
           <MarketFooter />
         </footer>
       </div>
-    ) : null
+    ) 
   }
 }
 
