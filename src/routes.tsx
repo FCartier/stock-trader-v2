@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import ConnectedApp from "./ConnectedApp";
 import Nav from "./Nav";
 import getData from "./utils/GetData"
 
@@ -20,7 +19,7 @@ export default () => {
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/"/>
+          <Route exact path="/" />
           <Route exact path="/:symbol" component={getData(App)} />
           <Route path="/:symbol/overview" component={getData(Overview)} />
           <Route path="/:symbol/chart" component={getData(Chart)} />
