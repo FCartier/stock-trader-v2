@@ -1,76 +1,90 @@
 .searchbar {
-    width: 80%;
-    height: 4em;
-  }
-  
-  .searchbar-container {
-    align-items: center;
-    font-weight: 300;
-    justify-items: space-between;
-  }
-  
-  .Select-control {
-    background-color: transparent;
-    color: #fff;
-    border: 0;
-    width: 80%;
-    height: 100%;
-  }
-  
-  .Select.is-focused > .Select-control, .Select.is-focused:not(.is-open) > .Select-control {
-    background: transparent;
-    color: #fff;
-    border-color: transparent;
-  }
-  
-  .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
-    color: #fff;
-  }
-  
-  .Select-menu-outer {
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    background-color: #16233B;
-    border: 0;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-    box-sizing: border-box;
-    margin-top: -1px;
-    max-height: 200px;
-    width: 70%;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  .Select {
-    color: #fff;
-  }
-  
-  .full-height, .Select {
-    height: 100%;
-  }
-  
-  .full-height {
-    display:flex;
-    align-items: center;
-  }
-  
-  .search-icon {
-    width: 1.5em;
-    height: auto;
-  }
-  
-  .Select-placeholder, .Select--single > .Select-control .Select-value {
-    font-size: 2em;
-  }
-  
-  .icon-container {
-    display: inline-block;
-  }
-  
-  .searchbox-container {
-    display: inline-block;
-    min-width: 80%;
-  }
+  width: 70%;
+  height: 4em;
+}
+
+.searchbar-container {
+  align-items: center;
+  font-weight: 300;
+  justify-items: space-between;
+}
+
+.Select-control {
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  width: 80%;
+  height: 100%;
+}
+
+.Select.is-focused > .Select-control,
+.Select.is-focused:not(.is-open) > .Select-control {
+  background: transparent;
+  color: #fff;
+  border-color: transparent;
+}
+
+.Select.has-value.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label {
+  color: #fff;
+}
+
+.Select-menu-outer {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #16233b;
+  border: 0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  width: 70%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.Select {
+  color: #fff;
+}
+
+.full-height,
+.Select {
+  height: 100%;
+}
+
+.full-height {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  width: 1.5em;
+  height: auto;
+}
+
+.Select-control {
+  width: 100%;
+}
+
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  font-size: 2em;
+}
+
+.icon-container {
+  display: inline-block;
+}
+
+.searchbox-container {
+  display: inline-block;
+  width: 100%;
+}
