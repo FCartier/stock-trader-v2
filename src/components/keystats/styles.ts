@@ -1,10 +1,5 @@
 import styled from 'react-emotion'
 
-
-export const Container = styled('div')`
-   margin-left: 1em;
-`
-
 export const List = styled('ul')`
   list-style-type: none;
   padding-left: 1em;
