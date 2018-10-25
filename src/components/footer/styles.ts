@@ -5,7 +5,7 @@ export const MarketFoot = styled("ul")`
   font-size: 10px;
   list-style-type: none;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-image: linear-gradient(
     to bottom right,
     ${props => props.theme.marketFooterTop},
@@ -16,10 +16,6 @@ export const MarketFoot = styled("ul")`
   margin: 0;
   height: 5vh;
   color: ${props => props.theme.textColor};
-
-  & li {
-    margin: 0 1rem;
-  }
 `;
 
 export const MarketItem = styled("li");
