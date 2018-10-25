@@ -53,7 +53,8 @@
   }
   
   .full-height {
-    justify-items: center;
+    display:flex;
+    align-items: center;
   }
   
   .search-icon {
