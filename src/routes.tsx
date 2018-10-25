@@ -4,6 +4,7 @@ import ConnectedApp from "./ConnectedApp";
 import Nav from "./Nav";
 import getData from "./utils/GetData"
 
+
 import News from "./components/news";
 import Overview from "./components/overview"
 import KeyStats from "./components/keystats";
@@ -18,6 +19,7 @@ export default () => {
       <div>
         <Nav />
         <Switch>
+          <Route exact path="/"/>
           <Route exact path="/:symbol" component={ConnectedApp} />
           <Route path="/:symbol/overview" component={getData(Overview)} />
           <Route path="/:symbol/chart" component={getData(Chart)} />
