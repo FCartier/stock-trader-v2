@@ -20,7 +20,7 @@ interface IChartProps {
 export const Chart: React.SFC<IChartProps> = (props) => {
   const { data } = props 
   return (
-    <ResponsiveContainer>
+    <ResponsiveContainer height="100%">
       <AreaChart
         data={data}
         margin={{ top: 5, bottom: 0 }}
