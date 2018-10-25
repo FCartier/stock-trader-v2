@@ -2,8 +2,7 @@ import styled from 'react-emotion'
 
 export const List = styled('ul')`
   list-style-type: none;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0;
   li  {
     border-bottom: 2px solid grey;
     p  {
@@ -27,6 +26,7 @@ export const Row = styled('div')`
   }
   @media (min-width: 1040px) {
     display: flex;
+    justify-content: space-between;
   }
   @media (max-width: 760px) {
     padding-right: 1rem
@@ -34,5 +34,5 @@ export const Row = styled('div')`
 `
 
 export const Column = styled('div')`
-  flex: 50%
+  width: 49%
 `
