@@ -20,7 +20,7 @@ const getData = (Component: React.ComponentType) => {
       }
 
       public render() {
-        return <ComponentContainer><Component /></ComponentContainer>;
+        return <Component />;
       }
     }
   );
