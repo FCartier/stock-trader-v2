@@ -35,7 +35,13 @@ class Search extends Component<ISearchProps, ISearchState> {
     this.setState({
       selectedOption: selectedOption.value
     })
-    history.replace(`/${selectedOption.value}`)
+    const component = history.location.pathname.split("/")[2]
+    if (component) {
+      history.replace(`/${selectedOption.value}/${component}`)
+    } else {
+      history.replace(`/${selectedOption.value}`)
+    }
+    
   };
 
   public render() {

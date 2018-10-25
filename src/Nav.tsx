@@ -6,7 +6,9 @@ import Search from "./components/search/Search";
 import * as logo from "./images/logo.png";
 
 
-const Nav = () => (
+const Nav = (props: any) => {
+  console.log(props)
+  return (
   <div>
     <div className="flexbox-container">
       <div>
@@ -23,6 +25,6 @@ const Nav = () => (
     </div>
     <hr />
   </div>
-);
+)};
 
 export default Nav; 
