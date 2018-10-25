@@ -12,6 +12,7 @@ import TopPeers from "./components/peers";
 import Chart from "./components/chart"
 
 import IncorrectURL from "./components/reusables/IncerrectURL"
+import StyledContainer from "./components/reusables/styledContainer"
 
 export default () => {
   return (
@@ -19,16 +20,17 @@ export default () => {
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/" />
-          <Route exact path="/:symbol" component={getData(App)} />
-          <Route path="/:symbol/overview" component={getData(Overview)} />
-          <Route path="/:symbol/chart" component={getData(Chart)} />
-          <Route path="/:symbol/peers" component={getData(TopPeers)} />
-          <Route path="/:symbol/keystats" component={getData(KeyStats)} />
-          <Route path="/:symbol/news" component={getData(News)} />
+          <Route exact={true} path="/" />
+          <Route exact={true} path="/:symbol" component={getData(App)} />
+          <Route path="/:symbol/overview" component={getData(Overview, StyledContainer)} />
+          <Route path="/:symbol/chart" component={getData(Chart, StyledContainer)} />
+          <Route path="/:symbol/peers" component={getData(TopPeers, StyledContainer)} />
+          <Route path="/:symbol/keystats" component={getData(KeyStats, StyledContainer)} />
+          <Route path="/:symbol/news" component={getData(News, StyledContainer)} />
           <Route component={IncorrectURL}/>
         </Switch>
       </div>
     </BrowserRouter>
   );
 };
+

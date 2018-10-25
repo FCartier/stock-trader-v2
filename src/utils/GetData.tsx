@@ -3,7 +3,8 @@ import { selectedSymbol } from "../components/search/searchActions"
 import { connect } from "react-redux"
 import { IMapProps, Props } from "./getDataTypes/types"
 
-const getData = (Component: React.ComponentType) => {
+
+const getData = (Component: React.ComponentType, Container?: React.ComponentType) => {
   return connect<null, IMapProps, {}>(
     null,
     { selectedSymbol }
@@ -16,10 +17,15 @@ const getData = (Component: React.ComponentType) => {
       public render() {
         const { symbol } = this.props.match.params;
         this.props.selectedSymbol(symbol);
-        return <Component />;
+        return Container 
+             ? <Container>
+                 <Component />
+               </Container> 
+             : <Component/>;
       }
     }
   );
 }; 
+
 
 export default getData;
