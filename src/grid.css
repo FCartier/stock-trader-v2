@@ -38,3 +38,17 @@
 .Grid--1of3 > .main {
   width: 64%;
 }
+
+@media (max-width: 850px) {
+  .Grid {
+    flex-wrap: wrap;
+  }
+
+  .Grid-cell {
+    width: 100%;
+  }
+
+  .Grid--1of3 > .main {
+    width: 100%;
+  }
+}
