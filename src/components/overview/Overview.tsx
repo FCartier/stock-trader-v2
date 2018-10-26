@@ -13,7 +13,7 @@ const Overview: React.SFC<IOverviewProps> = ({overview}) => {
   return !(typeof overview === "undefined" || overview.companyName === "") ? (
     <div>
       <div className='overview'>
-        <SectionHeader title="COMPANY OVERVIEW"/>
+        <SectionHeader title="COMPANY OVERVIEW" />
         <div className='overview-content'>
           <h2>{overview.companyName}</h2>
           <p>{overview.website}</p>

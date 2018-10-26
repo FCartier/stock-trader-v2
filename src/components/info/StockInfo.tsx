@@ -1,7 +1,8 @@
 import React from "react";
 import { IStockInfo } from "./types";
-import { StockInfoBox, stockInfo, LastUpdate, MarketStatus } from "./styles"
+import { StockInfoBox, stockInfo, LastUpdate, MarketStatus, List, Item, link } from "./styles"
 import { isStockTrading } from "./utils/marketStatus"
+import { Link } from "react-router-dom"
 
 const StockInfo: React.SFC<IStockInfo> = ({ keystats }) => {
   const {
@@ -9,17 +10,36 @@ const StockInfo: React.SFC<IStockInfo> = ({ keystats }) => {
     sector,
     latestUpdate,
     closeTime,
-    openTime
+    openTime, 
+    symbol
   } = keystats;
 
+  console.log(keystats)
   
   return keystats.primaryExchange ? (
     <div className={stockInfo}>
         {primaryExchange && <StockInfoBox>{primaryExchange}</StockInfoBox>}
         {sector && <StockInfoBox>{sector}</StockInfoBox>}
-       
         {isStockTrading(openTime, closeTime) ? <MarketStatus>Market Open</MarketStatus> : <MarketStatus>Market Closed</MarketStatus>}
         <LastUpdate>Real-Time Price as of {formatTime(latestUpdate)}</LastUpdate>
+        <List>
+          <Item>
+            <Link className={link} to={`${symbol}/chart`}>
+            Chart
+            </Link>
+          </Item>
+          <Item>
+             <Link className={link} to={`${symbol}/overview`}>
+               Overview
+              </Link>
+          </Item>
+          <Item>
+            <Link className={link} to={`${symbol}/keystats`}>
+              KeyStats
+            </Link>
+          </Item>
+        </List>
+
     </div>
   ) : null;
 };

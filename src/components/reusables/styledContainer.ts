@@ -1,5 +1,6 @@
 import styled from "react-emotion"
 
+
 const StyledContainer = styled('div')`
   @media(min-width: 1000px) {
     max-width: 50%;

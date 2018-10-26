@@ -8,7 +8,7 @@ const News: React.SFC<NewsList> = ({news}) => {
   return renderCondition(news) ? (
     <div>
       <Container>
-        <SectionHeader title="NEWS" />
+        <SectionHeader title="NEWS"/>
         <List>
           {news
           .slice(0, 5)

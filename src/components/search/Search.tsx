@@ -9,8 +9,6 @@ import { Route } from 'react-router-dom'
 
 /* tslint:disable */
 import * as searchIcon from "./images/search.png";
-import { any } from "prop-types";
-import { search } from "./searchReducer";
 
 
 interface ISearchProps {

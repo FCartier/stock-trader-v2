@@ -15,10 +15,8 @@ interface AppProps {
 }
 
 class App extends React.Component<AppProps> {
-
   
   public render() {
- 
     return (
       <div>
         <div className="flexbox-container">

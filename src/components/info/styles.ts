@@ -29,3 +29,22 @@ export const MarketStatus = styled('p')`
   padding: 3px;
   margin: 2px;
 `
+
+export const List = styled("ul")` 
+    padding: 5px 10px 0px 15px;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+`;
+
+export const Item = styled("li")`
+    display: block;
+    flex: 0 1 auto; 
+    list-style-type: none;
+    padding-right: 1rem;
+`;
+
+export const link = css`
+  color: white;
+`
