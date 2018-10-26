@@ -5,11 +5,7 @@ exports[`peers component peers component should render correctly with fetch fail
   <Component
     title="TOP PEERS"
   />
-  <div>
-    <NoData
-      componentName="top peers"
-    />
-  </div>
+  <div />
 </div>
 `;
 
@@ -21,28 +17,30 @@ exports[`peers component peers component should render properly with fetch succe
     title="TOP PEERS"
   />
   <div>
-    <Styled(ul)>
-      <Styled(li)
-        key="0"
-      >
-        AAPL
-      </Styled(li)>
-      <Styled(li)
-        key="1"
-      >
-        FB
-      </Styled(li)>
-      <Styled(li)
-        key="2"
-      >
-        GOOG
-      </Styled(li)>
-      <Styled(li)
-        key="3"
-      >
-        GOOGL
-      </Styled(li)>
-    </Styled(ul)>
+    <div>
+      <Styled(ul)>
+        <Styled(li)
+          key="0"
+        >
+          AAPL
+        </Styled(li)>
+        <Styled(li)
+          key="1"
+        >
+          FB
+        </Styled(li)>
+        <Styled(li)
+          key="2"
+        >
+          GOOG
+        </Styled(li)>
+        <Styled(li)
+          key="3"
+        >
+          GOOGL
+        </Styled(li)>
+      </Styled(ul)>
+    </div>
   </div>
 </div>
 `;
