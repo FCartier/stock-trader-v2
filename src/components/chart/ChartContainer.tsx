@@ -19,16 +19,16 @@ export const ChartContainer: React.SFC<IChartContainerProps> = ({
 }) => {
   return status !== fetchStatus.pending ? (
     <div>
-      <Container>
-        {status === fetchStatus.success ? (
-          <>
-            <ChartFilter />
+      {status === fetchStatus.success ? (
+        <>
+          <ChartFilter />
+          <Container>
             <Chart data={formatChartData(chart)} />
-          </>
-        ) : (
-          <NoData componentName="chart" />
-        )}
-      </Container>
+          </Container>
+        </>
+      ) : (
+        <NoData componentName="chart" />
+      )}
     </div>
   ) : null;
 };

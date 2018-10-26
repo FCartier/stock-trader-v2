@@ -585,8 +585,6 @@ exports[`chart component chart component should render properly 1`] = `
     margin={
       Object {
         "bottom": 0,
-        "left": 20,
-        "right": 30,
         "top": 5,
       }
     }
@@ -720,18 +718,16 @@ exports[`chart component chart container chart container component should render
 
 exports[`chart component chart container chart container component should render properly with fetch failed 1`] = `
 <div>
-  <Styled(div)>
-    <NoData
-      componentName="chart"
-    />
-  </Styled(div)>
+  <NoData
+    componentName="chart"
+  />
 </div>
 `;
 
 exports[`chart component chart container chart container component should render properly with fetch success 1`] = `
 <div>
+  <Connect(ChartFilter) />
   <Styled(div)>
-    <Connect(ChartFilter) />
     <Component
       data={
         Array [

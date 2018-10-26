@@ -4,7 +4,8 @@ export const data: IPriceProps = {
   price: {
     change: -0.96,
     changePercent: -0.432,
-    askPrice: 221.19
+    askPrice: 221.19,
+    lastSalePrice: 221.29,
   },
   keystats: {
     previousClose: 221.19,

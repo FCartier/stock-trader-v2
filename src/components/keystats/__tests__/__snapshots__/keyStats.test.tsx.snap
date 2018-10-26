@@ -4,90 +4,86 @@ exports[`keystats component keystats component should render properly before fet
 
 exports[`keystats component keystats component should render properly with fetch failed 1`] = `
 <div>
-  <Styled(div)>
-    <Component
-      title="KEY STATS"
-    />
-    <NoData
-      componentName="key stats"
-    />
-  </Styled(div)>
+  <Component
+    title="KEY STATS"
+  />
+  <NoData
+    componentName="key stats"
+  />
 </div>
 `;
 
 exports[`keystats component keystats component should render properly with fetch success 1`] = `
 <div>
+  <Component
+    title="KEY STATS"
+  />
   <Styled(div)>
-    <Component
-      title="KEY STATS"
-    />
     <Styled(div)>
-      <Styled(div)>
-        <Styled(ul)>
-          <li>
-            <p>
-              Previous Close
-            </p>
-             
-            <h5>
-              221.19
-            </h5>
-          </li>
-          <li>
-            <p>
-              Day Range
-            </p>
-             
-            <h5>
-              219.34
-              -
-              222.64
-            </h5>
-          </li>
-          <li>
-            <p>
-              Volume
-            </p>
-             
-            <h5>
-              22688651
-            </h5>
-          </li>
-        </Styled(ul)>
-      </Styled(div)>
-      <Styled(div)>
-        <Styled(ul)>
-          <li>
-            <p>
-              Open 
-            </p>
-             
-            <h5>
-              222.15
-            </h5>
-          </li>
-          <li>
-            <p>
-              52 Week Range
-            </p>
-             
-            <h5>
-              150.24
-              -
-              233.47
-            </h5>
-          </li>
-          <li>
-            <p>
-               Total Avg. Volume
-            </p>
-             
-            <h5>
-              34502868
-            </h5>
-          </li>
-        </Styled(ul)>
-      </Styled(div)>
+      <Styled(ul)>
+        <li>
+          <p>
+            Previous Close
+          </p>
+           
+          <h5>
+            221.19
+          </h5>
+        </li>
+        <li>
+          <p>
+            Day Range
+          </p>
+           
+          <h5>
+            219.34
+            -
+            222.64
+          </h5>
+        </li>
+        <li>
+          <p>
+            Volume
+          </p>
+           
+          <h5>
+            22688651
+          </h5>
+        </li>
+      </Styled(ul)>
+    </Styled(div)>
+    <Styled(div)>
+      <Styled(ul)>
+        <li>
+          <p>
+            Open 
+          </p>
+           
+          <h5>
+            222.15
+          </h5>
+        </li>
+        <li>
+          <p>
+            52 Week Range
+          </p>
+           
+          <h5>
+            150.24
+            -
+            233.47
+          </h5>
+        </li>
+        <li>
+          <p>
+             Total Avg. Volume
+          </p>
+           
+          <h5>
+            34502868
+          </h5>
+        </li>
+      </Styled(ul)>
     </Styled(div)>
   </Styled(div)>
 </div>

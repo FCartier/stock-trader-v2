@@ -13,8 +13,8 @@ import { Gradient, Logo, ThemeChangeButton } from "./globalStyles";
 
 // @ts-ignore
 import * as logo from "./images/logo.png";
-import { ThemeProvider } from 'emotion-theming';
-import { darkTheme, lightTheme } from './themes';
+import { ThemeProvider } from "emotion-theming";
+import { darkTheme, lightTheme } from "./themes";
 import "./grid.css";
 
 interface IAppState {
@@ -64,30 +64,26 @@ class App extends React.Component<any, IAppState> {
 
             <hr />
 
-            <div className="flexbox-container">
-              <StockInfo />
-            </div>
-            <div className="Grid Grid--gutters Grid--1of3">
-              <div className="Grid-cell main">
-                <div>
+            <div className="main-container">
+              <div className="flexbox-container info-container">
+                <StockInfo />
+              </div>
+              <div className="Grid Grid--gutters Grid--1of3">
+                <div className="Grid-cell main">
                   <Chart />
                 </div>
-              </div>
 
-              <div className="Grid-cell">
-                <div>
+                <div className="Grid-cell">
                   <News />
                 </div>
               </div>
-            </div>
 
-            <div className="Grid Grid--gutters Grid--1of3">
-              <div className="Grid-cell main">
-                <KeyStats />
-              </div>
+              <div className="Grid Grid--gutters Grid--1of3">
+                <div className="Grid-cell main">
+                  <KeyStats />
+                </div>
 
-              <div className="Grid-cell">
-                <div>
+                <div className="Grid-cell">
                   <Overview />
                   <TopPeers />
                 </div>
