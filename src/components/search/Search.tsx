@@ -5,8 +5,9 @@ import { selectedSymbol, SelectedSymbol } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
 import "./style.css"
+import { Route } from 'react-router-dom'
 
-// @ts-ignore
+/* tslint:disable */
 import * as searchIcon from "./images/search.png";
 
 
@@ -27,11 +28,18 @@ class Search extends Component<ISearchProps, ISearchState> {
     }
   }
 
-  public handleChange = (selectedOption: { value: string }) => {
-    this.setState({ selectedOption });
-    if (selectedOption){
-      this.props.selectedSymbol(selectedOption.value);
+
+  public handleSubmit = (history: any, selectedOption: any) => {
+    this.setState({
+      selectedOption: selectedOption.value
+    })
+    const component = history.location.pathname.split("/")[2]
+    if (component) {
+      history.replace(`/${selectedOption.value}/${component}`)
+    } else {
+      history.replace(`/${selectedOption.value}`)
     }
+    
   };
 
   public render() {
@@ -42,23 +50,32 @@ class Search extends Component<ISearchProps, ISearchState> {
           <img src={searchIcon} alt="search icon" className="search-icon" />
         </div>
         <div className="searchbox-container">
-          <Select
-            value={selectedOption}
-            onChange={this.handleChange}
-            options={this.props.results}
-            id="select-component"
+        <Route render={({history}) => (
+         <Select
+           value={selectedOption}
+           onChange={(selectedOption) => this.handleSubmit(history, selectedOption)}
+           options={this.props.results}
+           id="select-component"
           />
+         )}/>    
         </div>
-
       </div>
     );
   }
 }
 
+interface stateToProps {
+    search: { 
+      symbols: [], 
+      symbol: string
+    }
+  
+}
 
-const mapStateToProps = (state: { search: { symbols: [] } }) => {
+const mapStateToProps = (state: stateToProps) => {
   return {
-    results: formatSearchData(state.search.symbols)
+    results: formatSearchData(state.search.symbols),
+    symbol: state.search.symbol
   }
 }
 

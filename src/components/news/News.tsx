@@ -10,6 +10,7 @@ const News: React.SFC<NewsList> = ({ news, status }) => {
   return status !== fetchStatus.pending ? (
     <div>
       <Container>
+
         <SectionHeader title="NEWS" />
         {status === fetchStatus.success ? (
           <List>

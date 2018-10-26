@@ -4,8 +4,6 @@ import Overview from "./components/overview";
 import KeyStats from "./components/keystats";
 import TopPeers from "./components/peers";
 import MarketFooter from "./components/footer";
-import Price from "./components/price";
-import Search from "./components/search/Search";
 import StockInfo from "./components/info";
 import Chart from "./components/chart";
 
@@ -16,86 +14,49 @@ import * as logo from "./images/logo.png";
 import { ThemeProvider } from "emotion-theming";
 import { darkTheme, lightTheme } from "./themes";
 import "./grid.css";
+import { selectedSymbol, SelectedSymbol } from "./components/search/searchActions";
 
-interface IAppState {
-  isDark: boolean;
-  theme: object;
+interface AppProps {
+  selectedSymbol?: (input: string) => SelectedSymbol;
+  symbol?: string
 }
 
-class App extends React.Component<any, IAppState> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      isDark: true,
-      theme: darkTheme
-    };
-  }
-
-  public handleClick() {
-    const isDark = !this.state.isDark;
-    this.setState({
-      isDark,
-      theme: isDark ? darkTheme : lightTheme
-    });
-  }
-
+class App extends React.Component<AppProps> {
+  
   public render() {
     return (
-      <ThemeProvider theme={this.state.theme}>
-        <div>
-          <Gradient>
-            <div className="flexbox-container">
-              <div>
-                <Logo src={logo} alt="Adaptive Logo" />
-                <ThemeChangeButton onClick={() => this.handleClick()}>
-                  Change Theme
-                </ThemeChangeButton>
-              </div>
-            </div>
-
-            <div className="flexbox-container searchbar-container">
-              <div className="searchbar">
-                <Search />
-              </div>
-              <div className="price-information">
-                <Price />
-              </div>
-            </div>
-
-            <hr />
-
-            <div className="main-container">
-              <div className="flexbox-container info-container">
-                <StockInfo />
-              </div>
-              <div className="Grid Grid--gutters Grid--1of3">
-                <div className="Grid-cell main">
-                  <Chart />
-                </div>
-
-                <div className="Grid-cell">
-                  <News />
-                </div>
-              </div>
-
-              <div className="Grid Grid--gutters Grid--1of3">
-                <div className="Grid-cell main">
-                  <KeyStats />
-                </div>
-
-                <div className="Grid-cell">
-                  <Overview />
-                  <TopPeers />
-                </div>
-              </div>
-            </div>
-          </Gradient>
-          <footer className="footer">
-            <MarketFooter />
-          </footer>
+      <div>
+        <div className="flexbox-container">
+          <StockInfo />
         </div>
-      </ThemeProvider>
-    );
+        <div className="Grid Grid--gutters Grid--1of3">
+          <div className="Grid-cell main">
+            <div>
+              <Chart />
+            </div>
+          </div>
+          <div className="Grid-cell">
+            <div>
+              <News />
+            </div>
+          </div>
+        </div>
+        <div className="Grid Grid--gutters Grid--1of3">
+          <div className="Grid-cell main">
+            <KeyStats />
+          </div>
+          <div className="Grid-cell">
+            <div>
+              <Overview />
+              <TopPeers />
+            </div>
+          </div>
+        </div>
+        <footer className="footer">
+          <MarketFooter />
+        </footer>
+      </div>
+    ) 
   }
 }
 
