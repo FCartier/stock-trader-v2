@@ -5,5 +5,6 @@ export interface IStockInfo {
     latestUpdate: number;
     openTime: number;
     closeTime: number;
+    symbol: string;
   };
 }

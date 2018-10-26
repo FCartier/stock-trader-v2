@@ -15,6 +15,13 @@ interface IState {
 }
 
 export class ChartFilter extends React.Component<IChartFilter> {
+  constructor(props: any) {
+    super(props)
+  }
+
+  public componendDidMount() {
+    console.log(this.props)
+  }
   public filter = (event: any) => {
     this.props.chartFilter(this.props.input, event.target.value);
   };

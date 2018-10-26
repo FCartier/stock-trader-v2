@@ -36,7 +36,7 @@ export const Gradient = styled('div')`
   background-image: linear-gradient(to bottom right,
      ${props => props.theme.backgroundColorTop},
      ${props => props.theme.backgroundColorBottom}); 
-  min-height: 95vh;
+  min-height: 100vh;
   flex: 1;
   color: ${props => props.theme.textColor};
 `

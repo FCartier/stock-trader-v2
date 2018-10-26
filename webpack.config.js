@@ -5,7 +5,10 @@ const path = require('path'),
  webpack = require('webpack');
 
  let config = {
-    entry: ['./src/index.tsx'],
+    entry: ["babel-polyfill", './src/index.tsx'],
+    output: {
+        publicPath: '/'
+    },
     module: {
         rules: [
             { test: /\.(js|jsx)$/, use: "babel-loader"},
