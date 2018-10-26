@@ -6,14 +6,14 @@ exports[`price should render properly with data 1`] = `
     <Styled(sup)>
       $
     </Styled(sup)>
-    221.10
+    221.19
   </Styled(div)>
   <Styled(div)
     className="css-1dt5uw9"
   >
-    -0.090
+    0.000
      | 
-    -0.000
+    0.000
     <sup>
       %
     </sup>
