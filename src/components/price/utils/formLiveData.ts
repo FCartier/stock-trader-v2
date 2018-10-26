@@ -3,10 +3,10 @@ import { IPrice, IKeyStats } from "../types";
 export const formLiveData = (price: IPrice, keystats: IKeyStats) => {
     if (price.askPrice && keystats.previousClose) {
       return {
-        lastSalePrice: price.askPrice,
-        change: (price.askPrice - keystats.previousClose).toFixed(3),
+        lastSalePrice: price.lastSalePrice,
+        change: (price.lastSalePrice - keystats.previousClose).toFixed(3),
         changePercent:
-          ((price.askPrice - keystats.previousClose) / keystats.previousClose).toFixed(3)
+          ((price.lastSalePrice - keystats.previousClose) / keystats.previousClose).toFixed(3)
       };
     } else if (keystats.previousClose && !price.askPrice) {
       console.log("static triggered")

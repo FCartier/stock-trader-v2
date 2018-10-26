@@ -6,7 +6,8 @@ export const Container = styled('div')`
 
 export const Filter = styled('div')`
   text-align: right;
-  margin-right: 90px;
+  margin-right: 30px;
+  margin-bottom: 5px;
   button {
     background-color: Transparent;
     background-repeat: no-repeat;
