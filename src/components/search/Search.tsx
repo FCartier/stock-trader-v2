@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import * as React from "react";
 import Select from "react-virtualized-select";
 import "react-virtualized-select/styles.css";
 import { selectedSymbol, SelectedSymbol } from "./searchActions";
@@ -10,22 +10,21 @@ import { Route } from 'react-router-dom'
 /* tslint:disable */
 import * as searchIcon from "./images/search.png";
 
-
 interface ISearchProps {
   results: any;
   selectedSymbol: (input: string) => void;
 }
 
 interface ISearchState {
-  selectedOption: null | object
+  selectedOption: null | object;
 }
 
-class Search extends Component<ISearchProps, ISearchState> {
+export class Search extends React.Component<ISearchProps, ISearchState> {
   constructor(props: ISearchProps) {
-    super(props)
+    super(props);
     this.state = {
       selectedOption: null
-    }
+    };
   }
 
 
@@ -81,14 +80,17 @@ const mapStateToProps = (state: stateToProps) => {
 
 const mapDispatchToProps = {
   selectedSymbol
-}
+};
 
 interface IMapProps {
   selectedSymbol?: (input: string) => SelectedSymbol;
 }
 
 interface IMapState {
-  results: Array<{ value: string, label: string }>
+  results: Array<{ value: string; label: string }>;
 }
 
-export default connect<IMapState, IMapProps, {}>(mapStateToProps, mapDispatchToProps)(Search);
+export default connect<IMapState, IMapProps, {}>(
+  mapStateToProps,
+  mapDispatchToProps
+)(Search);

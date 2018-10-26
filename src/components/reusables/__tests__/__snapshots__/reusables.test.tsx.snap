@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reusables NoData should render correctly 1`] = `
+<h5>
+  No 
+  test
+   currently available for this company.
+</h5>
+`;
+
+exports[`reusables SectionHeader should render correctly 1`] = `
+<Styled(div)>
+  <h3>
+    Test
+  </h3>
+</Styled(div)>
+`;

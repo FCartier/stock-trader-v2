@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<MarketFooter /> should render properly 1`] = `
-<ul
-  className="css-k5mi76"
->
+exports[`market footer market footer should render properly before fetch 1`] = `""`;
+
+exports[`market footer market footer should render properly with fetch failed 1`] = `
+<Styled(ul)>
+  No market footer available
+</Styled(ul)>
+`;
+
+exports[`market footer market footer should render properly with fetch success 1`] = `
+<Styled(ul)>
   <li
     key="0"
   >
@@ -52,5 +58,5 @@ exports[`<MarketFooter /> should render properly 1`] = `
       %
     </p>
   </li>
-</ul>
+</Styled(ul)>
 `;

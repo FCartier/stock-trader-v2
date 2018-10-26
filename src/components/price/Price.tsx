@@ -1,5 +1,5 @@
 import * as React from "react";
-import { formLiveData } from "./utils/formLiveData"
+import formLiveData  from "./utils/formLiveData"
 import { IPriceProps } from "./types"
 import { Container, CurrencyTag, orange, green, StockPrice, StockChange } from "./styles";
 

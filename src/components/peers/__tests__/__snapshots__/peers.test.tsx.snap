@@ -1,6 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`peers component peers component should render properly 1`] = `
+exports[`peers component peers component should render correctly with fetch failed 1`] = `
+<div>
+  <Component
+    title="TOP PEERS"
+  />
+  <div>
+    <NoData
+      componentName="top peers"
+    />
+  </div>
+</div>
+`;
+
+exports[`peers component peers component should render properly before fetch 1`] = `""`;
+
+exports[`peers component peers component should render properly with fetch success 1`] = `
 <div>
   <Component
     title="TOP PEERS"

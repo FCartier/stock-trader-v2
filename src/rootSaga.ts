@@ -12,7 +12,7 @@ export const APP_STARTED = "APP_STARTED";
 export const FETCH_SYMBOLS_SUCCESS = "FETCH_SYMBOLS_SUCCESS"
 
 
-function* appStartedWorker() {
+export function* appStartedWorker() {
     yield take([APP_STARTED]);
     try {
       const symbols = yield call(api.getSymbols);
