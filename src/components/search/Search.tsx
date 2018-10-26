@@ -13,10 +13,11 @@ import * as searchIcon from "./images/search.png";
 interface ISearchProps {
   results: any;
   selectedSymbol: (input: string) => void;
+  symbol: string;
 }
 
 interface ISearchState {
-  selectedOption: null | object;
+  selectedOption: null | object | string;
 }
 
 export class Search extends React.Component<ISearchProps, ISearchState> {
@@ -32,6 +33,7 @@ export class Search extends React.Component<ISearchProps, ISearchState> {
     this.setState({
       selectedOption: selectedOption.value
     })
+    console.log(selectedOption.value)
     const component = history.location.pathname.split("/")[2]
     if (component) {
       history.replace(`/${selectedOption.value}/${component}`)
@@ -41,8 +43,17 @@ export class Search extends React.Component<ISearchProps, ISearchState> {
     
   };
 
+  public shouldUpdateSearch() {
+    if (this.props.symbol !== "" && this.state.selectedOption == null) {
+      this.setState({
+        selectedOption: this.props.symbol.toUpperCase()
+      })
+    }
+  }
+
   public render() {
     const { selectedOption } = this.state;
+    this.shouldUpdateSearch()
     return (
       <div className="full-height">
         <div className="icon-container">
@@ -88,6 +99,7 @@ interface IMapProps {
 
 interface IMapState {
   results: Array<{ value: string; label: string }>;
+  symbol: string
 }
 
 export default connect<IMapState, IMapProps, {}>(
