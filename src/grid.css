@@ -1,124 +1,54 @@
 .flexbox-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 2em;
-    margin-right: 2em;
-  }
-  
-  .main-container {
-    display: flex;
-  }
-  
-  .sidebar {
-    order: 1;
-    flex: 1;
-    flex-basis: auto;
-    min-height: 666px;
-    margin-right: 3em;
-    margin-left: 3em;
-  }
-  
-  .main {
-    margin-top: 2em;
-    min-width: 70%;
-  }
-  
-  .sidebar-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: inherit;
-  }
-  
-  .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: inherit;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.info-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.price-information {
+  width: 30%;
+  text-align: right;
+}
+
+.main-container {
+  padding: 1rem 2rem;
+}
+
+.Grid {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  flex-wrap: nowrap;
+}
+
+.Grid--gutters {
+  height: 50%;
+}
+
+.Grid-cell {
+  width: 34%;
+}
+
+.Grid--1of3 > .main {
+  width: 64%;
+}
+
+@media (max-width: 850px) {
   .Grid {
-    display: flex;
-    flex-flow: row;
     flex-wrap: wrap;
   }
-  
+
   .Grid-cell {
-    flex: 1;
+    width: 100%;
   }
-  
-  .Grid--gutters {
-    margin-left: -1em;
+
+  .Grid--1of3 > .main {
+    width: 100%;
   }
-  .Grid--gutters .Grid-cell {
-    padding-left: 1em;
-  }
-  .Grid--gutters .Grid--nested .Grid-cell:first-of-type .Demo {
-    margin-right: 1em;
-  }
-  
-  .Grid--1of2 > .Grid-cell,
-  .Grid--1of4 > .Grid-cell:first-of-type,
-  .Grid--1of3 > .Grid-cell:first-of-type {
-    flex: 0 0 100%;
-  }
-  
-  @media (min-width: 30em) {
-    .Grid--1of2 > .Grid-cell {
-      flex: 0 0 50%;
-    }
-  
-    .Grid--1of6 > .Grid-cell:first-of-type {
-      flex: 0 0 30%;
-    }
-  
-    .Grid--1of4 > .Grid-cell:first-of-type {
-      flex: 0 0 50%;
-    }
-  
-    .Grid--1of3 > .Grid-cell:first-of-type {
-      flex: 0 0 100%;
-    }
-  }
-  @media (min-width: 48em) {
-    .Grid--1of2 > .Grid-cell {
-      flex: 0 0 50%;
-    }
-  
-    .Grid--1of6 > .Grid-cell:first-of-type {
-      flex: 0 0 16.6666%;
-    }
-  
-    .Grid--1of4 > .Grid-cell:first-of-type {
-      flex: 0 0 25%;
-    }
-  
-    .Grid--1of3 > .Grid-cell:first-of-type {
-      flex: 0 0 30%;
-    }
-  
-    .Grid--gutters.Grid--nested .Grid-cell:first-of-type .Demo {
-      margin-right: 0;
-    }
-  }
-  @media (min-width: 200px) and (max-width: 1060px) {
-    .flexbox-container {
-      flex-wrap: wrap;
-    }
-  }
-  @media all and (max-width: 760px) {
-    .news {
-      margin-top: 4rem;
-    }
-  
-    .news,
-  .overview,
-  .top-peers {
-      margin-left: 1rem;
-    }
-  
-    .overview-content {
-      padding: 1rem;
-    }
-  }
+}

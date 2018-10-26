@@ -20,10 +20,10 @@ interface IChartProps {
 export const Chart: React.SFC<IChartProps> = (props) => {
   const { data } = props 
   return (
-    <ResponsiveContainer>
+    <ResponsiveContainer height="100%">
       <AreaChart
         data={data}
-        margin={{ top: 5, right: 30, left: 20, bottom: 0 }}
+        margin={{ top: 5, bottom: 0 }}
       >
       <defs>
       <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
