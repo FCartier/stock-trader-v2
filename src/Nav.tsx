@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Logo } from "./globalStyles";
+import { Logo, nav } from "./globalStyles";
 import Price from "./components/price";
 import Search from "./components/search/Search";
 // @ts-ignore
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Nav = (props: any) => {
   console.log(props);
   return (
-    <div>
+    <div className={nav}>
       <div className="flexbox-container">
         <div>
           <Logo src={logo} alt="Adaptive Logo" />

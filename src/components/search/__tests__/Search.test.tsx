@@ -9,7 +9,7 @@ configure({ adapter: new Adapter() });
 describe("search", () => {
   test("should render properly", () => {
     const component = shallow(
-      <Search results={formattedSearchData} selectedSymbol={jest.fn()} />
+      <Search results={formattedSearchData} symbol="" selectedSymbol={jest.fn()} />
     );
     expect(component).toMatchSnapshot();
   });

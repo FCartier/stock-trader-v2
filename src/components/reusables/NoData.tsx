@@ -5,7 +5,15 @@ interface NoDataProps {
 }
 
 const NoData: React.SFC<NoDataProps> = (props) => {
-    return <h5>No {props.componentName} currently available for this company.</h5>
+    return <p>No {props.componentName} currently available for this company.</p>
 }
 
+export function renderCondition(length: number) {
+    if (length === 0) {
+      return false;
+    } else {
+      return true;
+    }
+}
+  
 export default NoData;
