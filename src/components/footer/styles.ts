@@ -13,11 +13,10 @@ export const MarketFoot = styled("ul")`
   );
   overflow: hidden;
   width: calc(100% - 2rem);
-  padding: 1vh 1rem 0 1rem;
-  
-  margin: 0;
+  padding-top: 1vh;
   height: 5vh;
   color: ${props => props.theme.textColor};
+   bottom: 0px;
 `;
 
 export const MarketItem = styled("li");
