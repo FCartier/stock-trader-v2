@@ -46,40 +46,38 @@ exports[`app component app component should render properly 1`] = `
       </div>
       <hr />
       <div
-        className="flexbox-container"
-      >
-        <Connect(StockInfo) />
-      </div>
-      <div
-        className="Grid Grid--gutters Grid--1of3"
+        className="main-container"
       >
         <div
-          className="Grid-cell main"
+          className="flexbox-container info-container"
         >
-          <div>
-            <Connect(Component) />
-          </div>
+          <Connect(StockInfo) />
         </div>
         <div
-          className="Grid-cell"
+          className="Grid Grid--gutters Grid--1of3"
         >
-          <div>
+          <div
+            className="Grid-cell main"
+          >
+            <Connect(Component) />
+          </div>
+          <div
+            className="Grid-cell"
+          >
             <Connect(News) />
           </div>
         </div>
-      </div>
-      <div
-        className="Grid Grid--gutters Grid--1of3"
-      >
         <div
-          className="Grid-cell main"
+          className="Grid Grid--gutters Grid--1of3"
         >
-          <Connect(KeyStats) />
-        </div>
-        <div
-          className="Grid-cell"
-        >
-          <div>
+          <div
+            className="Grid-cell main"
+          >
+            <Connect(KeyStats) />
+          </div>
+          <div
+            className="Grid-cell"
+          >
             <Connect(Overview) />
             <Connect(TopPeers) />
           </div>

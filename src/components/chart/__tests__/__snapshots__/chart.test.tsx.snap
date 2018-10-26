@@ -26,8 +26,8 @@ exports[`chart component chart component should render properly 1`] = `
 
 exports[`chart component chart container component should render properly 1`] = `
 <div>
+  <Connect(ChartFilter) />
   <Styled(div)>
-    <Connect(ChartFilter) />
     <Component
       data={
         Array [

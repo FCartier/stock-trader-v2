@@ -2,6 +2,7 @@ export interface IPrice {
     change: number;
     changePercent: number;
     askPrice: number;
+    lastSalePrice: number;
 }
 
 export interface IKeyStats {

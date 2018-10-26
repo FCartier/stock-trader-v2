@@ -6,6 +6,13 @@ import TopPeers from "./components/peers";
 import MarketFooter from "./components/footer";
 import StockInfo from "./components/info";
 import Chart from "./components/chart";
+
+import { Gradient, Logo, ThemeChangeButton } from "./globalStyles";
+
+// @ts-ignore
+import * as logo from "./images/logo.png";
+import { ThemeProvider } from "emotion-theming";
+import { darkTheme, lightTheme } from "./themes";
 import "./grid.css";
 import { selectedSymbol, SelectedSymbol } from "./components/search/searchActions";
 

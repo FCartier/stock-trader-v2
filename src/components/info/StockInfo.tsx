@@ -1,8 +1,10 @@
 import React from "react";
 import { IStockInfo } from "./types";
+
 import { StockInfoBox, stockInfo, LastUpdate, MarketStatus, List, Item, link } from "./styles"
 import { isStockTrading } from "./utils/marketStatus"
 import { Link } from "react-router-dom"
+
 
 const StockInfo: React.SFC<IStockInfo> = ({ keystats }) => {
   const {
@@ -14,10 +16,10 @@ const StockInfo: React.SFC<IStockInfo> = ({ keystats }) => {
     symbol
   } = keystats;
 
-  console.log(keystats)
-  
+
   return keystats.primaryExchange ? (
     <div className={stockInfo}>
+      <div>
         {primaryExchange && <StockInfoBox>{primaryExchange}</StockInfoBox>}
         {sector && <StockInfoBox>{sector}</StockInfoBox>}
         {isStockTrading(openTime, closeTime) ? <MarketStatus>Market Open</MarketStatus> : <MarketStatus>Market Closed</MarketStatus>}
@@ -49,17 +51,14 @@ const StockInfo: React.SFC<IStockInfo> = ({ keystats }) => {
             </Link>
           </Item>
         </List>
-
+      </div>
     </div>
   ) : null;
 };
 
-
 function formatTime(time: number) {
-  const date = new Date(time)
-  return date.toISOString()
+  const date = new Date(time);
+  return date.toISOString();
 }
 
-
 export default StockInfo;
-

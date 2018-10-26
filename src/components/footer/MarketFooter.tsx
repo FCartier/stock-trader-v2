@@ -1,5 +1,7 @@
 import * as React from "react";
-import { MarketFoot } from "./styles"
+import { MarketFoot } from "./styles";
+import { fetchStatus } from "../reusables/fetchStatus";
+import NoData from "../reusables/NoData";
 
 export interface IMarketItem {
   mic: string;
@@ -9,13 +11,24 @@ export interface IMarketItem {
 
 interface IMarketsProps {
   market?: IMarketItem[];
+  status?: fetchStatus;
 }
 
-const MarketFooter: React.SFC<IMarketsProps> = ({ market }) => {
-  return market.length ? (
-      <MarketFoot>
-        {market.map((item: IMarketItem, index: number) => <li key={index}><p><strong>{item.venueName}</strong>  {item.marketPercent}%</p></li>)}
-      </MarketFoot>
+const MarketFooter: React.SFC<IMarketsProps> = ({ market, status }) => {
+  return status !== fetchStatus.pending ? (
+    <MarketFoot>
+      {status === fetchStatus.success ? (
+        market.map((item: IMarketItem, index: number) => (
+          <li key={index}>
+            <p>
+              <strong>{item.venueName}</strong> {item.marketPercent}%
+            </p>
+          </li>
+        ))
+      ) : (
+        "No market footer available"
+      )}
+    </MarketFoot>
   ) : null;
 };
 

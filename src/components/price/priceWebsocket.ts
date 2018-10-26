@@ -11,6 +11,7 @@ let currentSymbol: string;
 
 const priceReceivedHandler = (emit: (fn: PriceAction)=>void, rawData: string) => {
   const data = JSON.parse(rawData)
+  console.log(data)
   if (data.symbol !== currentSymbol){
     console.log("outdated data received", data)
     return 

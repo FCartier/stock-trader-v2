@@ -2,8 +2,9 @@ import Peers from "./TopPeers";
 import { connect } from "react-redux";
 import { GlobalState } from "../../StoreTypes";
 
-const mapStateToProps = (state: GlobalState) => ({
-  peers: state.peers
+const mapStateToProps = ({ peers: { peers, status } }: GlobalState) => ({
+  peers,
+  status
 });
 
 export default connect(
