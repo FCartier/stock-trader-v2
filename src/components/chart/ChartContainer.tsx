@@ -8,6 +8,7 @@ import { Container } from "./styles";
 import { fetchStatus } from "../reusables/fetchStatus";
 import NoData from "../reusables/NoData";
 
+
 interface IChartContainerProps {
   chart?: [];
   status?: fetchStatus;

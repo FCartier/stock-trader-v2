@@ -15,6 +15,7 @@ export interface IOverviewProps {
 const Overview: React.SFC<IOverviewProps> = ({ overview, status }) => {
   return status !== fetchStatus.pending ? (
     <div>
+
       <div className="overview">
         <SectionHeader title="COMPANY OVERVIEW" />
         <div className="overview-content">
