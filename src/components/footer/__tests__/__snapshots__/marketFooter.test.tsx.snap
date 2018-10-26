@@ -2,7 +2,7 @@
 
 exports[`<MarketFooter /> should render properly 1`] = `
 <ul
-  className="css-125ik1j"
+  className="css-k5mi76"
 >
   <li
     key="0"
