@@ -42,7 +42,7 @@ export const Item = styled("li")`
     display: block;
     flex: 0 1 auto; 
     list-style-type: none;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 `;
 
 export const link = css`

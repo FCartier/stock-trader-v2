@@ -38,6 +38,16 @@ const StockInfo: React.SFC<IStockInfo> = ({ keystats }) => {
               KeyStats
             </Link>
           </Item>
+          <Item>
+            <Link className={link} to={`${symbol}/news`}>
+              News
+            </Link>
+          </Item>
+          <Item>
+            <Link className={link} to={`${symbol}/peers`}>
+              Peers
+            </Link>
+          </Item>
         </List>
 
     </div>
