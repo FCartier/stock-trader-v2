@@ -26,36 +26,35 @@ class App extends React.Component<AppProps> {
   public render() {
     return (
       <div>
-        <div className="flexbox-container">
-          <StockInfo />
-        </div>
-        <div className="Grid Grid--gutters Grid--1of3">
-          <div className="Grid-cell main">
-            <div>
-              <Chart />
+       <div className="main-container">
+              <div className="flexbox-container info-container">
+                <StockInfo />
+              </div>
+              <div className="Grid Grid--gutters Grid--1of3">
+                <div className="Grid-cell main">
+                  <Chart />
+                </div>
+
+                <div className="Grid-cell">
+                  <News />
+                </div>
+              </div>
+
+              <div className="Grid Grid--gutters Grid--1of3">
+                <div className="Grid-cell main">
+                  <KeyStats />
+                </div>
+
+                <div className="Grid-cell">
+                  <Overview />
+                  <TopPeers />
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="Grid-cell">
-            <div>
-              <News />
-            </div>
-          </div>
+          <footer className="footer">
+            <MarketFooter />
+          </footer>
         </div>
-        <div className="Grid Grid--gutters Grid--1of3">
-          <div className="Grid-cell main">
-            <KeyStats />
-          </div>
-          <div className="Grid-cell">
-            <div>
-              <Overview />
-              <TopPeers />
-            </div>
-          </div>
-        </div>
-        <footer className="footer">
-          <MarketFooter />
-        </footer>
-      </div>
     ) 
   }
 }
