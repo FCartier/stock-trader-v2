@@ -5,7 +5,7 @@ import { FETCH_NEWS_FAILED, FETCH_NEWS_SUCCESS } from "./newsActions";
 
 /**** Workers ****/
 
-function* newsWorker({ payload }: SelectedSymbol) {
+export function* newsWorker({ payload }: SelectedSymbol) {
   try {
     const news = yield call(api.getNews, payload);
     yield put({ type: FETCH_NEWS_SUCCESS, payload: news });

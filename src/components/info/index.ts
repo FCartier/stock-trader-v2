@@ -1,3 +1,3 @@
-import InfoContainer from "./infoContainer"
+import InfoContainer from "./infoContainer";
 
-export default InfoContainer
+export default InfoContainer;

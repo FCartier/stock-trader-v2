@@ -1,8 +1,9 @@
-interface SymbolItem {
+export interface SymbolItem {
     date: string,
     iexId: string, 
     isEnabled: boolean, 
-    name: string, 
+    name: string,
+    symbol: string, 
     type: string
 }
 

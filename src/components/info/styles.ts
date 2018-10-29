@@ -1,5 +1,5 @@
-import styled from 'react-emotion'
-import { css } from "emotion"
+import styled from 'react-emotion';
+import { css } from "emotion";
 
 
 export const StockInfoBox = styled('span')`
@@ -9,11 +9,9 @@ export const StockInfoBox = styled('span')`
   float: left;
   margin: 2px;
 `
+
 export const stockInfo = css`
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 `
 
 export const LastUpdate = styled('span')`

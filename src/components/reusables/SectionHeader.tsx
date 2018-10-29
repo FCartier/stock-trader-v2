@@ -1,4 +1,5 @@
-import React from "react";
+import * as React from "react";
+
 import { CategoryHeader } from "./styles"
 import { Link } from "react-router-dom"
 import { connect } from "react-redux"

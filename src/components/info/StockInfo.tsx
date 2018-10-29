@@ -5,7 +5,6 @@ import { StockInfoBox, stockInfo, LastUpdate, MarketStatus, List, Item, link } f
 import { isStockTrading } from "./utils/marketStatus"
 import { Link } from "react-router-dom"
 
-
 const StockInfo: React.SFC<IStockInfo> = ({ keystats }) => {
   const {
     primaryExchange,
@@ -15,7 +14,6 @@ const StockInfo: React.SFC<IStockInfo> = ({ keystats }) => {
     openTime, 
     symbol
   } = keystats;
-
 
   return keystats.primaryExchange ? (
     <div className={stockInfo}>

@@ -5,7 +5,7 @@ import { api } from "../../utils/apiUtil";
 
 /**** Workers ****/
 
-function* keyStatsWorker({ payload }: SelectedSymbol) {
+export function* keyStatsWorker({ payload }: SelectedSymbol) {
   try {
     const keystats = yield call(api.getKeyStats, payload);
     yield put({ type: FETCH_KEYSTATS_SUCCESS, payload: keystats });

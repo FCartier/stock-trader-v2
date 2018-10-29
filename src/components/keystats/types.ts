@@ -12,4 +12,4 @@ export default interface KeyStatState {
     avgTotalVolume: number;
   };
   status: fetchStatus;
-}
+};

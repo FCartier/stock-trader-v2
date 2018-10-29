@@ -7,4 +7,4 @@ export default interface OverviewState {
     description: string;
   };
   status: fetchStatus;
-}
+};

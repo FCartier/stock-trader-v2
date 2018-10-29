@@ -1,3 +1,3 @@
-import { reducer } from "./reducer"
+import { reducer } from "./reducer";
 
-export type GlobalState = ReturnType<typeof reducer>
+export type GlobalState = ReturnType<typeof reducer>;

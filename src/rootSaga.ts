@@ -1,6 +1,6 @@
 import { all, fork, put, take, call } from "redux-saga/effects";
-import {api} from './utils/apiUtil'
-import { chartWatcher, filterChartWatcher } from "./components/chart/chartSaga"
+import { api } from './utils/apiUtil';
+import { chartWatcher, filterChartWatcher } from "./components/chart/chartSaga";
 import { marketWatcher } from "./components/footer/marketSaga";
 import { keyStatsWatcher } from "./components/keystats/keyStatsSaga";
 import { newsWatcher } from "./components/news/newsSaga";
@@ -9,10 +9,9 @@ import { peerWatcher } from "./components/peers/peerSaga";
 import { priceWebsocketWatcher } from "./components/price/priceWebsocket";
 
 export const APP_STARTED = "APP_STARTED";
-export const FETCH_SYMBOLS_SUCCESS = "FETCH_SYMBOLS_SUCCESS"
+export const FETCH_SYMBOLS_SUCCESS = "FETCH_SYMBOLS_SUCCESS";
 
-
-function* appStartedWorker() {
+export function* appStartedWorker() {
     yield take([APP_STARTED]);
     try {
       const symbols = yield call(api.getSymbols);
@@ -22,16 +21,15 @@ function* appStartedWorker() {
     }
 }
 
-
 export function* root() {
   yield all([
     fork(appStartedWorker),
     fork(chartWatcher),
-    fork(filterChartWatcher), 
-    fork(marketWatcher), 
-    fork(keyStatsWatcher), 
-    fork(newsWatcher), 
-    fork(overviewWatcher), 
+    fork(filterChartWatcher),
+    fork(marketWatcher),
+    fork(keyStatsWatcher),
+    fork(newsWatcher),
+    fork(overviewWatcher),
     fork(peerWatcher),
     fork(priceWebsocketWatcher)
   ]);

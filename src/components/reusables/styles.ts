@@ -1,4 +1,4 @@
-import styled from 'react-emotion'
+import styled from 'react-emotion';
 
 export const CategoryHeader = styled('div')`
   color: ${props => props.theme.headerColor};
@@ -7,4 +7,4 @@ export const CategoryHeader = styled('div')`
     margin-bottom: 0px;
     padding-bottom: 0px;
   }
-`
+`;
