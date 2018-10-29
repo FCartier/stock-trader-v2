@@ -23,7 +23,7 @@ const priceReceivedHandler = (emit: (fn: PriceAction) => void, rawData: string) 
   }
 }
 
-function connect(symbol: string) {
+export function connect(symbol: string) {
   return eventChannel(emit => {
     if (!socket || socket.disconnected) {
       currentSymbol = symbol;
@@ -42,7 +42,7 @@ function connect(symbol: string) {
   })
 }
 
-function* subscribeToSymbol({ payload }: PriceAction) {
+export function* subscribeToSymbol({ payload }: PriceAction) {
   const channel = yield call(connect, payload);
   yield takeEvery(channel, put);
 }

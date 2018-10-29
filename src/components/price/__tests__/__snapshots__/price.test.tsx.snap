@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Price /> should render properly 1`] = `
-<div
-  className="css-k6d7ts"
->
+exports[`price should render properly with data 1`] = `
+<Styled(div)>
   <Styled(div)>
     <Styled(sup)>
       $
@@ -20,5 +18,7 @@ exports[`<Price /> should render properly 1`] = `
       %
     </sup>
   </Styled(div)>
-</div>
+</Styled(div)>
 `;
+
+exports[`price should render properly with no data 1`] = `""`;

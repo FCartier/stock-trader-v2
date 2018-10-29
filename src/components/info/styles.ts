@@ -12,9 +12,6 @@ export const StockInfoBox = styled('span')`
 
 export const stockInfo = css`
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 `
 
 export const LastUpdate = styled('span')`

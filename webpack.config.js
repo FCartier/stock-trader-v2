@@ -4,8 +4,7 @@ const path = require('path'),
  CleanWebpackPlugin = require('clean-webpack-plugin'),
  webpack = require('webpack');
 
-
-module.exports = {
+ let config = {
     entry: ["babel-polyfill", './src/index.tsx'],
     output: {
         publicPath: '/'
@@ -34,23 +33,6 @@ module.exports = {
     resolve: {
         extensions: [ '.tsx', '.ts', '.js', '.jsx', '.json']
     },
-    devtool: 'inline-source-map',
-    devServer: {
-        contentBase: './dist',
-        hot: true,
-        historyApiFallback: true
-    },
-    plugins: [
-        new CleanWebpackPlugin(['dist']),
-        new HtmlWebPackPlugin({
-            template: "./src/index.html"
-        }),
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
-        }),
-        new webpack.HotModuleReplacementPlugin()
-    ]
   };
 
 module.exports = (env, argv) => {
@@ -69,7 +51,8 @@ module.exports = (env, argv) => {
         ];
         config.devServer = {
             contentBase: './dist',
-            hot: true
+            hot: true,
+            historyApiFallback: true
         }
       }
     

@@ -1,7 +1,7 @@
 // @ts-ignore
 import * as date from "date-and-time";
 
-interface Item {
+export interface Item {
   minute: string, 
   date: string, 
   close: number
@@ -24,7 +24,7 @@ export function formatChartData(data: Item[] = []) : FormattedItem[] {
     }); 
 }
 
-function formatDate(input: string) : string {
+export function formatDate(input: string) {
   const day = new Date(input);
   return date.format(day, "MMM YY");
 }

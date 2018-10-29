@@ -1,7 +1,8 @@
 /* tslint:disable */
 import * as React from "react";
 import { injectGlobal }  from "react-emotion";
-import styled from "react-emotion";
+import styled from "react-emotion"
+import { css } from "react-emotion"
 
 class Global extends React.Component {
 
@@ -15,16 +16,16 @@ class Global extends React.Component {
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
       }
       body {
-        min-height: 100%;
         margin: 0;
         font-family: 'Lato'; 
         display: flex;
         flex-direction: column;
-      };
-      html & body {
         height: 100%;
         width: 100%;
+      };
+      html & body {
         margin: 0;
+        padding: 0;
       };
     `;
     return React.Children.only(this.props.children);
@@ -44,6 +45,10 @@ export const Gradient = styled('div')`
 export const Logo = styled('img')`
   width: 10em;
   height: auto;
+`
+
+export const nav = css`
+  min-height: 10vh;
 `
 
 export const ThemeChangeButton = styled('button')`

@@ -13,11 +13,45 @@ export const MarketFoot = styled("ul")`
   );
   overflow: hidden;
   width: calc(100% - 2rem);
-  padding: 1vh 1rem 0 1rem;
-  
   margin: 0;
+  padding: 1vh 1rem 0 1rem;
   height: 5vh;
   color: ${props => props.theme.textColor};
-`;
+  bottom: 0px;
 
-export const MarketItem = styled('li');
+  @media (max-width: 1400px) {
+    li:nth-last-child(-n+2) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    li:nth-last-child(-n+4) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    li:nth-last-child(-n+6) {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    li:nth-last-child(-n+8) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    li:nth-last-child(-n+10) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 450px) {
+    li:nth-last-child(-n+12) {
+      display: none;
+    }
+  }
+`;

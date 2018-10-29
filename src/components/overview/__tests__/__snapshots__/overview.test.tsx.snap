@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`overview component overview component should display all data fields 1`] = `
+exports[`overview component overview component should render correctly before fetch 1`] = `""`;
+
+exports[`overview component overview component should render correctly with fetch failed 1`] = `
+<div>
+  <div
+    className="overview"
+  >
+    <Component
+      title="COMPANY OVERVIEW"
+    />
+    <div
+      className="overview-content"
+    >
+      <NoData
+        componentName="overview"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`overview component overview component should render correctly with fetch success 1`] = `
 <div>
   <div
     className="overview"

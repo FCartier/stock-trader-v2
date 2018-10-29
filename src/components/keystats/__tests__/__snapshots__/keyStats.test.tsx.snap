@@ -1,6 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`keyStats component keyStats component should render properly 1`] = `
+exports[`keystats component keystats component should render properly before fetch 1`] = `""`;
+
+exports[`keystats component keystats component should render properly with fetch failed 1`] = `
+<div>
+  <Component
+    title="KEY STATS"
+  />
+  <NoData
+    componentName="key stats"
+  />
+</div>
+`;
+
+exports[`keystats component keystats component should render properly with fetch success 1`] = `
 <div>
   <Component
     title="KEY STATS"

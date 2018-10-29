@@ -5,7 +5,7 @@ import { api } from "../../utils/apiUtil";
 
 /**** Workers ****/
 
-function* marketWorker() {
+export function* marketWorker() {
   try {
     const market = yield call(api.getMarket);
     yield put({ type: FETCH_MARKET_SUCCESS, payload: market });

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`peers component peers component should render correctly with fetch failed 1`] = `
+<div>
+  <Component
+    title="TOP PEERS"
+  />
+  <div />
+</div>
+`;
+
+exports[`peers component peers component should render properly before fetch 1`] = `""`;
+
+exports[`peers component peers component should render properly with fetch success 1`] = `
+<div>
+  <Component
+    title="TOP PEERS"
+  />
+  <div>
+    <div>
+      <Styled(ul)>
+        <Styled(li)
+          key="0"
+        >
+          AAPL
+        </Styled(li)>
+        <Styled(li)
+          key="1"
+        >
+          FB
+        </Styled(li)>
+        <Styled(li)
+          key="2"
+        >
+          GOOG
+        </Styled(li)>
+        <Styled(li)
+          key="3"
+        >
+          GOOGL
+        </Styled(li)>
+      </Styled(ul)>
+    </div>
+  </div>
+</div>
+`;

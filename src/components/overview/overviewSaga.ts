@@ -8,7 +8,7 @@ import { api } from "../../utils/apiUtil";
 
 /**** Workers ****/
 
-function* overviewWorker({ payload }: SelectedSymbol) {
+export function* overviewWorker({ payload }: SelectedSymbol) {
   try {
     const overview = yield call(api.getOverview, payload);
     yield put({ type: FETCH_OVERVIEW_SUCCESS, payload: overview });
