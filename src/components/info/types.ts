@@ -7,4 +7,4 @@ export interface IStockInfo {
     closeTime: number;
     symbol: string;
   };
-}
+};

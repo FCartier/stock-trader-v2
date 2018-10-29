@@ -1,5 +1,4 @@
-import styled from 'react-emotion'
-
+import styled from 'react-emotion';
 
 export const List = styled('ul')`
   list-style-type: none;

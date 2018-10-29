@@ -1,3 +1,3 @@
-import PeersContainer from "./peersContainer"
+import PeersContainer from "./peersContainer";
 
-export default PeersContainer
+export default PeersContainer;

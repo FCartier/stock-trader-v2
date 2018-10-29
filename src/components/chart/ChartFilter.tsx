@@ -2,17 +2,18 @@ import * as React from "react";
 import { connect } from "react-redux";
 import { chartFilter } from "./chartActions";
 import { Filter } from "./styles"
+import { ChartEventData } from "./types";
 
 interface IChartFilter {
-   chartFilter: (input: string, event: any) => void,
-   input: string
-}
+  chartFilter: (input: string, event: any) => void,
+  input: string
+};
 
 interface IState {
-    search: {
-      symbol: string
-    }
-}
+  search: {
+    symbol: string
+  }
+};
 
 export class ChartFilter extends React.Component<IChartFilter> {
   constructor(props: any) {
@@ -37,10 +38,10 @@ export class ChartFilter extends React.Component<IChartFilter> {
       </Filter>
     );
   }
-}
+};
 
 export default connect(
-  (state : IState) => ({
+  (state: IState) => ({
     input: state.search.symbol
   }),
   { chartFilter }

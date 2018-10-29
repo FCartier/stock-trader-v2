@@ -4,6 +4,7 @@ import "react-virtualized-select/styles.css";
 import { selectedSymbol, SelectedSymbol } from "./searchActions";
 import { connect } from "react-redux";
 import formatSearchData from "./utils/formatSearchData";
+
 import "./style.css";
 import { Route } from "react-router-dom";
 
@@ -11,6 +12,7 @@ import { Route } from "react-router-dom";
 import * as searchIcon from "./images/search.png";
 
 interface ISearchProps {
+  /// TODO
   results: any;
   selectedSymbol: (input: string) => void;
   symbol: string;
@@ -26,7 +28,7 @@ export class Search extends React.Component<ISearchProps, ISearchState> {
     this.state = {
       selectedOption: null
     };
-  }
+  };
 
   public handleSubmit = (history: any, selectedOption: any) => {
     this.setState({

@@ -1,5 +1,5 @@
-import styled from 'react-emotion'
-import { css } from 'emotion'
+import styled from 'react-emotion';
+import { css } from 'emotion';
 
 const orangeHex = '#df5455'
 const greenHex = '#6fb792'

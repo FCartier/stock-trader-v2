@@ -1,3 +1,3 @@
-import KeyStatsContainer from "./keyStatsContainer"
+import KeyStatsContainer from "./keyStatsContainer";
 
-export default KeyStatsContainer
+export default KeyStatsContainer;

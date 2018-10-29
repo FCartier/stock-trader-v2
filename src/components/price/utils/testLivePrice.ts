@@ -1,4 +1,4 @@
-import { priceReceived, PriceAction } from "../priceActions"
+import { priceReceived, PriceAction } from "../priceActions";
 
 export const testPriceComponent = (emit: (fn: PriceAction)=>void) => {
     setTimeout(() => setInterval(() => {

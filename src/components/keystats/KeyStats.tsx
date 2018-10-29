@@ -16,7 +16,7 @@ interface IKeyStatsProps {
     avgTotalVolume: number;
   };
   status?: fetchStatus;
-}
+};
 
 const KeyStats: React.SFC<IKeyStatsProps> = ({ keystats, status }) => {
   return status !== fetchStatus.pending ? (

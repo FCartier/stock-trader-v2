@@ -10,7 +10,7 @@ export interface IOverviewProps {
     description: string;
   };
   status?: fetchStatus;
-}
+};
 
 const Overview: React.SFC<IOverviewProps> = ({ overview, status }) => {
   return status !== fetchStatus.pending ? (

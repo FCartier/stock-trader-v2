@@ -1,3 +1,3 @@
-import MarketContainer from "./marketContainer"
+import MarketContainer from "./marketContainer";
 
-export default MarketContainer
+export default MarketContainer;
