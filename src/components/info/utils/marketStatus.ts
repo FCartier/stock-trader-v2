@@ -8,11 +8,13 @@ export function isStockTrading(openTime: number, closeTime: number) {
   if (current > open && current < close) {
     return true;
   }
+  return false;
 }
 
 export function formTime(input: number) {
   const date = new Date(input);
   const hour = date.getHours();
   const minute = date.getMinutes();
+
   return (hour + (minute / 60))
 }

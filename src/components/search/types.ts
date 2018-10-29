@@ -7,6 +7,15 @@ export interface SymbolItem {
     type: string
 }
 
+export interface SymbolItemTesting {
+    date: string,
+    iexId: string, 
+    isEnabled: boolean, 
+    name: string,
+    symbol: string,
+    type: string
+}
+
 export default interface SearchState {
     symbols: SymbolItem[],
     symbol: string

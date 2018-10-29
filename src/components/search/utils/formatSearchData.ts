@@ -10,6 +10,7 @@ const formatSearchData = (data: SymbolItem[]) => {
       })
     })
   }
+
   return formattedData;
 }
 
