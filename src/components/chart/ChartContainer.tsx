@@ -12,11 +12,13 @@ import NoData from "../reusables/NoData";
 interface IChartContainerProps {
   chart?: [];
   status?: fetchStatus;
+  theme?: {chartColor: string};
 }
 
 export const ChartContainer: React.SFC<IChartContainerProps> = ({
   chart,
-  status
+  status, 
+  theme
 }) => {
   return status !== fetchStatus.pending ? (
     <div>
@@ -24,7 +26,7 @@ export const ChartContainer: React.SFC<IChartContainerProps> = ({
         <>
           <ChartFilter />
           <Container>
-            <Chart data={formatChartData(chart)} />
+            <Chart data={formatChartData(chart)} theme={theme} />
           </Container>
         </>
       ) : (
@@ -34,9 +36,10 @@ export const ChartContainer: React.SFC<IChartContainerProps> = ({
   ) : null;
 };
 
-export const mapStateToProps = ({ chart: { chart, status } }: GlobalState) => ({
+export const mapStateToProps = ({ chart: { chart, status }, theme }: GlobalState) => ({
   chart,
-  status
+  status, 
+  theme
 });
 
 export default connect(

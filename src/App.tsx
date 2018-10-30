@@ -7,8 +7,11 @@ import MarketFooter from "./components/footer";
 import StockInfo from "./components/info";
 import Chart from "./components/chart";
 
+// @ts-ignore
+
 import "./grid.css";
 import {
+  selectedSymbol,
   SelectedSymbol
 } from "./components/search/searchActions";
 

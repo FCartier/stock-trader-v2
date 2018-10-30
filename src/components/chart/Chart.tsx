@@ -13,12 +13,13 @@ import {
 import {calculateMaxValue} from "./utils/calculateMaxValue";
 
 interface IChartProps {
-  data?: Array<{date: string, value: number}>
+  data?: Array<{date: string, value: number}>;
+  theme?: {chartColor: string}
 }
 
 
 export const Chart: React.SFC<IChartProps> = (props) => {
-  const { data } = props 
+  const { data, theme } = props 
   return (
     <ResponsiveContainer height="100%">
       <AreaChart
@@ -27,8 +28,8 @@ export const Chart: React.SFC<IChartProps> = (props) => {
       >
       <defs>
       <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="5%" stopColor="#72a2e9" stopOpacity={0.8} />
-          <stop offset="95%" stopColor="#72a2e9" stopOpacity={0} />
+          <stop offset="5%" stopColor={theme.chartColor} stopOpacity={0.8} />
+          <stop offset="95%" stopColor={theme.chartColor} stopOpacity={0} />
       </linearGradient>
       </defs>
         <CartesianGrid strokeDasharray="3 3" />
@@ -44,7 +45,7 @@ export const Chart: React.SFC<IChartProps> = (props) => {
           tickLine={false}
         />
         <ReferenceLine y={calculateMaxValue(data)} stroke={'orange'}  className="referenceLine" />
-        <Area type="monotone" dataKey="value" stroke="#72a2e9" fillOpacity={1} fill="url(#colorUv)" />
+        <Area type="monotone" dataKey="value" stroke={theme.chartColor} fillOpacity={1} fill="url(#colorUv)" />
         
       </AreaChart>
     </ResponsiveContainer>

@@ -8,6 +8,7 @@ import { peers } from "./components/peers/peerReducer"
 import { price } from "./components/price/priceReducer"
 import { search } from "./components/search/searchReducer"
 import { error } from "./components/reusables/errorReducer"
+import { theme } from "./utils/themeReducers"
 
 export const reducer = combineReducers({
    chart, 
@@ -18,6 +19,7 @@ export const reducer = combineReducers({
    peers, 
    price, 
    search, 
-   error
+   error, 
+   theme
 })
 

@@ -4,15 +4,15 @@ import Price from "./components/price";
 import Search from "./components/search/Search";
 // @ts-ignore
 import * as logo from "./images/logo.png";
-import { Link } from "react-router-dom";
+import ThemeChangeButton from "./utils/ThemeChange"
 
 const Nav = (props: any) => {
-  console.log(props);
   return (
     <div className={nav}>
       <div className="flexbox-container">
         <div>
           <Logo src={logo} alt="Adaptive Logo" />
+          <ThemeChangeButton/>
         </div>
       </div>
 
@@ -29,5 +29,6 @@ const Nav = (props: any) => {
     </div>
   );
 };
+
 
 export default Nav;
