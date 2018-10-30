@@ -13,7 +13,7 @@ const News: React.SFC<NewsList> = ({ news, status }) => {
         <SectionHeader title="NEWS" />
         {status === fetchStatus.success ? (
           <List>
-            {news.slice(0, 5).map((article: NewsItem, index: number) => {
+            {news.map((article: NewsItem, index: number) => {
               return (
                 <li key={index}>
                   <Header>

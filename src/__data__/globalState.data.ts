@@ -8,6 +8,8 @@ import { priceData } from "../components/price/__data__/price.data";
 import { GlobalState } from "../StoreTypes";
 import { fetchStatus } from "../components/reusables/fetchStatus";
 
+
+// @ts-ignore
 export const globalState = {
   chart: {chart: chartTestData, status: fetchStatus.success},
   keystats: {keystats: keystatsTestData, status: fetchStatus.success},
