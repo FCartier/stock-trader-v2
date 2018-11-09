@@ -2,7 +2,7 @@ import * as React from "react";
 import { connect } from "react-redux";
 import { chartFilter } from "./chartActions";
 import { Filter } from "./styles"
-import { ChartEventData } from "./types";
+import { ChartData } from "./types";
 
 interface IChartFilter {
   chartFilter: (input: string, event: any) => void,

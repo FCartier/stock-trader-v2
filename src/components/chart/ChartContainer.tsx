@@ -7,6 +7,7 @@ import { GlobalState } from "../../StoreTypes";
 import { Container } from "./styles";
 import { fetchStatus } from "../reusables/fetchStatus";
 import NoData from "../reusables/NoData";
+import { selectChartState, selectChartStatus } from "./selectors";
 
 
 interface IChartContainerProps {
@@ -34,9 +35,9 @@ export const ChartContainer: React.SFC<IChartContainerProps> = ({
   ) : null;
 };
 
-export const mapStateToProps = ({ chart: { chart, status } }: GlobalState) => ({
-  chart,
-  status
+export const mapStateToProps = (state: GlobalState) => ({
+  chart: selectChartState(state),
+  status: selectChartStatus(state)
 });
 
 export default connect(
